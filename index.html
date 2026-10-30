@@ -618,6 +618,7 @@
         <option value="Peter">Peter</option>
         <option value="Flo">Flo</option>
         <option value="Raphi">Raphi</option>
+        <option value="Tobi">Tobi</option>
       </select>
       <select id="rarity-filter" aria-label="Seltenheit filtern">
         <option value="">Alle Seltenheiten</option>
@@ -814,10 +815,12 @@ Counterspell
     let archidektData = { decks: [] };
     const statusContainer = document.getElementById("status-container");
 
-    function renderStatus(results) {
+    let csvResults = [];
+
+    function updateStatusBadges() {
       statusContainer.innerHTML = "";
       let totalVersions = 0;
-      results.forEach(res => {
+      csvResults.forEach(res => {
         const badge = document.createElement("span");
         if (res.success) {
           totalVersions += res.uniqueCount;
@@ -829,6 +832,18 @@ Counterspell
         }
         statusContainer.appendChild(badge);
       });
+
+      const tobiCount = cardInventory.filter(c => c.owner === "Tobi").length;
+      if (tobiCount > 0) {
+        totalVersions += tobiCount;
+        const tobiBadge = document.createElement("span");
+        tobiBadge.className = "status-badge ok";
+        tobiBadge.style.borderColor = "rgba(249, 115, 22, 0.4)";
+        tobiBadge.style.color = "#fb923c";
+        tobiBadge.innerText = `Tobi (Deck): ${tobiCount} Versionen`;
+        statusContainer.appendChild(tobiBadge);
+      }
+
       const totalBadge = document.createElement("span");
       totalBadge.className = "status-badge ok";
       totalBadge.style.fontWeight = "bold";
@@ -892,8 +907,9 @@ Counterspell
         });
       })
     )).then(results => {
-      renderStatus(results);
+      csvResults = results;
       cardInventory = results.flatMap(r => r.items);
+      updateStatusBadges();
       populateFilters();
       renderResults();
     });
@@ -925,10 +941,20 @@ Counterspell
       cardDecksLookup = {};
       const decks = archidektData.decks || [];
       decks.forEach(d => {
+        const commanderName = (d.commanders && d.commanders.length > 0)
+          ? d.commanders.join(" // ")
+          : d.name;
+
         (d.cards || []).forEach(c => {
           const raw = (c.name || "").toLowerCase().trim();
           const clean = raw.replace(/\s*\/\/.*$/, "").trim();
-          const entry = { deckName: d.name, owner: d.owner, badge: d.badge, deckId: d.id };
+          const entry = { 
+            commanderName: commanderName, 
+            deckName: d.name, 
+            owner: d.owner, 
+            badge: d.badge, 
+            deckId: d.id 
+          };
 
           [clean, raw].forEach(k => {
             if (!k) return;
@@ -953,12 +979,12 @@ Counterspell
 
       const displayLimit = 2;
       const items = list.slice(0, displayLimit).map(d => {
-        return `<span class="deck-tag" title="${escapeHtml(d.deckName)} (${escapeHtml(d.owner)})"><span class="badge ${d.badge}" style="padding:1px 4px; font-size:0.68rem;">${d.owner}</span> ${escapeHtml(d.deckName)}</span>`;
+        return `<span class="deck-tag" title="Commander: ${escapeHtml(d.commanderName)} (Deck: ${escapeHtml(d.deckName)})"><span class="badge ${d.badge}" style="padding:1px 4px; font-size:0.68rem;">${d.owner}</span> ${escapeHtml(d.commanderName)}</span>`;
       });
 
       if (list.length > displayLimit) {
         const extraCount = list.length - displayLimit;
-        const allTitles = list.map(d => `${d.deckName} (${d.owner})`).join("\n");
+        const allTitles = list.map(d => `${d.owner}: ${d.commanderName} (${d.deckName})`).join("\n");
         items.push(`<span class="deck-tag-more" title="${escapeHtml(allTitles)}">+${extraCount} mehr</span>`);
       }
 
@@ -1281,6 +1307,7 @@ Counterspell
             let badgeClass = 'owner-peter';
             if (owner === 'Flo') badgeClass = 'owner-flo';
             if (owner === 'Raphi') badgeClass = 'owner-raphi';
+            if (owner === 'Tobi') badgeClass = 'owner-tobi';
             return `<span class="breakdown-tag"><span class="badge ${badgeClass}" style="padding:1px 5px; font-size:0.7rem;">${owner}</span> ${qty}x</span>`;
           }).join(" ");
         } else {
@@ -1360,6 +1387,30 @@ Counterspell
               tobiDeckCount.textContent = `${data.owners.Tobi ? data.owners.Tobi.count : 0} Deck${data.owners.Tobi && data.owners.Tobi.count === 1 ? '' : 's'}`;
             }
           }
+
+          // Tobis Deckkarten in den gemeinsamen Kartenpool aufnehmen
+          const tobiDecks = (archidektData.decks || []).filter(d => d.owner === "Tobi");
+          const tobiCards = [];
+          tobiDecks.forEach(d => {
+            (d.cards || []).forEach(c => {
+              tobiCards.push({
+                name: c.name,
+                cleanName: c.name.replace(/\s*\/\/.*$/, "").trim(),
+                count: c.quantity || 1,
+                setCode: "",
+                setName: d.name,
+                collectorNumber: "",
+                rarity: "",
+                foil: "normal",
+                lang: "en",
+                scryfallId: "",
+                owner: "Tobi",
+                badge: "owner-tobi"
+              });
+            });
+          });
+          cardInventory = cardInventory.filter(c => c.owner !== "Tobi").concat(tobiCards);
+          updateStatusBadges();
 
           buildCardDecksLookup();
           populateQuickDeckSelect(decks);
