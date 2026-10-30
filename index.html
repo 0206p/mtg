@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTG Sammlungs-Suche</title>
+  <title>MTG Sammlungs-Pool</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <style>
     * { box-sizing: border-box; }
     body { 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-      max-width: 950px; 
+      max-width: 1100px; 
       margin: 0 auto; 
-      padding: 30px 15px; 
+      padding: 24px 16px; 
       background: #0f1115; 
       color: #f0f2f5; 
     }
     h1 { text-align: center; font-size: 2.2rem; margin-bottom: 6px; letter-spacing: 1px; }
     p.subtitle { text-align: center; color: #8a94a6; margin-top: 0; margin-bottom: 20px; }
+    
     .status-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; font-size: 0.85rem; margin-bottom: 20px; }
     .status-badge { background: #1a1e26; padding: 6px 12px; border-radius: 6px; border: 1px solid #2d3544; color: #8a94a6; }
     .status-badge.ok { color: #4ade80; border-color: rgba(74, 222, 128, 0.3); }
     .status-badge.err { color: #f87171; border-color: rgba(248, 113, 113, 0.4); }
-    
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #2d3544;
+      padding-bottom: 10px;
+    }
+    .tab-btn {
+      background: #161a23;
+      border: 1px solid #2d3544;
+      color: #94a3b8;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover {
+      background: #1f2533;
+      color: #fff;
+    }
+    .tab-btn.active {
+      background: #2563eb;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Single Search Inputs & Filters */
     #search { 
       width: 100%; 
       padding: 14px 18px; 
@@ -35,76 +71,237 @@
       transition: border-color 0.2s; 
     }
     #search:focus { border-color: #3b82f6; }
+    
     .filters {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 10px;
       margin-bottom: 16px;
     }
     .filters select, .filters button {
       width: 100%;
-      padding: 11px 12px;
+      padding: 10px 12px;
       border-radius: 8px;
       border: 1px solid #2d3544;
       background: #161a23;
       color: #e2e8f0;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
     .filters button {
       cursor: pointer;
       background: #232a38;
+      transition: background 0.2s;
     }
-    .filters button:hover { border-color: #64748b; }
-    @media (max-width: 700px) { .filters { grid-template-columns: 1fr; } }
-    
-    table { width: 100%; border-collapse: collapse; background: #161a23; border-radius: 8px; overflow: hidden; border: 1px solid #2d3544; }
-    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #232a38; }
-    th { background: #1c2230; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .filters button:hover { border-color: #64748b; background: #2b3446; }
+
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid #2d3544;
+      border-radius: 8px;
+      background: #161a23;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 600px; }
+    th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid #232a38; font-size: 0.9rem; vertical-align: middle; }
+    th { background: #1c2230; color: #94a3b8; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #1c2230; }
-    
-    .card-cell { 
-      color: #f8fafc; 
-      text-decoration: none;
-      transition: color 0.15s; 
-    }
-    .card-cell:hover { 
-      color: #60a5fa; 
-      text-decoration: underline;
-    }
-    .preview-button {
-      cursor: pointer;
-      padding: 7px 10px;
-      border: 1px solid #475569;
-      border-radius: 6px;
-      background: #232a38;
-      color: #e2e8f0;
-      font-size: 0.82rem;
-    }
-    .preview-button:hover { background: #30394a; border-color: #60a5fa; }
 
-    .badge { padding: 4px 10px; border-radius: 9999px; font-size: 0.8rem; font-weight: 600; display: inline-block; }
+    .card-title {
+      font-weight: 500;
+      color: #f8fafc;
+    }
+
+    .badge { padding: 3px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; display: inline-block; white-space: nowrap; }
     .owner-peter { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
     .owner-flo { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
     .owner-raphi { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
-    .set-tag { background: #232a38; color: #cbd5e1; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; }
-    .empty-state { text-align: center; color: #64748b; padding: 30px; font-style: italic; }
-
-    #card-preview {
-      width: 380px;
-      max-width: calc(100vw - 30px);
-      border: 1px solid #3b82f6;
-      border-radius: 12px;
-      padding: 12px;
-      background: #161a23;
-      color: #fff;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+    
+    .foil-badge {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(244, 114, 182, 0.2), rgba(129, 140, 248, 0.2));
+      border: 1px solid rgba(251, 191, 36, 0.45);
+      color: #fbbf24;
     }
-    #card-preview::backdrop { background: rgba(0, 0, 0, 0.72); }
-    .preview-header { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
-    .preview-header strong { font-size: 1rem; }
-    .preview-close { cursor: pointer; border: 0; background: transparent; color: #94a3b8; font-size: 1.35rem; }
-    #preview-img { width: 100%; display: block; border-radius: 9px; min-height: 200px; background: #232a38; }
+    .etched-badge {
+      background: rgba(148, 163, 184, 0.2);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: #cbd5e1;
+    }
+    .lang-badge {
+      background: #232a38;
+      border: 1px solid #3b4252;
+      color: #94a3b8;
+      font-size: 0.7rem;
+      padding: 2px 5px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .set-tag { background: #232a38; color: #cbd5e1; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; }
+    .empty-state { text-align: center; color: #64748b; padding: 35px; font-style: italic; }
+
+    /* Links & Buttons */
+    .link-group {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .external-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.78rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.15s;
+    }
+    .external-link:hover { opacity: 0.85; text-decoration: underline; }
+    .link-scryfall { background: #2b1f3d; color: #d8b4fe; border: 1px solid #7e22ce; }
+    .link-cardmarket { background: #132e4d; color: #7dd3fc; border: 1px solid #0284c7; }
+
+    /* Camera Hover Button */
+    .camera-trigger {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: #232a38;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s;
+    }
+    .camera-trigger:hover {
+      background: #3b82f6;
+      border-color: #60a5fa;
+      color: #ffffff;
+    }
+    .camera-trigger svg {
+      width: 16px;
+      height: 16px;
+      pointer-events: none;
+    }
+
+    /* Floating Hover Card Preview */
+    #hover-preview {
+      position: fixed;
+      display: none;
+      z-index: 99999;
+      pointer-events: none;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.85), 0 0 0 1px #3b82f6;
+      overflow: hidden;
+      background: #161a23;
+    }
+    #hover-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    /* List Import Tab Styles */
+    .deck-container {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 900px) {
+      .deck-container { grid-template-columns: 1fr; }
+    }
+    .deck-input-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .deck-textarea {
+      width: 100%;
+      height: 380px;
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 8px;
+      padding: 12px;
+      color: #f1f5f9;
+      font-family: monospace;
+      font-size: 0.88rem;
+      resize: vertical;
+    }
+    .deck-textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary:hover { background: #1d4ed8; }
+
+    .deck-summary-card {
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .stat-lbl {
+      color: #8a94a6;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: #232a38;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: #22c55e;
+      transition: width 0.3s ease;
+    }
+
+    .status-ok { color: #4ade80; font-weight: 600; }
+    .status-part { color: #facc15; font-weight: 600; }
+    .status-missing { color: #f87171; font-weight: 600; }
+
+    .breakdown-tag {
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #232a38;
+      margin-right: 4px;
+      display: inline-block;
+    }
   </style>
 </head>
 <body>
@@ -116,45 +313,138 @@
     <span class="status-badge">Lade Sammlungen...</span>
   </div>
 
-  <input type="text" id="search" placeholder="Kartenname eingeben (z. B. Sol Ring, Swords, Command...)" autofocus>
-  <div class="filters">
-    <select id="set-filter" aria-label="Edition filtern">
-      <option value="">Alle Editionen</option>
-    </select>
-    <select id="owner-filter" aria-label="Besitzer filtern">
-      <option value="">Alle Besitzer</option>
-      <option value="Peter">Peter</option>
-      <option value="Flo">Flo</option>
-      <option value="Raphi">Raphi</option>
-    </select>
-    <select id="rarity-filter" aria-label="Seltenheit filtern">
-      <option value="">Alle Seltenheiten</option>
-    </select>
-    <button type="button" id="reset-filters">Filter zurücksetzen</button>
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-search">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      Kartensuche & Filter
+    </button>
+    <button class="tab-btn" data-tab="tab-deck">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+      Deck- & Listen-Checker
+    </button>
   </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Karte</th>
-        <th>Edition</th>
-        <th>Besitzer</th>
-        <th>Anzahl</th>
-        <th>Vorschau</th>
-      </tr>
-    </thead>
-    <tbody id="results">
-      <tr><td colspan="5" class="empty-state">Lade Karten...</td></tr>
-    </tbody>
-  </table>
-
-  <dialog id="card-preview">
-    <div class="preview-header">
-      <strong id="preview-title"></strong>
-      <button type="button" class="preview-close" aria-label="Vorschau schließen">&times;</button>
+  <!-- TAB 1: KARTENSUCHE -->
+  <div id="tab-search" class="tab-content active">
+    <input type="text" id="search" placeholder="Kartenname eingeben (z. B. Sol Ring, Swords, Command...)" autofocus>
+    
+    <div class="filters">
+      <select id="set-filter" aria-label="Edition filtern">
+        <option value="">Alle Editionen</option>
+      </select>
+      <select id="owner-filter" aria-label="Besitzer filtern">
+        <option value="">Alle Besitzer</option>
+        <option value="Peter">Peter</option>
+        <option value="Flo">Flo</option>
+        <option value="Raphi">Raphi</option>
+      </select>
+      <select id="rarity-filter" aria-label="Seltenheit filtern">
+        <option value="">Alle Seltenheiten</option>
+      </select>
+      <select id="foil-filter" aria-label="Version / Finish filtern">
+        <option value="">Alle Finishes</option>
+        <option value="normal">Normal (Non-Foil)</option>
+        <option value="foil">Foil</option>
+        <option value="etched">Etched</option>
+      </select>
+      <select id="lang-filter" aria-label="Sprache filtern">
+        <option value="">Alle Sprachen</option>
+      </select>
+      <button type="button" id="reset-filters">Filter zurücksetzen</button>
     </div>
-    <img id="preview-img" src="" alt="Kartenvorschau">
-  </dialog>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40px; text-align: center;">Bild</th>
+            <th>Karte</th>
+            <th>Edition</th>
+            <th>Version</th>
+            <th>Sprache</th>
+            <th>Besitzer</th>
+            <th>Anzahl</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody id="results">
+          <tr><td colspan="8" class="empty-state">Lade Karten...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB 2: DECK-CHECKER -->
+  <div id="tab-deck" class="tab-content">
+    <div class="deck-container">
+      <div class="deck-input-box">
+        <label for="decklist-input" style="font-weight: 600; font-size: 0.95rem; color: #cbd5e1;">Deckliste oder Kartenliste einfügen:</label>
+        <textarea id="decklist-input" class="deck-textarea" placeholder="Einfach Liste hier einfügen, z. B.:
+1 Sol Ring
+1 Rhystic Study
+4 Lightning Bolt
+Counterspell
+1 Demonic Tutor (BLB) 250"></textarea>
+        <button type="button" id="btn-check-deck" class="btn-primary">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          Liste im Kartenpool prüfen
+        </button>
+      </div>
+
+      <div class="deck-results-box">
+        <div id="deck-summary-wrapper" style="display: none;">
+          <div class="deck-summary-card">
+            <div class="stat-item">
+              <div class="stat-num" id="stat-total">0</div>
+              <div class="stat-lbl">Karten gesucht</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" style="color: #4ade80;" id="stat-found">0</div>
+              <div class="stat-lbl">Im Pool vorhanden</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" style="color: #f87171;" id="stat-missing">0</div>
+              <div class="stat-lbl">Fehlen noch</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" style="color: #60a5fa;" id="stat-percent">0%</div>
+              <div class="stat-lbl">Abdeckung</div>
+            </div>
+            <div style="width: 100%;">
+              <div class="progress-bar-bg">
+                <div id="deck-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 40px; text-align: center;">Bild</th>
+                <th>Karte</th>
+                <th style="text-align: center;">Bedarf</th>
+                <th style="text-align: center;">Vorhanden</th>
+                <th>Verfügbar bei</th>
+                <th>Status</th>
+                <th>Links</th>
+              </tr>
+            </thead>
+            <tbody id="deck-results-body">
+              <tr><td colspan="7" class="empty-state">Füge links eine Liste ein und klicke auf "Liste prüfen".</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Hover Preview Tooltip -->
+  <div id="hover-preview">
+    <img id="hover-preview-img" src="" alt="Vorschau">
+  </div>
 
   <script>
     const sources = [
@@ -168,27 +458,27 @@
 
     function renderStatus(results) {
       statusContainer.innerHTML = "";
-      let total = 0;
+      let totalVersions = 0;
       results.forEach(res => {
         const badge = document.createElement("span");
         if (res.success) {
-          total += res.count;
+          totalVersions += res.uniqueCount;
           badge.className = "status-badge ok";
-          badge.innerText = `${res.name}: ${res.count.toLocaleString()} Karten`;
+          badge.innerText = `${res.name}: ${res.uniqueCount.toLocaleString()} Versionen`;
         } else {
           badge.className = "status-badge err";
-          badge.innerText = `${res.name} (${res.file}): Fehler!`;
+          badge.innerText = `${res.name} (${res.file}): Fehler beim Laden!`;
         }
         statusContainer.appendChild(badge);
       });
       const totalBadge = document.createElement("span");
       totalBadge.className = "status-badge ok";
       totalBadge.style.fontWeight = "bold";
-      totalBadge.innerText = `Gesamt: ${total.toLocaleString()} Karten`;
+      totalBadge.innerText = `Gesamt: ${totalVersions.toLocaleString()} Versionen im Pool`;
       statusContainer.appendChild(totalBadge);
     }
 
-    // CSV-Dateien parallel laden inklusive Scryfall ID
+    // CSV-Dateien parallel laden
     Promise.all(sources.map(source => 
       new Promise(resolve => {
         Papa.parse(source.file, {
@@ -197,25 +487,34 @@
           skipEmptyLines: true,
           complete: res => {
             if (!res.data || res.data.length === 0) {
-              resolve({ name: source.name, file: source.file, success: false, count: 0, items: [] });
+              resolve({ name: source.name, file: source.file, success: false, uniqueCount: 0, totalQty: 0, items: [] });
               return;
             }
+            let totalQty = 0;
             const parsed = res.data.map(row => {
               const name = (row["Name"] || row["Card Name"] || row["Card name"] || row["name"] || "").trim();
               const count = parseInt(row["Quantity"] || row["Count"] || row["quantity"] || row["count"] || 1, 10);
+              const qty = isNaN(count) ? 1 : count;
+              totalQty += qty;
+
               const setCode = (row["Set code"] || row["Set Code"] || row["set code"] || "").trim();
               const setName = (row["Set name"] || row["Set Name"] || row["set name"] || "").trim();
               const collectorNumber = (row["Collector number"] || row["Collector Number"] || row["collector number"] || "").trim();
-              const rarity = (row["Rarity"] || row["rarity"] || "").trim();
+              const rarity = (row["Rarity"] || row["rarity"] || "").trim().toLowerCase();
+              const foil = (row["Foil"] || row["foil"] || "normal").trim().toLowerCase();
+              const lang = (row["Language"] || row["language"] || "en").trim().toLowerCase();
               const scryfallId = (row["Scryfall ID"] || row["Scryfall Id"] || row["scryfall id"] || "").trim();
               
               return {
                 name: name,
-                count: isNaN(count) ? 1 : count,
+                cleanName: name.replace(/\s*\/\/.*$/, "").trim(), // Vorderseite für Suche
+                count: qty,
                 setCode: setCode,
                 setName: setName,
                 collectorNumber: collectorNumber,
                 rarity: rarity,
+                foil: foil,
+                lang: lang,
                 scryfallId: scryfallId,
                 owner: source.name,
                 badge: source.badge
@@ -226,11 +525,12 @@
               name: source.name,
               file: source.file,
               success: parsed.length > 0,
-              count: parsed.length,
+              uniqueCount: parsed.length,
+              totalQty: totalQty,
               items: parsed
             });
           },
-          error: () => resolve({ name: source.name, file: source.file, success: false, count: 0, items: [] })
+          error: () => resolve({ name: source.name, file: source.file, success: false, uniqueCount: 0, totalQty: 0, items: [] })
         });
       })
     )).then(results => {
@@ -240,15 +540,27 @@
       renderResults();
     });
 
+    // Navigation Tabs
+    const tabBtns = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+    tabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabBtns.forEach(b => b.classList.remove("active"));
+        tabContents.forEach(c => c.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+      });
+    });
+
+    // Elements
     const searchInput = document.getElementById("search");
     const setFilter = document.getElementById("set-filter");
     const ownerFilter = document.getElementById("owner-filter");
     const rarityFilter = document.getElementById("rarity-filter");
+    const foilFilter = document.getElementById("foil-filter");
+    const langFilter = document.getElementById("lang-filter");
     const resetFiltersButton = document.getElementById("reset-filters");
     const resultsTable = document.getElementById("results");
-    const previewBox = document.getElementById("card-preview");
-    const previewImg = document.getElementById("preview-img");
-    const previewTitle = document.getElementById("preview-title");
 
     function escapeHtml(value) {
       return String(value)
@@ -260,11 +572,9 @@
     }
 
     function populateFilters() {
+      // Sets
       const sets = [...new Set(cardInventory.map(item => item.setCode).filter(Boolean))]
         .sort((a, b) => a.localeCompare(b));
-      const rarities = [...new Set(cardInventory.map(item => item.rarity).filter(Boolean))]
-        .sort((a, b) => a.localeCompare(b));
-
       sets.forEach(setCode => {
         const item = cardInventory.find(card => card.setCode === setCode);
         const option = document.createElement("option");
@@ -273,11 +583,24 @@
         setFilter.appendChild(option);
       });
 
+      // Rarities
+      const rarities = [...new Set(cardInventory.map(item => item.rarity).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b));
       rarities.forEach(rarity => {
         const option = document.createElement("option");
         option.value = rarity;
         option.textContent = rarity.charAt(0).toUpperCase() + rarity.slice(1);
         rarityFilter.appendChild(option);
+      });
+
+      // Languages
+      const langs = [...new Set(cardInventory.map(item => item.lang).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b));
+      langs.forEach(lang => {
+        const option = document.createElement("option");
+        option.value = lang;
+        option.textContent = lang.toUpperCase();
+        langFilter.appendChild(option);
       });
     }
 
@@ -291,34 +614,87 @@
       return `https://scryfall.com/search?q=${encodeURIComponent(`!"${item.name}"`)}`;
     }
 
+    function getCardmarketUrl(cardName) {
+      // Cardmarket Suchlink für MTG
+      const searchName = cardName.replace(/\s*\/\/.*$/, "").trim();
+      return `https://www.cardmarket.com/de/Magic/Products/Search?searchString=${encodeURIComponent(searchName)}`;
+    }
+
+    function getImageUrl(item) {
+      if (item.scryfallId) {
+        return `https://api.scryfall.com/cards/${encodeURIComponent(item.scryfallId)}?format=image&version=normal`;
+      }
+      const searchName = (item.cleanName || item.name).trim();
+      return `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(searchName)}&format=image&version=normal`;
+    }
+
     function renderResults() {
       const query = searchInput.value.toLowerCase().trim();
       const selectedSet = setFilter.value;
       const selectedOwner = ownerFilter.value;
       const selectedRarity = rarityFilter.value;
+      const selectedFoil = foilFilter.value;
+      const selectedLang = langFilter.value;
       resultsTable.innerHTML = "";
 
       const matches = cardInventory
         .filter(item => !query || item.name.toLowerCase().includes(query))
         .filter(item => !selectedSet || item.setCode === selectedSet)
         .filter(item => !selectedOwner || item.owner === selectedOwner)
-        .filter(item => !selectedRarity || item.rarity.toLowerCase() === selectedRarity.toLowerCase())
-        .slice(0, 50);
+        .filter(item => !selectedRarity || item.rarity === selectedRarity)
+        .filter(item => !selectedFoil || item.foil === selectedFoil)
+        .filter(item => !selectedLang || item.lang === selectedLang)
+        .slice(0, 75);
 
       if (matches.length === 0) {
-        resultsTable.innerHTML = '<tr><td colspan="5" class="empty-state">Keine Karte gefunden.</td></tr>';
+        resultsTable.innerHTML = '<tr><td colspan="8" class="empty-state">Keine Karten gefunden.</td></tr>';
         return;
       }
+
+      const cameraIconSvg = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+      `;
 
       matches.forEach(item => {
         const row = document.createElement("tr");
         const scryfallUrl = getScryfallUrl(item);
+        const cardmarketUrl = getCardmarketUrl(item.name);
+        const imgUrl = getImageUrl(item);
+
+        let foilBadgeHtml = '';
+        if (item.foil === 'foil') {
+          foilBadgeHtml = '<span class="badge foil-badge">✨ Foil</span>';
+        } else if (item.foil === 'etched') {
+          foilBadgeHtml = '<span class="badge etched-badge">Etched</span>';
+        } else {
+          foilBadgeHtml = '<span style="color:#64748b; font-size:0.8rem;">Normal</span>';
+        }
+
         row.innerHTML = `
-          <td><a class="card-cell" href="${escapeHtml(scryfallUrl)}">${escapeHtml(item.name)}</a></td>
+          <td style="text-align: center;">
+            <span class="camera-trigger" data-img="${escapeHtml(imgUrl)}" title="Hover für Bildvorschau">
+              ${cameraIconSvg}
+            </span>
+          </td>
+          <td><span class="card-title">${escapeHtml(item.name)}</span></td>
           <td>${item.setCode ? `<span class="set-tag">${item.setCode}</span>` : "-"}</td>
+          <td>${foilBadgeHtml}</td>
+          <td><span class="lang-badge">${escapeHtml(item.lang || 'en')}</span></td>
           <td><span class="badge ${item.badge}">${item.owner}</span></td>
-          <td>${item.count}x</td>
-          <td><button type="button" class="preview-button" data-id="${escapeHtml(item.scryfallId)}" data-name="${escapeHtml(item.name)}">Vorschau</button></td>
+          <td style="font-weight: 600;">${item.count}x</td>
+          <td>
+            <div class="link-group">
+              <a href="${escapeHtml(scryfallUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-scryfall" title="Auf Scryfall ansehen">
+                Scryfall ↗
+              </a>
+              <a href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-cardmarket" title="Auf Cardmarket suchen">
+                Cardmarket ↗
+              </a>
+            </div>
+          </td>
         `;
         resultsTable.appendChild(row);
       });
@@ -328,43 +704,256 @@
     setFilter.addEventListener("change", renderResults);
     ownerFilter.addEventListener("change", renderResults);
     rarityFilter.addEventListener("change", renderResults);
+    foilFilter.addEventListener("change", renderResults);
+    langFilter.addEventListener("change", renderResults);
+
     resetFiltersButton.addEventListener("click", () => {
       searchInput.value = "";
       setFilter.value = "";
       ownerFilter.value = "";
       rarityFilter.value = "";
+      foilFilter.value = "";
+      langFilter.value = "";
       renderResults();
     });
 
-    resultsTable.addEventListener("click", (e) => {
-      const target = e.target.closest(".preview-button");
-      if (!target) return;
-      const id = target.dataset.id;
-      const name = target.dataset.name;
-      const imgUrl = id 
-        ? `https://api.scryfall.com/cards/${id}?format=image&version=normal` 
-        : `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(name)}&format=image&version=normal`;
-      previewTitle.textContent = name;
-      previewImg.dataset.fallbackName = name;
-      delete previewImg.dataset.usedNamedFallback;
-      previewImg.src = imgUrl;
-      previewBox.showModal();
+    // ----------------------------------------------------
+    // HOVER-PREVIEW (SCHWEBENDE KARTENVORSCHAU BEI KAMERA)
+    // ----------------------------------------------------
+    const hoverPreview = document.getElementById("hover-preview");
+    const hoverPreviewImg = document.getElementById("hover-preview-img");
+
+    document.addEventListener("mouseover", (e) => {
+      const trigger = e.target.closest(".camera-trigger");
+      if (!trigger) return;
+      
+      const imgUrl = trigger.getAttribute("data-img");
+      if (!imgUrl) return;
+
+      hoverPreviewImg.src = imgUrl;
+      hoverPreview.style.display = "block";
+      updateHoverPosition(e);
     });
-    previewImg.addEventListener("error", () => {
-      const name = previewImg.dataset.fallbackName || "Vorschau nicht verfügbar";
-      if (!previewImg.dataset.usedNamedFallback) {
-        previewImg.dataset.usedNamedFallback = "true";
-        previewImg.src = `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(name)}&format=image&version=normal`;
+
+    document.addEventListener("mousemove", (e) => {
+      if (hoverPreview.style.display === "block") {
+        updateHoverPosition(e);
+      }
+    });
+
+    document.addEventListener("mouseout", (e) => {
+      const trigger = e.target.closest(".camera-trigger");
+      if (trigger) {
+        hoverPreview.style.display = "none";
+        hoverPreviewImg.src = "";
+      }
+    });
+
+    function updateHoverPosition(e) {
+      const offset = 18;
+      const previewWidth = 250;
+      const previewHeight = 350; // Annäherung Kartengröße
+      
+      let left = e.clientX + offset;
+      let top = e.clientY - (previewHeight / 3);
+
+      // Rechtsüberhang verhindern
+      if (left + previewWidth > window.innerWidth) {
+        left = e.clientX - previewWidth - offset;
+      }
+      // Unten/Oben Überhang verhindern
+      if (top + previewHeight > window.innerHeight) {
+        top = window.innerHeight - previewHeight - 10;
+      }
+      if (top < 10) top = 10;
+
+      hoverPreview.style.left = `${left}px`;
+      hoverPreview.style.top = `${top}px`;
+    }
+
+    // ----------------------------------------------------
+    // DECK- / LISTEN-CHECKER FUNKTIONALITÄT
+    // ----------------------------------------------------
+    const deckInput = document.getElementById("decklist-input");
+    const btnCheckDeck = document.getElementById("btn-check-deck");
+    const deckResultsBody = document.getElementById("deck-results-body");
+    const deckSummaryWrapper = document.getElementById("deck-summary-wrapper");
+    const statTotal = document.getElementById("stat-total");
+    const statFound = document.getElementById("stat-found");
+    const statMissing = document.getElementById("stat-missing");
+    const statPercent = document.getElementById("stat-percent");
+    const deckProgressBar = document.getElementById("deck-progress-bar");
+
+    function parseDecklist(text) {
+      const lines = text.split("\n");
+      const list = [];
+
+      for (let rawLine of lines) {
+        let line = rawLine.trim();
+        if (!line || line.startsWith("//") || line.startsWith("#") || line.toLowerCase() === "deck" || line.toLowerCase() === "sideboard" || line.toLowerCase() === "commander") {
+          continue;
+        }
+
+        // RegEx für Formate wie:
+        // "1 Sol Ring"
+        // "4 Lightning Bolt (M11) 149"
+        // "1x Counterspell"
+        // "Swords to Plowshares"
+        let count = 1;
+        let cardName = line;
+
+        const countMatch = line.match(/^(\d+)[xX]?\s+(.*)$/);
+        if (countMatch) {
+          count = parseInt(countMatch[1], 10);
+          cardName = countMatch[2].trim();
+        }
+
+        // Entferne Set-Klammern am Ende falls vorhanden: " (BLB) 250" oder " [M11]"
+        cardName = cardName.replace(/\s*[\(\[][A-Za-z0-9_-]+[\)\]].*$/, "").trim();
+        // Entferne Collector Numbers wie "*Foil*" oder ähnliches
+        cardName = cardName.replace(/\*Foil\*/i, "").trim();
+
+        if (cardName.length > 0) {
+          // Prüfen ob bereits in Liste
+          const existing = list.find(item => item.name.toLowerCase() === cardName.toLowerCase());
+          if (existing) {
+            existing.needed += count;
+          } else {
+            list.push({
+              name: cardName,
+              cleanName: cardName.replace(/\s*\/\/.*$/, "").trim(),
+              needed: count
+            });
+          }
+        }
+      }
+      return list;
+    }
+
+    btnCheckDeck.addEventListener("click", () => {
+      const input = deckInput.value.trim();
+      if (!input) {
+        alert("Bitte gib zuerst eine Kartenliste ein!");
         return;
       }
-      const safeName = escapeHtml(name).replaceAll("'", "");
-      previewImg.onerror = null;
-      previewImg.src = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="488" height="680"><rect width="100%" height="100%" fill="#232a38"/><text x="50%" y="50%" fill="#94a3b8" font-family="sans-serif" font-size="24" text-anchor="middle">${safeName}</text></svg>`)}`;
-      delete previewImg.dataset.usedNamedFallback;
-    });
-    document.querySelector(".preview-close").addEventListener("click", () => previewBox.close());
-    previewBox.addEventListener("click", (e) => {
-      if (e.target === previewBox) previewBox.close();
+
+      if (cardInventory.length === 0) {
+        alert("Die Sammlungen werden noch geladen. Bitte kurz warten...");
+        return;
+      }
+
+      const wantedCards = parseDecklist(input);
+      if (wantedCards.length === 0) {
+        deckResultsBody.innerHTML = '<tr><td colspan="7" class="empty-state">Keine gültigen Zeilen gefunden. Bitte Format prüfen.</td></tr>';
+        return;
+      }
+
+      let totalNeededCards = 0;
+      let totalAvailableCards = 0;
+
+      const cameraIconSvg = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <circle cx="12" cy="13" r="4"></circle>
+        </svg>
+      `;
+
+      deckResultsBody.innerHTML = "";
+
+      wantedCards.forEach(wanted => {
+        totalNeededCards += wanted.needed;
+
+        // Finde alle Matches im Pool (case-insensitive)
+        const nameLower = wanted.cleanName.toLowerCase();
+        const matches = cardInventory.filter(c => {
+          const invName = c.cleanName.toLowerCase();
+          return invName === nameLower || c.name.toLowerCase() === wanted.name.toLowerCase();
+        });
+
+        // Summiere Mengen pro Besitzer
+        const ownerCounts = {};
+        let totalHave = 0;
+        let sampleMatch = matches[0] || null;
+
+        matches.forEach(m => {
+          ownerCounts[m.owner] = (ownerCounts[m.owner] || 0) + m.count;
+          totalHave += m.count;
+        });
+
+        // Wie viele können bereitgestellt werden? Maximal der Bedarf
+        const covered = Math.min(wanted.needed, totalHave);
+        totalAvailableCards += covered;
+        const missing = Math.max(0, wanted.needed - totalHave);
+
+        let statusText = '';
+        if (totalHave >= wanted.needed) {
+          statusText = '<span class="status-ok">✔ Komplett</span>';
+        } else if (totalHave > 0) {
+          statusText = `<span class="status-part">⚠ Fehlt ${missing}x</span>`;
+        } else {
+          statusText = `<span class="status-missing">✖ Fehlt komplett</span>`;
+        }
+
+        // Besitzer Aufschlüsselung
+        let breakdownHtml = '';
+        if (matches.length > 0) {
+          breakdownHtml = Object.entries(ownerCounts).map(([owner, qty]) => {
+            let badgeClass = 'owner-peter';
+            if (owner === 'Flo') badgeClass = 'owner-flo';
+            if (owner === 'Raphi') badgeClass = 'owner-raphi';
+            return `<span class="breakdown-tag"><span class="badge ${badgeClass}" style="padding:1px 5px; font-size:0.7rem;">${owner}</span> ${qty}x</span>`;
+          }).join(" ");
+        } else {
+          breakdownHtml = '<span style="color: #64748b;">Niemand</span>';
+        }
+
+        const scryfallUrl = sampleMatch 
+          ? getScryfallUrl(sampleMatch) 
+          : `https://scryfall.com/search?q=${encodeURIComponent(`!"${wanted.cleanName}"`)}`;
+        const cardmarketUrl = getCardmarketUrl(wanted.cleanName);
+        const imgUrl = sampleMatch 
+          ? getImageUrl(sampleMatch) 
+          : `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(wanted.cleanName)}&format=image&version=normal`;
+
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td style="text-align: center;">
+            <span class="camera-trigger" data-img="${escapeHtml(imgUrl)}" title="Hover für Bildvorschau">
+              ${cameraIconSvg}
+            </span>
+          </td>
+          <td><span class="card-title">${escapeHtml(wanted.name)}</span></td>
+          <td style="text-align: center; font-weight: bold;">${wanted.needed}x</td>
+          <td style="text-align: center; font-weight: bold; ${totalHave >= wanted.needed ? 'color:#4ade80;' : (totalHave > 0 ? 'color:#facc15;' : 'color:#f87171;')}">
+            ${totalHave}x
+          </td>
+          <td>${breakdownHtml}</td>
+          <td>${statusText}</td>
+          <td>
+            <div class="link-group">
+              <a href="${escapeHtml(scryfallUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-scryfall" title="Auf Scryfall ansehen">
+                Scryfall ↗
+              </a>
+              <a href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-cardmarket" title="Auf Cardmarket kaufen">
+                Cardmarket ↗
+              </a>
+            </div>
+          </td>
+        `;
+        deckResultsBody.appendChild(row);
+      });
+
+      // Statistiken aktualisieren
+      const missingTotal = Math.max(0, totalNeededCards - totalAvailableCards);
+      const percentage = totalNeededCards > 0 ? Math.round((totalAvailableCards / totalNeededCards) * 100) : 0;
+
+      statTotal.textContent = totalNeededCards;
+      statFound.textContent = totalAvailableCards;
+      statMissing.textContent = missingTotal;
+      statPercent.textContent = `${percentage}%`;
+      deckProgressBar.style.width = `${percentage}%`;
+
+      deckSummaryWrapper.style.display = "block";
     });
   </script>
 </body>
