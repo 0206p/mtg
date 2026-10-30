@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTG Kartenpool</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 30px 15px; background: #0f1115; color: #f0f2f5; }
+    h1 { text-align: center; font-size: 2rem; margin-bottom: 5px; letter-spacing: 1px; }
+    p.subtitle { text-align: center; color: #8a94a6; margin-top: 0; margin-bottom: 25px; }
+    .status-bar { display: flex; justify-content: flex-end; gap: 15px; font-size: 0.85rem; color: #8a94a6; margin-bottom: 10px; }
+    .status-badge { background: #1a1e26; padding: 4px 10px; border-radius: 6px; border: 1px solid #2d3544; }
+    .status-badge.online { color: #4ade80; }
+    #search { width: 100%; padding: 14px 18px; font-size: 1.1rem; border-radius: 10px; border: 1px solid #2d3544; background: #161a23; color: #fff; outline: none; margin-bottom: 20px; transition: border-color 0.2s; }
+    #search:focus { border-color: #3b82f6; }
+    table { width: 100%; border-collapse: collapse; background: #161a23; border-radius: 8px; overflow: hidden; border: 1px solid #2d3544; }
+    th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #232a38; }
+    th { background: #1c2230; color: #94a3b8; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #1c2230; }
+    .badge { padding: 4px 10px; border-radius: 9999px; font-size: 0.8rem; font-weight: 600; display: inline-block; }
+    .owner-1 { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
+    .owner-2 { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
+    .owner-3 { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
+    .empty-state { text-align: center; color: #64748b; padding: 30px; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <h1>MTG KARTENPOOL</h1>
+  <p class="subtitle">Gemeinsame Suche in allen Sammlungen</p>
+
+  <div class="status-bar">
+    <span class="status-badge" id="card-count">Lade Bestände...</span>
+    <span class="status-badge online" id="status-indicator">Daten: bereit</span>
+  </div>
+
+  <input type="text" id="search" placeholder="Kartenname eingeben (z. B. Sol Ring, Swords, Command...)" autofocus>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Karte</th>
+        <th>Besitzer</th>
+        <th>Anzahl</th>
+      </tr>
+    </thead>
+    <tbody id="results">
+      <tr><td colspan="3" class="empty-state">Tippe oben mindestens 2 Buchstaben ein...</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    // Konfiguration: Passe hier die Vornamen an
+    const collections = [
+      { name: "Spieler 1", file: "spieler1.csv", class: "owner-1" },
+      { name: "Spieler 2", file: "spieler2.csv", class: "owner-2" },
+      { name: "Spieler 3", file: "spieler3.csv", class: "owner-3" }
+    ];
+
+    let allCards = [];
+
+    // CSV-Dateien parallel auslesen
+    Promise.all(collections.map(user => 
+      new Promise(resolve => {
+        Papa.parse(user.file, {
+          download: true,
+          header: true,
+          skipEmptyLines: true,
+          complete: results => {
+            const parsed = results.data.map(row => {
+              const cardName = row["Name"] || row["Card Name"] || row["Card name"] || row["name"] || "";
+              const count = row["Quantity"] || row["Count"] || row["quantity"] || row["count"] || 1;
+              return { card: cardName.trim(), count: count, owner: user.name, badgeClass: user.class };
+            }).filter(item => item.card !== "");
+            resolve(parsed);
+          },
+          error: () => resolve([])
+        });
+      })
+    )).then(dataArrays => {
+      allCards = dataArrays.flat();
+      document.getElementById("card-count").innerText = `Gesamt: ${allCards.length.toLocaleString()} Einträge`;
+    });
+
+    // Such-Filter
+    const searchInput = document.getElementById("search");
+    const resultsTable = document.getElementById("results");
+
+    searchInput.addEventListener("input", (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      resultsTable.innerHTML = "";
+
+      if (query.length < 2) {
+        resultsTable.innerHTML = '<tr><td colspan="3" class="empty-state">Tippe mindestens 2 Buchstaben ein...</td></tr>';
+        return;
+      }
+
+      const matches = allCards
+        .filter(item => item.card.toLowerCase().includes(query))
+        .slice(0, 50);
+
+      if (matches.length === 0) {
+        resultsTable.innerHTML = '<tr><td colspan="3" class="empty-state">Keine Karte gefunden.</td></tr>';
+        return;
+      }
+
+      matches.forEach(item => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td><strong>${item.card}</strong></td>
+          <td><span class="badge ${item.badgeClass}">${item.owner}</span></td>
+          <td>${item.count}x</td>
+        `;
+        resultsTable.appendChild(row);
+      });
+    });
+  </script>
+</body>
+</html>
