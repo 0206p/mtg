@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTG Sammlungs-Pool</title>
+  <title>MTG Sammlungs-Pool & Decks</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <style>
     * { box-sizing: border-box; }
@@ -26,6 +26,7 @@
     /* Tabs */
     .tabs {
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 20px;
       border-bottom: 1px solid #2d3544;
@@ -35,9 +36,9 @@
       background: #161a23;
       border: 1px solid #2d3544;
       color: #94a3b8;
-      padding: 10px 20px;
+      padding: 10px 18px;
       border-radius: 8px;
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 500;
       cursor: pointer;
       display: flex;
@@ -107,9 +108,16 @@
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #1c2230; }
 
-    .card-title {
+    .card-cell {
+      color: #ffffff !important;
+      text-decoration: none !important;
       font-weight: 500;
-      color: #f8fafc;
+      transition: opacity 0.15s;
+    }
+    .card-cell:hover {
+      color: #ffffff !important;
+      text-decoration: none !important;
+      opacity: 0.8;
     }
 
     .badge { padding: 3px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; display: inline-block; white-space: nowrap; }
@@ -146,6 +154,37 @@
       align-items: center;
       white-space: nowrap;
     }
+    .deck-tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      align-items: center;
+      max-width: 260px;
+    }
+    .deck-tag {
+      background: #1e2430;
+      border: 1px solid #334155;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.74rem;
+      color: #e2e8f0;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      max-width: 180px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .deck-tag-more {
+      background: #232a38;
+      border: 1px solid #475569;
+      border-radius: 4px;
+      padding: 2px 5px;
+      font-size: 0.72rem;
+      color: #94a3b8;
+      cursor: help;
+    }
     .external-link {
       display: inline-flex;
       align-items: center;
@@ -160,6 +199,7 @@
     .external-link:hover { opacity: 0.85; text-decoration: underline; }
     .link-scryfall { background: #2b1f3d; color: #d8b4fe; border: 1px solid #7e22ce; }
     .link-cardmarket { background: #132e4d; color: #7dd3fc; border: 1px solid #0284c7; }
+    .link-archidekt { background: #272115; color: #fbbf24; border: 1px solid #d97706; }
 
     /* Camera Hover Button */
     .camera-trigger {
@@ -212,8 +252,94 @@
       grid-template-columns: 360px 1fr;
       gap: 20px;
     }
+    .deck-input-box, .deck-results-box {
+      min-width: 0;
+      max-width: 100%;
+    }
     @media (max-width: 900px) {
-      .deck-container { grid-template-columns: 1fr; }
+      .deck-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .deck-textarea {
+        height: 180px;
+      }
+    }
+    @media (max-width: 650px) {
+      body {
+        padding: 14px 8px;
+      }
+      h1 {
+        font-size: 1.55rem;
+      }
+      .subtitle {
+        font-size: 0.84rem;
+        margin-bottom: 14px;
+      }
+      .status-bar {
+        gap: 5px;
+        font-size: 0.76rem;
+      }
+      .status-badge {
+        padding: 4px 8px;
+      }
+      .tabs {
+        gap: 4px;
+      }
+      .tab-btn {
+        padding: 8px 10px;
+        font-size: 0.82rem;
+        flex: 1 1 auto;
+        justify-content: center;
+      }
+      .filters {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .deck-container {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .deck-summary-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 12px 10px;
+      }
+      .stat-num {
+        font-size: 1.35rem;
+      }
+      .stat-lbl {
+        font-size: 0.7rem;
+      }
+      .table-container {
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      table {
+        min-width: 500px;
+      }
+      th, td {
+        padding: 8px 6px;
+        font-size: 0.78rem;
+      }
+      .badge {
+        font-size: 0.68rem;
+        padding: 2px 5px;
+      }
+      .deck-tag {
+        max-width: 110px;
+        font-size: 0.7rem;
+      }
+      .profiles-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .deck-grid {
+        grid-template-columns: 1fr;
+      }
     }
     .deck-input-box {
       display: flex;
@@ -222,7 +348,7 @@
     }
     .deck-textarea {
       width: 100%;
-      height: 380px;
+      height: 340px;
       background: #161a23;
       border: 1px solid #2d3544;
       border-radius: 8px;
@@ -249,8 +375,29 @@
       justify-content: center;
       align-items: center;
       gap: 8px;
+      transition: background 0.15s;
     }
     .btn-primary:hover { background: #1d4ed8; }
+
+    .btn-secondary {
+      background: #232a38;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+    .btn-secondary:hover {
+      background: #334155;
+      color: #fff;
+      border-color: #64748b;
+    }
 
     .deck-summary-card {
       background: #161a23;
@@ -302,12 +449,140 @@
       margin-right: 4px;
       display: inline-block;
     }
+
+    /* Archidekt Profiles & Grid */
+    .profiles-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .profile-card {
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .profile-info strong {
+      display: block;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+    .profile-info span {
+      color: #8a94a6;
+      font-size: 0.82rem;
+    }
+
+    .archidekt-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .archidekt-search {
+      flex: 1;
+      min-width: 250px;
+      padding: 11px 14px;
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 8px;
+      color: #fff;
+      outline: none;
+      font-size: 0.95rem;
+    }
+    .archidekt-search:focus { border-color: #3b82f6; }
+
+    .owner-filter-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .chip-btn {
+      background: #161a23;
+      border: 1px solid #2d3544;
+      color: #94a3b8;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .chip-btn:hover { background: #232a38; color: #fff; }
+    .chip-btn.active {
+      background: #2563eb;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+
+    .deck-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 14px;
+    }
+    .deck-card {
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .deck-card:hover {
+      border-color: #3b82f6;
+      transform: translateY(-2px);
+    }
+    .deck-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .deck-card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .deck-card-commander {
+      color: #fbbf24;
+      font-size: 0.84rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .deck-card-meta {
+      color: #8a94a6;
+      font-size: 0.8rem;
+    }
+    .deck-card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .deck-card-actions .btn-primary {
+      flex: 1;
+      padding: 7px 10px;
+      font-size: 0.82rem;
+      justify-content: center;
+    }
+    .deck-card-actions .external-link {
+      padding: 7px 10px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>MTG KARTENPOOL</h1>
-  <p class="subtitle">Gemeinsame Suche in den Sammlungen von Peter, Flo und Raphi</p>
+  <h1>MTG KARTENPOOL & DECKS</h1>
+  <p class="subtitle">Gemeinsame Suche & Deck-Pool von Peter, Flo und Raphi</p>
 
   <div class="status-bar" id="status-container">
     <span class="status-badge">Lade Sammlungen...</span>
@@ -322,6 +597,10 @@
     <button class="tab-btn" data-tab="tab-deck">
       <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
       Deck- & Listen-Checker
+    </button>
+    <button class="tab-btn" data-tab="tab-archidekt" id="btn-tab-archidekt">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"></rect><circle cx="12" cy="14" r="4"></circle><path d="M12 6h.01"></path></svg>
+      Archidekt Decks <span id="archidekt-tab-count" style="background:#232a38; padding:2px 7px; border-radius:10px; font-size:0.75rem; margin-left:4px;">...</span>
     </button>
   </div>
 
@@ -343,13 +622,15 @@
         <option value="">Alle Seltenheiten</option>
       </select>
       <select id="foil-filter" aria-label="Version / Finish filtern">
-        <option value="">Alle Finishes</option>
+        <option value="">Alle Versionen</option>
         <option value="normal">Normal (Non-Foil)</option>
         <option value="foil">Foil</option>
         <option value="etched">Etched</option>
       </select>
-      <select id="lang-filter" aria-label="Sprache filtern">
-        <option value="">Alle Sprachen</option>
+      <select id="deck-filter" aria-label="Deck-Verwendung filtern">
+        <option value="">Alle Karten (Pool & Decks)</option>
+        <option value="in_deck">Nur in Decks verwendet</option>
+        <option value="unused">Nur freie Karten (in keinem Deck)</option>
       </select>
       <button type="button" id="reset-filters">Filter zurücksetzen</button>
     </div>
@@ -365,7 +646,7 @@
             <th>Sprache</th>
             <th>Besitzer</th>
             <th>Anzahl</th>
-            <th>Links</th>
+            <th>In Decks</th>
           </tr>
         </thead>
         <tbody id="results">
@@ -379,13 +660,28 @@
   <div id="tab-deck" class="tab-content">
     <div class="deck-container">
       <div class="deck-input-box">
-        <label for="decklist-input" style="font-weight: 600; font-size: 0.95rem; color: #cbd5e1;">Deckliste oder Kartenliste einfügen:</label>
-        <textarea id="decklist-input" class="deck-textarea" placeholder="Einfach Liste hier einfügen, z. B.:
+        <!-- Schnell-Auswahl für Archidekt-Decks -->
+        <div>
+          <label for="deck-select-quick" style="font-size: 0.85rem; color: #94a3b8; display: block; margin-bottom: 5px;">
+            ⚡ Schnellauswahl aus euren Archidekt-Decks:
+          </label>
+          <select id="deck-select-quick" style="width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #2d3544; background: #161a23; color: #f0f2f5; font-size: 0.9rem;">
+            <option value="">-- Archidekt-Deck auswählen... --</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="decklist-input" style="font-weight: 600; font-size: 0.95rem; color: #cbd5e1; display: block; margin-bottom: 5px;">
+            Deckliste oder Kartenliste:
+          </label>
+          <textarea id="decklist-input" class="deck-textarea" placeholder="Einfach Liste hier einfügen oder oben ein Deck auswählen, z. B.:
 1 Sol Ring
 1 Rhystic Study
 4 Lightning Bolt
 Counterspell
 1 Demonic Tutor (BLB) 250"></textarea>
+        </div>
+
         <button type="button" id="btn-check-deck" class="btn-primary">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           Liste im Kartenpool prüfen
@@ -429,15 +725,65 @@ Counterspell
                 <th style="text-align: center;">Vorhanden</th>
                 <th>Verfügbar bei</th>
                 <th>Status</th>
-                <th>Links</th>
+                <th>In Decks</th>
               </tr>
             </thead>
             <tbody id="deck-results-body">
-              <tr><td colspan="7" class="empty-state">Füge links eine Liste ein und klicke auf "Liste prüfen".</td></tr>
+              <tr><td colspan="7" class="empty-state">Füge links eine Liste ein oder wähle oben ein Archidekt-Deck aus.</td></tr>
             </tbody>
           </table>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: ARCHIDEKT DECKS -->
+  <div id="tab-archidekt" class="tab-content">
+    <!-- Profile Übersicht -->
+    <div class="profiles-row">
+      <div class="profile-card">
+        <div class="profile-info">
+          <strong>Peter (<span style="color:#60a5fa;">p0206</span>)</strong>
+          <span id="peter-deck-count">Lade Decks...</span>
+        </div>
+        <a href="https://archidekt.com/u/p0206" target="_blank" rel="noopener noreferrer" class="external-link link-archidekt">
+          Archidekt ↗
+        </a>
+      </div>
+      <div class="profile-card">
+        <div class="profile-info">
+          <strong>Flo (<span style="color:#c084fc;">Flogrim96</span>)</strong>
+          <span id="flo-deck-count">Lade Decks...</span>
+        </div>
+        <a href="https://archidekt.com/u/Flogrim96" target="_blank" rel="noopener noreferrer" class="external-link link-archidekt">
+          Archidekt ↗
+        </a>
+      </div>
+      <div class="profile-card">
+        <div class="profile-info">
+          <strong>Raphi (<span style="color:#4ade80;">RaphaelOspelt</span>)</strong>
+          <span id="raphi-deck-count">Lade Decks...</span>
+        </div>
+        <a href="https://archidekt.com/u/RaphaelOspelt" target="_blank" rel="noopener noreferrer" class="external-link link-archidekt">
+          Archidekt ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- Filter & Suchleiste für Decks -->
+    <div class="archidekt-toolbar">
+      <input type="text" id="archidekt-search" class="archidekt-search" placeholder="Deckname oder Commander suchen (z. B. Sauron, Calgar, Tom Bombadil...)">
+      <div class="owner-filter-chips">
+        <button type="button" class="chip-btn active" data-owner="">Alle Decks</button>
+        <button type="button" class="chip-btn" data-owner="Peter">Peter</button>
+        <button type="button" class="chip-btn" data-owner="Flo">Flo</button>
+        <button type="button" class="chip-btn" data-owner="Raphi">Raphi</button>
+      </div>
+    </div>
+
+    <!-- Deck Grid -->
+    <div id="decks-grid" class="deck-grid">
+      <div class="empty-state" style="grid-column: 1 / -1;">Lade Archidekt Decks...</div>
     </div>
   </div>
 
@@ -454,6 +800,7 @@ Counterspell
     ];
 
     let cardInventory = [];
+    let archidektData = { decks: [] };
     const statusContainer = document.getElementById("status-container");
 
     function renderStatus(results) {
@@ -507,7 +854,7 @@ Counterspell
               
               return {
                 name: name,
-                cleanName: name.replace(/\s*\/\/.*$/, "").trim(), // Vorderseite für Suche
+                cleanName: name.replace(/\s*\/\/.*$/, "").trim(),
                 count: qty,
                 setCode: setCode,
                 setName: setName,
@@ -543,13 +890,12 @@ Counterspell
     // Navigation Tabs
     const tabBtns = document.querySelectorAll(".tab-btn");
     const tabContents = document.querySelectorAll(".tab-content");
+    function switchTab(tabId) {
+      tabBtns.forEach(b => b.classList.toggle("active", b.dataset.tab === tabId));
+      tabContents.forEach(c => c.classList.toggle("active", c.id === tabId));
+    }
     tabBtns.forEach(btn => {
-      btn.addEventListener("click", () => {
-        tabBtns.forEach(b => b.classList.remove("active"));
-        tabContents.forEach(c => c.classList.remove("active"));
-        btn.classList.add("active");
-        document.getElementById(btn.dataset.tab).classList.add("active");
-      });
+      btn.addEventListener("click", () => switchTab(btn.dataset.tab));
     });
 
     // Elements
@@ -558,9 +904,55 @@ Counterspell
     const ownerFilter = document.getElementById("owner-filter");
     const rarityFilter = document.getElementById("rarity-filter");
     const foilFilter = document.getElementById("foil-filter");
-    const langFilter = document.getElementById("lang-filter");
+    const deckFilter = document.getElementById("deck-filter");
     const resetFiltersButton = document.getElementById("reset-filters");
     const resultsTable = document.getElementById("results");
+
+    let cardDecksLookup = {};
+
+    function buildCardDecksLookup() {
+      cardDecksLookup = {};
+      const decks = archidektData.decks || [];
+      decks.forEach(d => {
+        (d.cards || []).forEach(c => {
+          const raw = (c.name || "").toLowerCase().trim();
+          const clean = raw.replace(/\s*\/\/.*$/, "").trim();
+          const entry = { deckName: d.name, owner: d.owner, badge: d.badge, deckId: d.id };
+
+          [clean, raw].forEach(k => {
+            if (!k) return;
+            if (!cardDecksLookup[k]) cardDecksLookup[k] = [];
+            if (!cardDecksLookup[k].some(x => x.deckId === d.id)) {
+              cardDecksLookup[k].push(entry);
+            }
+          });
+        });
+      });
+    }
+
+    function getCardDecksHtml(cardName) {
+      if (!cardName) return '<span style="color:#64748b;">—</span>';
+      const raw = cardName.toLowerCase().trim();
+      const clean = raw.replace(/\s*\/\/.*$/, "").trim();
+      const list = cardDecksLookup[clean] || cardDecksLookup[raw] || [];
+
+      if (list.length === 0) {
+        return '<span style="color:#64748b;">—</span>';
+      }
+
+      const displayLimit = 2;
+      const items = list.slice(0, displayLimit).map(d => {
+        return `<span class="deck-tag" title="${escapeHtml(d.deckName)} (${escapeHtml(d.owner)})"><span class="badge ${d.badge}" style="padding:1px 4px; font-size:0.68rem;">${d.owner}</span> ${escapeHtml(d.deckName)}</span>`;
+      });
+
+      if (list.length > displayLimit) {
+        const extraCount = list.length - displayLimit;
+        const allTitles = list.map(d => `${d.deckName} (${d.owner})`).join("\n");
+        items.push(`<span class="deck-tag-more" title="${escapeHtml(allTitles)}">+${extraCount} mehr</span>`);
+      }
+
+      return `<div class="deck-tags-container">${items.join(" ")}</div>`;
+    }
 
     function escapeHtml(value) {
       return String(value)
@@ -592,16 +984,6 @@ Counterspell
         option.textContent = rarity.charAt(0).toUpperCase() + rarity.slice(1);
         rarityFilter.appendChild(option);
       });
-
-      // Languages
-      const langs = [...new Set(cardInventory.map(item => item.lang).filter(Boolean))]
-        .sort((a, b) => a.localeCompare(b));
-      langs.forEach(lang => {
-        const option = document.createElement("option");
-        option.value = lang;
-        option.textContent = lang.toUpperCase();
-        langFilter.appendChild(option);
-      });
     }
 
     function getScryfallUrl(item) {
@@ -615,7 +997,6 @@ Counterspell
     }
 
     function getCardmarketUrl(cardName) {
-      // Cardmarket Suchlink für MTG
       const searchName = cardName.replace(/\s*\/\/.*$/, "").trim();
       return `https://www.cardmarket.com/de/Magic/Products/Search?searchString=${encodeURIComponent(searchName)}`;
     }
@@ -634,7 +1015,7 @@ Counterspell
       const selectedOwner = ownerFilter.value;
       const selectedRarity = rarityFilter.value;
       const selectedFoil = foilFilter.value;
-      const selectedLang = langFilter.value;
+      const selectedDeckUsage = deckFilter.value;
       resultsTable.innerHTML = "";
 
       const matches = cardInventory
@@ -643,7 +1024,13 @@ Counterspell
         .filter(item => !selectedOwner || item.owner === selectedOwner)
         .filter(item => !selectedRarity || item.rarity === selectedRarity)
         .filter(item => !selectedFoil || item.foil === selectedFoil)
-        .filter(item => !selectedLang || item.lang === selectedLang)
+        .filter(item => {
+          if (!selectedDeckUsage) return true;
+          const raw = item.name.toLowerCase().trim();
+          const clean = raw.replace(/\s*\/\/.*$/, "").trim();
+          const inDecks = (cardDecksLookup[clean] || cardDecksLookup[raw] || []).length > 0;
+          return selectedDeckUsage === 'in_deck' ? inDecks : !inDecks;
+        })
         .slice(0, 75);
 
       if (matches.length === 0) {
@@ -660,9 +1047,9 @@ Counterspell
 
       matches.forEach(item => {
         const row = document.createElement("tr");
-        const scryfallUrl = getScryfallUrl(item);
         const cardmarketUrl = getCardmarketUrl(item.name);
         const imgUrl = getImageUrl(item);
+        const decksHtml = getCardDecksHtml(item.name);
 
         let foilBadgeHtml = '';
         if (item.foil === 'foil') {
@@ -679,22 +1066,17 @@ Counterspell
               ${cameraIconSvg}
             </span>
           </td>
-          <td><span class="card-title">${escapeHtml(item.name)}</span></td>
+          <td>
+            <a class="card-cell" href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" title="Auf Cardmarket ansehen">
+              ${escapeHtml(item.name)}
+            </a>
+          </td>
           <td>${item.setCode ? `<span class="set-tag">${item.setCode}</span>` : "-"}</td>
           <td>${foilBadgeHtml}</td>
           <td><span class="lang-badge">${escapeHtml(item.lang || 'en')}</span></td>
           <td><span class="badge ${item.badge}">${item.owner}</span></td>
           <td style="font-weight: 600;">${item.count}x</td>
-          <td>
-            <div class="link-group">
-              <a href="${escapeHtml(scryfallUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-scryfall" title="Auf Scryfall ansehen">
-                Scryfall ↗
-              </a>
-              <a href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-cardmarket" title="Auf Cardmarket suchen">
-                Cardmarket ↗
-              </a>
-            </div>
-          </td>
+          <td>${decksHtml}</td>
         `;
         resultsTable.appendChild(row);
       });
@@ -705,7 +1087,7 @@ Counterspell
     ownerFilter.addEventListener("change", renderResults);
     rarityFilter.addEventListener("change", renderResults);
     foilFilter.addEventListener("change", renderResults);
-    langFilter.addEventListener("change", renderResults);
+    deckFilter.addEventListener("change", renderResults);
 
     resetFiltersButton.addEventListener("click", () => {
       searchInput.value = "";
@@ -713,7 +1095,7 @@ Counterspell
       ownerFilter.value = "";
       rarityFilter.value = "";
       foilFilter.value = "";
-      langFilter.value = "";
+      deckFilter.value = "";
       renderResults();
     });
 
@@ -752,16 +1134,14 @@ Counterspell
     function updateHoverPosition(e) {
       const offset = 18;
       const previewWidth = 250;
-      const previewHeight = 350; // Annäherung Kartengröße
+      const previewHeight = 350;
       
       let left = e.clientX + offset;
       let top = e.clientY - (previewHeight / 3);
 
-      // Rechtsüberhang verhindern
       if (left + previewWidth > window.innerWidth) {
         left = e.clientX - previewWidth - offset;
       }
-      // Unten/Oben Überhang verhindern
       if (top + previewHeight > window.innerHeight) {
         top = window.innerHeight - previewHeight - 10;
       }
@@ -783,6 +1163,7 @@ Counterspell
     const statMissing = document.getElementById("stat-missing");
     const statPercent = document.getElementById("stat-percent");
     const deckProgressBar = document.getElementById("deck-progress-bar");
+    const quickDeckSelect = document.getElementById("deck-select-quick");
 
     function parseDecklist(text) {
       const lines = text.split("\n");
@@ -794,11 +1175,6 @@ Counterspell
           continue;
         }
 
-        // RegEx für Formate wie:
-        // "1 Sol Ring"
-        // "4 Lightning Bolt (M11) 149"
-        // "1x Counterspell"
-        // "Swords to Plowshares"
         let count = 1;
         let cardName = line;
 
@@ -808,13 +1184,10 @@ Counterspell
           cardName = countMatch[2].trim();
         }
 
-        // Entferne Set-Klammern am Ende falls vorhanden: " (BLB) 250" oder " [M11]"
         cardName = cardName.replace(/\s*[\(\[][A-Za-z0-9_-]+[\)\]].*$/, "").trim();
-        // Entferne Collector Numbers wie "*Foil*" oder ähnliches
         cardName = cardName.replace(/\*Foil\*/i, "").trim();
 
         if (cardName.length > 0) {
-          // Prüfen ob bereits in Liste
           const existing = list.find(item => item.name.toLowerCase() === cardName.toLowerCase());
           if (existing) {
             existing.needed += count;
@@ -830,7 +1203,7 @@ Counterspell
       return list;
     }
 
-    btnCheckDeck.addEventListener("click", () => {
+    function runDeckCheck() {
       const input = deckInput.value.trim();
       if (!input) {
         alert("Bitte gib zuerst eine Kartenliste ein!");
@@ -863,14 +1236,12 @@ Counterspell
       wantedCards.forEach(wanted => {
         totalNeededCards += wanted.needed;
 
-        // Finde alle Matches im Pool (case-insensitive)
         const nameLower = wanted.cleanName.toLowerCase();
         const matches = cardInventory.filter(c => {
           const invName = c.cleanName.toLowerCase();
           return invName === nameLower || c.name.toLowerCase() === wanted.name.toLowerCase();
         });
 
-        // Summiere Mengen pro Besitzer
         const ownerCounts = {};
         let totalHave = 0;
         let sampleMatch = matches[0] || null;
@@ -880,7 +1251,6 @@ Counterspell
           totalHave += m.count;
         });
 
-        // Wie viele können bereitgestellt werden? Maximal der Bedarf
         const covered = Math.min(wanted.needed, totalHave);
         totalAvailableCards += covered;
         const missing = Math.max(0, wanted.needed - totalHave);
@@ -894,7 +1264,6 @@ Counterspell
           statusText = `<span class="status-missing">✖ Fehlt komplett</span>`;
         }
 
-        // Besitzer Aufschlüsselung
         let breakdownHtml = '';
         if (matches.length > 0) {
           breakdownHtml = Object.entries(ownerCounts).map(([owner, qty]) => {
@@ -907,9 +1276,6 @@ Counterspell
           breakdownHtml = '<span style="color: #64748b;">Niemand</span>';
         }
 
-        const scryfallUrl = sampleMatch 
-          ? getScryfallUrl(sampleMatch) 
-          : `https://scryfall.com/search?q=${encodeURIComponent(`!"${wanted.cleanName}"`)}`;
         const cardmarketUrl = getCardmarketUrl(wanted.cleanName);
         const imgUrl = sampleMatch 
           ? getImageUrl(sampleMatch) 
@@ -922,28 +1288,22 @@ Counterspell
               ${cameraIconSvg}
             </span>
           </td>
-          <td><span class="card-title">${escapeHtml(wanted.name)}</span></td>
+          <td>
+            <a class="card-cell" href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" title="Auf Cardmarket ansehen">
+              ${escapeHtml(wanted.name)}
+            </a>
+          </td>
           <td style="text-align: center; font-weight: bold;">${wanted.needed}x</td>
           <td style="text-align: center; font-weight: bold; ${totalHave >= wanted.needed ? 'color:#4ade80;' : (totalHave > 0 ? 'color:#facc15;' : 'color:#f87171;')}">
             ${totalHave}x
           </td>
           <td>${breakdownHtml}</td>
           <td>${statusText}</td>
-          <td>
-            <div class="link-group">
-              <a href="${escapeHtml(scryfallUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-scryfall" title="Auf Scryfall ansehen">
-                Scryfall ↗
-              </a>
-              <a href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-cardmarket" title="Auf Cardmarket kaufen">
-                Cardmarket ↗
-              </a>
-            </div>
-          </td>
+          <td>${getCardDecksHtml(wanted.name)}</td>
         `;
         deckResultsBody.appendChild(row);
       });
 
-      // Statistiken aktualisieren
       const missingTotal = Math.max(0, totalNeededCards - totalAvailableCards);
       const percentage = totalNeededCards > 0 ? Math.round((totalAvailableCards / totalNeededCards) * 100) : 0;
 
@@ -954,7 +1314,155 @@ Counterspell
       deckProgressBar.style.width = `${percentage}%`;
 
       deckSummaryWrapper.style.display = "block";
+    }
+
+    btnCheckDeck.addEventListener("click", runDeckCheck);
+
+    // ----------------------------------------------------
+    // ARCHIDEKT INTEGRATION
+    // ----------------------------------------------------
+    const decksGrid = document.getElementById("decks-grid");
+    const archidektSearchInput = document.getElementById("archidekt-search");
+    const archidektTabCount = document.getElementById("archidekt-tab-count");
+    const peterDeckCount = document.getElementById("peter-deck-count");
+    const floDeckCount = document.getElementById("flo-deck-count");
+    const raphiDeckCount = document.getElementById("raphi-deck-count");
+    let selectedArchidektOwner = "";
+
+    function loadArchidektDecks() {
+      fetch("decks.json")
+        .then(res => {
+          if (!res.ok) throw new Error("decks.json nicht gefunden");
+          return res.json();
+        })
+        .then(data => {
+          archidektData = data;
+          const decks = archidektData.decks || [];
+          archidektTabCount.textContent = decks.length;
+          
+          if (data.owners) {
+            peterDeckCount.textContent = `${data.owners.Peter ? data.owners.Peter.count : 0} Decks`;
+            floDeckCount.textContent = `${data.owners.Flo ? data.owners.Flo.count : 0} Decks`;
+            raphiDeckCount.textContent = `${data.owners.Raphi ? data.owners.Raphi.count : 0} Decks`;
+          }
+
+          buildCardDecksLookup();
+          populateQuickDeckSelect(decks);
+          renderArchidektGrid();
+          if (cardInventory.length > 0) {
+            renderResults();
+          }
+        })
+        .catch(err => {
+          console.warn("Konnte decks.json nicht laden:", err);
+          archidektTabCount.textContent = "0";
+          decksGrid.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              Konnte <code>decks.json</code> nicht laden.<br>
+              Führe bitte einmal <code>python sync_decks.py</code> aus, um die Decks von Archidekt zu synchronisieren.
+            </div>
+          `;
+        });
+    }
+
+    function populateQuickDeckSelect(decks) {
+      quickDeckSelect.innerHTML = '<option value="">-- Archidekt-Deck auswählen... --</option>';
+      const sorted = [...decks].sort((a,b) => a.owner.localeCompare(b.owner) || a.name.localeCompare(b.name));
+      sorted.forEach(d => {
+        const opt = document.createElement("option");
+        opt.value = d.id;
+        opt.textContent = `[${d.owner}] ${d.name} (${d.cardCount} Karten)`;
+        quickDeckSelect.appendChild(opt);
+      });
+    }
+
+    quickDeckSelect.addEventListener("change", () => {
+      const deckId = parseInt(quickDeckSelect.value, 10);
+      if (!deckId) return;
+      loadDeckIntoChecker(deckId);
     });
+
+    function loadDeckIntoChecker(deckId) {
+      const deck = (archidektData.decks || []).find(d => d.id === deckId);
+      if (!deck) return;
+
+      const lines = (deck.cards || [])
+        .filter(c => !c.isMaybeboard)
+        .map(c => `${c.quantity} ${c.name}`);
+
+      deckInput.value = lines.join("\n");
+      switchTab("tab-deck");
+      runDeckCheck();
+    }
+
+    function renderArchidektGrid() {
+      const query = (archidektSearchInput.value || "").toLowerCase().trim();
+      const decks = archidektData.decks || [];
+      decksGrid.innerHTML = "";
+
+      const filtered = decks.filter(d => {
+        const matchesOwner = !selectedArchidektOwner || d.owner === selectedArchidektOwner;
+        const commanderStr = (d.commanders || []).join(" ").toLowerCase();
+        const matchesQuery = !query || d.name.toLowerCase().includes(query) || commanderStr.includes(query);
+        return matchesOwner && matchesQuery;
+      });
+
+      if (filtered.length === 0) {
+        decksGrid.innerHTML = '<div class="empty-state" style="grid-column: 1 / -1;">Keine Decks gefunden.</div>';
+        return;
+      }
+
+      filtered.forEach(deck => {
+        const card = document.createElement("div");
+        card.className = "deck-card";
+
+        const titleText = (deck.commanders && deck.commanders.length > 0)
+          ? deck.commanders.join(" // ")
+          : deck.name;
+
+        card.innerHTML = `
+          <div>
+            <div class="deck-card-header">
+              <span class="deck-card-title" style="color: #fbbf24; font-size: 1.05rem;">👑 ${escapeHtml(titleText)}</span>
+              <span class="badge ${deck.badge}">${deck.owner}</span>
+            </div>
+            <div class="deck-card-meta">
+              ${escapeHtml(deck.formatName || 'Commander / EDH')} &bull; ${deck.cardCount} Karten
+            </div>
+          </div>
+          <div class="deck-card-actions">
+            <button type="button" class="btn-primary btn-check-this-deck" data-id="${deck.id}">
+              ⚡ Im Deck-Checker prüfen
+            </button>
+            <a href="${escapeHtml(deck.archidektUrl)}" target="_blank" rel="noopener noreferrer" class="external-link link-archidekt" title="Auf Archidekt ansehen">
+              Archidekt ↗
+            </a>
+          </div>
+        `;
+        decksGrid.appendChild(card);
+      });
+    }
+
+    archidektSearchInput.addEventListener("input", renderArchidektGrid);
+
+    document.querySelectorAll(".chip-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".chip-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedArchidektOwner = btn.dataset.owner || "";
+        renderArchidektGrid();
+      });
+    });
+
+    decksGrid.addEventListener("click", (e) => {
+      const btn = e.target.closest(".btn-check-this-deck");
+      if (!btn) return;
+      const deckId = parseInt(btn.dataset.id, 10);
+      loadDeckIntoChecker(deckId);
+    });
+
+    // Start loading Archidekt Decks
+    loadArchidektDecks();
   </script>
 </body>
 </html>
