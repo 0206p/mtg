@@ -12,8 +12,8 @@ Corpseberry Cultivator,BLB,Bloomburrow,210,normal,common,1,95829,c911a759-ed7b-4
 Three Tree Scribe,BLB,Bloomburrow,199,normal,uncommon,1,95977,ea2ca1b3-4c1a-4be5-b321-f57db5ff0528,0.17,false,false,near_mint,en,EUR
 Harnesser of Storms,BLB,Bloomburrow,137,normal,uncommon,1,95962,b56beeb6-88ca-475e-8654-1d4e8b4aa3c0,0.13,false,false,near_mint,en,EUR
 Lilypad Village,BLB,Bloomburrow,255,normal,uncommon,1,95631,7e95a7cc-ed77-4ca4-80db-61c0fc68bf50,0.14,false,false,near_mint,en,EUR
-Captain Howler, Sea Scourge,DFT,Aetherdrift,194,normal,rare,1,102896,0957c90f-e10d-40f8-a4be-9e9ef623dd43,0.17,false,false,near_mint,en,EUR
-Redshift, Rocketeer Chief,DFT,Aetherdrift,218,normal,rare,1,103071,5fba3820-32ba-47e9-9fa8-f985ff471b3f,0.17,false,false,near_mint,en,EUR
+"Captain Howler, Sea Scourge",DFT,Aetherdrift,194,normal,rare,1,102896,0957c90f-e10d-40f8-a4be-9e9ef623dd43,0.17,false,false,near_mint,en,EUR
+"Redshift, Rocketeer Chief",DFT,Aetherdrift,218,normal,rare,1,103071,5fba3820-32ba-47e9-9fa8-f985ff471b3f,0.17,false,false,near_mint,en,EUR
 Loxodon Surveyor,DFT,Aetherdrift,167,normal,common,1,103632,cd1cecb1-6776-4495-be56-b7dde65453f1,0.05,false,false,near_mint,en,EUR
 Lightshield Parry,DFT,Aetherdrift,19,normal,common,1,103302,dcf6a0e7-1fd4-425f-b634-c93236daea35,0.03,false,false,near_mint,en,EUR
 Clamorous Ironclad,DFT,Aetherdrift,117,normal,common,1,103013,4701da52-b9c8-4ce9-9d57-53e10899f19d,0.07,false,false,near_mint,en,EUR
@@ -22,7 +22,7 @@ Interface Ace,DFT,Aetherdrift,17,normal,common,1,103385,fcfd487a-a9e6-44e3-80af-
 Bestow Greatness,DFT,Aetherdrift,155,normal,common,1,103234,b6a5adee-3482-4c5b-9260-58efa8fec5ba,0.1,false,false,near_mint,en,EUR
 Wretched Doll,DFT,Aetherdrift,111,normal,uncommon,1,103491,4983177d-fbf4-47fa-997f-9d08294870f2,0.08,false,false,near_mint,en,EUR
 Dune Drifter,DFT,Aetherdrift,200,normal,uncommon,1,103471,36185de4-55c2-4e5d-9bcc-ea12b7052728,0.09,false,false,near_mint,en,EUR
-Terrian, World Tyrant,DFT,Aetherdrift,182,normal,uncommon,1,103606,b44255cf-5264-4ead-9de0-20cc0f7cac6f,0.09,false,false,near_mint,en,EUR
+"Terrian, World Tyrant",DFT,Aetherdrift,182,normal,uncommon,1,103606,b44255cf-5264-4ead-9de0-20cc0f7cac6f,0.09,false,false,near_mint,en,EUR
 Mountain,BLB,Bloomburrow,277,normal,common,1,91704,8a38bea4-2d1b-442b-aad5-ab1a0ae67aac,0.44,false,false,near_mint,en,EUR
 Valley Questcaller,BLB,Bloomburrow,36,normal,rare,1,95826,ba629ca8-a368-4282-8a61-9bf6a5c217f0,0.96,false,false,near_mint,en,EUR
 Start Your Engines! // Max Speed,TDFT,Aetherdrift Tokens,14,normal,common,1,103135,82613de6-ed37-48c1-8d2f-d91a3f496794,0.09,false,false,near_mint,en,EUR
@@ -45,8 +45,8 @@ Island,NEO,Kamigawa: Neon Dynasty,296,normal,common,1,66487,7132999f-6e2d-4689-8
 Sky-Blessed Samurai,NEO,Kamigawa: Neon Dynasty,314,normal,uncommon,1,66573,91d6a843-a1b7-4862-a2bf-8f8f66788126,0.1,false,false,near_mint,en,EUR
 Searchlight Companion,NEO,Kamigawa: Neon Dynasty,258,normal,common,1,66850,0b79b30e-e7aa-490e-b130-de7533e6e13b,0.09,false,false,near_mint,en,EUR
 Invoke Calamity,NEO,Kamigawa: Neon Dynasty,147,normal,rare,1,66483,fe666c86-6734-4c47-9244-bcd26b54068d,0.21,false,false,near_mint,en,EUR
-Heiko Yamazaki, the General,NEO,Kamigawa: Neon Dynasty,146,normal,uncommon,1,66584,9ea5e61c-d903-410b-9acf-96a917ce05cc,0.06,false,false,near_mint,en,EUR
-Norika Yamazaki, the Poet,NEO,Kamigawa: Neon Dynasty,31,normal,uncommon,1,66500,09cb553c-58c1-4cfd-b441-297b5f09b263,0.05,false,false,near_mint,en,EUR
+"Heiko Yamazaki, the General",NEO,Kamigawa: Neon Dynasty,146,normal,uncommon,1,66584,9ea5e61c-d903-410b-9acf-96a917ce05cc,0.06,false,false,near_mint,en,EUR
+"Norika Yamazaki, the Poet",NEO,Kamigawa: Neon Dynasty,31,normal,uncommon,1,66500,09cb553c-58c1-4cfd-b441-297b5f09b263,0.05,false,false,near_mint,en,EUR
 Sky-Blessed Samurai,NEO,Kamigawa: Neon Dynasty,37,normal,uncommon,1,66604,c9c7ba6f-c58e-4347-92e4-51ae8f2d5a88,0.09,false,false,near_mint,en,EUR
 Ground Seal,ODY,Odyssey,242,normal,rare,1,31935,977383a8-9a31-4aad-ace2-6ed4d0dd1cbe,1.04,false,false,near_mint,en,EUR
 Mothrider Patrol,NEO,Kamigawa: Neon Dynasty,30,normal,common,1,66845,f657f2dc-adc8-4a66-b081-a71b3a127389,0.11,false,false,near_mint,en,EUR
@@ -63,7 +63,7 @@ Jukai Trainee,NEO,Kamigawa: Neon Dynasty,196,normal,common,1,66897,8be526cd-1480
 Favor of Jukai,NEO,Kamigawa: Neon Dynasty,184,normal,common,1,66851,1013266a-81f4-4441-8dcf-2764d14afceb,0.04,false,false,near_mint,en,EUR
 Lion Sash,NEO,Kamigawa: Neon Dynasty,368,normal,rare,1,66345,308c8834-e06e-452a-b82e-cb2b8fe0c304,2.77,false,false,near_mint,en,EUR
 Kappa Tech-Wrecker,NEO,Kamigawa: Neon Dynasty,198,normal,uncommon,1,66459,d3a7bc69-4500-4e7e-94e4-67b85597bd82,0.1,false,false,near_mint,en,EUR
-Norika Yamazaki, the Poet,NEO,Kamigawa: Neon Dynasty,311,normal,uncommon,2,66518,344df5c2-a963-42e3-b61b-1712f15e1eb9,0.12,false,false,near_mint,en,EUR
+"Norika Yamazaki, the Poet",NEO,Kamigawa: Neon Dynasty,311,normal,uncommon,2,66518,344df5c2-a963-42e3-b61b-1712f15e1eb9,0.12,false,false,near_mint,en,EUR
 Invoke the Ancients,NEO,Kamigawa: Neon Dynasty,193,normal,rare,1,66786,b5c02102-3be7-462f-ab9c-ff404255002d,0.2,false,false,near_mint,en,EUR
 Ruthless Technomancer,NEC,Neon Dynasty Commander,35,normal,rare,1,66820,dddeb5cc-b535-4484-8a0e-ce32c4c09000,1.74,false,false,near_mint,en,EUR
 Nezumi Prowler,NEO,Kamigawa: Neon Dynasty,116,normal,uncommon,1,66451,ca911e9a-bd04-4531-a81e-3485e9cbe89e,0.1,false,false,near_mint,en,EUR
@@ -85,14 +85,14 @@ Roadside Reliquary,NEO,Kamigawa: Neon Dynasty,272,normal,uncommon,1,66741,8002de
 Touch the Spirit Realm,NEO,Kamigawa: Neon Dynasty,40,normal,uncommon,1,66823,e16ab44e-4257-4c0c-b705-8ac1e9c1d835,0.63,false,false,near_mint,en,EUR
 High-Speed Hoverbike,NEO,Kamigawa: Neon Dynasty,247,normal,uncommon,1,66397,7c619116-1eae-439d-9b1f-639643458a23,0.12,false,false,near_mint,en,EUR
 Guardians of Oboro,NEO,Kamigawa: Neon Dynasty,56,normal,common,1,66618,e9c44d4e-742f-4e4f-9bf4-921075bc427c,0.05,false,false,near_mint,en,EUR
-Ugin, Eye of the Storms,TDM,Tarkir: Dragonstorm,382,normal,mythic,1,104294,53b11c30-1c4e-4238-9d42-2e1480df60c1,32.6,false,false,near_mint,en,EUR
+"Ugin, Eye of the Storms",TDM,Tarkir: Dragonstorm,382,normal,mythic,1,104294,53b11c30-1c4e-4238-9d42-2e1480df60c1,32.6,false,false,near_mint,en,EUR
 Angel of Sanctions,DRC,Aetherdrift Commander,62,normal,mythic,1,103048,546b6ffc-44e3-4994-b84b-6282c6474a1a,0.29,false,false,near_mint,en,EUR
-Sevinne, the Chronoclasm,C19,Commander 2019,49,foil,mythic,1,45885,2c209efe-b4dc-44a3-bd45-d647f5680cbe,0.29,false,false,near_mint,en,EUR
+"Sevinne, the Chronoclasm",C19,Commander 2019,49,foil,mythic,1,45885,2c209efe-b4dc-44a3-bd45-d647f5680cbe,0.29,false,false,near_mint,en,EUR
 Descend upon the Sinful,OTC,Outlaws of Thunder Junction Commander,80,normal,mythic,1,93719,83245e11-a020-4d81-9d83-e1505f1d125e,0.27,false,false,near_mint,en,EUR
-Ukkima, Stalking Shadow,OTC,Outlaws of Thunder Junction Commander,247,normal,mythic,1,93842,c66b452b-9c49-4c58-9966-6bafbfa34c36,0.28,false,false,near_mint,en,EUR
-Kitt Kanto, Mayhem Diva,NCC,New Capenna Commander,4,normal,mythic,1,67911,9b9850d6-49d3-45ec-9a45-75aa0fce9ee5,0.21,false,false,near_mint,en,EUR
-Mikaeus, the Lunarch,MOC,March of the Machine Commander,197,normal,mythic,1,82058,fb885d30-c6e5-494a-bc01-3d5085b8e262,0.4,false,false,near_mint,en,EUR
-Obuun, Mul Daya Ancestor,ZNC,Zendikar Rising Commander,2,foil,mythic,1,54630,8319b155-0fba-4d30-9481-bf01afbd3457,0.47,false,false,near_mint,en,EUR
+"Ukkima, Stalking Shadow",OTC,Outlaws of Thunder Junction Commander,247,normal,mythic,1,93842,c66b452b-9c49-4c58-9966-6bafbfa34c36,0.28,false,false,near_mint,en,EUR
+"Kitt Kanto, Mayhem Diva",NCC,New Capenna Commander,4,normal,mythic,1,67911,9b9850d6-49d3-45ec-9a45-75aa0fce9ee5,0.21,false,false,near_mint,en,EUR
+"Mikaeus, the Lunarch",MOC,March of the Machine Commander,197,normal,mythic,1,82058,fb885d30-c6e5-494a-bc01-3d5085b8e262,0.4,false,false,near_mint,en,EUR
+"Obuun, Mul Daya Ancestor",ZNC,Zendikar Rising Commander,2,foil,mythic,1,54630,8319b155-0fba-4d30-9481-bf01afbd3457,0.47,false,false,near_mint,en,EUR
 The Thirteenth Doctor,WHO,Doctor Who,4,foil,mythic,1,86919,0dc4ec90-1650-4b98-9350-66341394cf0b,0.36,false,false,near_mint,en,EUR
 Entish Restoration,LTR,The Lord of the Rings: Tales of Middle-earth,163,normal,uncommon,2,83513,cd4dbf80-187b-40e3-9e0b-526f78d9a34e,1.34,false,false,near_mint,en,EUR
 The Bath Song,LTR,The Lord of the Rings: Tales of Middle-earth,40,normal,uncommon,2,83671,fb11c04f-6f17-4da4-bbf6-0bd09de6e544,0.07,false,false,near_mint,en,EUR
@@ -100,13 +100,13 @@ Long List of the Ents,LTR,The Lord of the Rings: Tales of Middle-earth,174,norma
 Glorious Gale,LTR,The Lord of the Rings: Tales of Middle-earth,51,normal,common,3,83178,6e1057de-5710-415c-9a51-1d8bd86021a3,0.07,false,false,near_mint,en,EUR
 Esquire of the King,LTR,The Lord of the Rings: Tales of Middle-earth,13,normal,common,1,83503,caa6dded-ab08-43d0-b2fb-008854582cba,0.02,false,false,near_mint,en,EUR
 Rising of the Day,LTR,The Lord of the Rings: Tales of Middle-earth,427,normal,uncommon,1,83208,7a06a653-eca1-4fee-add5-45d2594885c3,0.27,false,false,near_mint,en,EUR
-Elrond, Master of Healing,LTR,The Lord of the Rings: Tales of Middle-earth,318,normal,rare,1,83047,476e2a30-4410-432d-9c8a-beaaa40220c1,0.3,false,false,near_mint,en,EUR
+"Elrond, Master of Healing",LTR,The Lord of the Rings: Tales of Middle-earth,318,normal,rare,1,83047,476e2a30-4410-432d-9c8a-beaaa40220c1,0.3,false,false,near_mint,en,EUR
 Mirkwood Bats,LTR,The Lord of the Rings: Tales of Middle-earth,421,normal,common,1,83265,882747f9-b4fe-42be-8fe9-f871cd0779bd,0.26,false,false,near_mint,en,EUR
-Mauhúr, Uruk-hai Captain,LTR,The Lord of the Rings: Tales of Middle-earth,214,normal,uncommon,1,83145,65e9a757-7ed4-4cc0-bb6f-a59fa69b32a5,0.09,false,false,near_mint,en,EUR
+"MauhÃºr, Uruk-hai Captain",LTR,The Lord of the Rings: Tales of Middle-earth,214,normal,uncommon,1,83145,65e9a757-7ed4-4cc0-bb6f-a59fa69b32a5,0.09,false,false,near_mint,en,EUR
 Voracious Fell Beast,LTR,The Lord of the Rings: Tales of Middle-earth,422,normal,uncommon,1,83542,d6ce6be0-ebfe-4d50-87c6-8c1fc7536f1f,0.05,false,false,near_mint,en,EUR
 Arwen's Gift,LTR,The Lord of the Rings: Tales of Middle-earth,39,normal,common,2,82969,30e1ec49-ad4f-4623-aeeb-dba07d6e6251,0.04,false,false,near_mint,en,EUR
 Quarrel's End,LTR,The Lord of the Rings: Tales of Middle-earth,141,normal,common,2,83101,5a7e61a6-c602-4089-ae45-828d8e516a63,0.05,false,false,near_mint,en,EUR
-Denethor, Ruling Steward,LTR,The Lord of the Rings: Tales of Middle-earth,198,normal,uncommon,2,83669,fa8654cf-431c-427b-b78f-0e48f6007e9e,0.1,false,false,near_mint,en,EUR
+"Denethor, Ruling Steward",LTR,The Lord of the Rings: Tales of Middle-earth,198,normal,uncommon,2,83669,fa8654cf-431c-427b-b78f-0e48f6007e9e,0.1,false,false,near_mint,en,EUR
 The Grey Havens,LTR,The Lord of the Rings: Tales of Middle-earth,255,normal,uncommon,2,83571,dd698f10-b0fc-42fc-84ec-f5a0d96bfa1d,0.15,false,false,near_mint,en,EUR
 Willow-Wind,LTR,The Lord of the Rings: Tales of Middle-earth,76,normal,common,2,82844,0adc3bff-0eb1-40e9-b954-5515babd07a3,0.02,false,false,near_mint,en,EUR
 Yotian Soldier,BBD,Battlebond,249,normal,common,1,1744,9e71190b-c96c-4aea-9696-780c69eff395,0.05,false,false,near_mint,en,EUR
@@ -121,7 +121,7 @@ Isildur's Fateful Strike,LTR,The Lord of the Rings: Tales of Middle-earth,91,nor
 Snarling Warg,LTR,The Lord of the Rings: Tales of Middle-earth,109,normal,common,1,83351,a1ad561c-ccb4-480a-88a4-0555d0ef245e,0.03,false,false,near_mint,en,EUR
 Mirkwood Bats,LTR,The Lord of the Rings: Tales of Middle-earth,95,normal,common,1,82881,15f035df-784a-4dc8-b7f5-77139a4e6e99,0.28,false,false,near_mint,en,EUR
 Dunland Crebain,LTR,The Lord of the Rings: Tales of Middle-earth,411,normal,common,2,83634,f1b90963-2a4c-4e0a-9d00-5d3df258c880,0.06,false,false,near_mint,en,EUR
-Gríma Wormtongue,LTR,The Lord of the Rings: Tales of Middle-earth,88,normal,uncommon,2,83283,8e3bd86b-e8ca-4885-a823-78fb967e6caf,0.09,false,false,near_mint,en,EUR
+GrÃ­ma Wormtongue,LTR,The Lord of the Rings: Tales of Middle-earth,88,normal,uncommon,2,83283,8e3bd86b-e8ca-4885-a823-78fb967e6caf,0.09,false,false,near_mint,en,EUR
 Claim the Precious,LTR,The Lord of the Rings: Tales of Middle-earth,81,normal,common,2,82862,121c12c4-83ea-463e-8fdf-30718968a2bd,0.07,false,false,near_mint,en,EUR
 Cast into the Fire,LTR,The Lord of the Rings: Tales of Middle-earth,118,normal,common,1,82962,2ef878cb-27b6-47d8-ad11-bd20529b0e7e,0.59,false,false,near_mint,en,EUR
 Improvised Club,LTR,The Lord of the Rings: Tales of Middle-earth,137,normal,common,4,83432,b8397d13-eeaf-4b4e-b3cd-9a9ac231873a,0.08,false,false,near_mint,en,EUR
@@ -130,28 +130,28 @@ Smite the Deathless,LTR,The Lord of the Rings: Tales of Middle-earth,148,normal,
 Warbeast of Gorgoroth,LTR,The Lord of the Rings: Tales of Middle-earth,152,normal,common,3,83112,5eeecb9e-fbde-429b-b3da-18a4dbadf6de,0.04,false,false,near_mint,en,EUR
 Rush the Room,LTR,The Lord of the Rings: Tales of Middle-earth,147,normal,common,2,83646,f525b727-acde-427b-9c33-20964e8cf613,0.03,false,false,near_mint,en,EUR
 Pippin's Bravery,LTR,The Lord of the Rings: Tales of Middle-earth,414,normal,common,1,82841,08dc9616-83e5-451f-aaa8-d0c81802fa13,0.04,false,false,near_mint,en,EUR
-Gandalf, Friend of the Shire,LTR,The Lord of the Rings: Tales of Middle-earth,308,normal,uncommon,1,83615,eae80537-f355-4aa3-8952-b08f3d1a1e41,0.1,false,false,near_mint,en,EUR
+"Gandalf, Friend of the Shire",LTR,The Lord of the Rings: Tales of Middle-earth,308,normal,uncommon,1,83615,eae80537-f355-4aa3-8952-b08f3d1a1e41,0.1,false,false,near_mint,en,EUR
 Fiery Inscription,LTR,The Lord of the Rings: Tales of Middle-earth,126,normal,uncommon,2,83276,8c321159-43e5-40fc-9f0c-4ecc4f6cfd20,0.24,false,false,near_mint,en,EUR
 Lash of the Balrog,LTR,The Lord of the Rings: Tales of Middle-earth,92,normal,common,2,83236,812fee97-e145-4458-b495-bc6ad227335b,0.07,false,false,near_mint,en,EUR
-Saruman, the White Hand,LTC,Tales of Middle-earth Commander,8,normal,mythic,1,83139,6487ccbf-f6cd-45a6-8514-2c458b655ef2,0.61,false,false,near_mint,en,EUR
-Faramir, Field Commander,LTR,The Lord of the Rings: Tales of Middle-earth,303,normal,uncommon,1,82815,008b953a-da2b-4c30-9424-6d6e3e938251,0.04,false,false,near_mint,en,EUR
+"Saruman, the White Hand",LTC,Tales of Middle-earth Commander,8,normal,mythic,1,83139,6487ccbf-f6cd-45a6-8514-2c458b655ef2,0.61,false,false,near_mint,en,EUR
+"Faramir, Field Commander",LTR,The Lord of the Rings: Tales of Middle-earth,303,normal,uncommon,1,82815,008b953a-da2b-4c30-9424-6d6e3e938251,0.04,false,false,near_mint,en,EUR
 Ringsight,LTR,The Lord of the Rings: Tales of Middle-earth,220,normal,uncommon,2,82992,3700a65c-6f54-4d56-9c6f-8364c45a058c,0.19,false,false,near_mint,en,EUR
-Pippin, Guard of the Citadel,LTR,The Lord of the Rings: Tales of Middle-earth,218,normal,rare,1,82840,08b7a4d8-1183-430e-8ea4-016844f33200,0.59,false,false,near_mint,en,EUR
+"Pippin, Guard of the Citadel",LTR,The Lord of the Rings: Tales of Middle-earth,218,normal,rare,1,82840,08b7a4d8-1183-430e-8ea4-016844f33200,0.59,false,false,near_mint,en,EUR
 Nasty End,LTR,The Lord of the Rings: Tales of Middle-earth,416,normal,common,1,82993,37271b8b-3c58-43aa-b120-f0aa12fb3ad5,0.07,false,false,near_mint,en,EUR
-Gandalf, Westward Voyager,LTC,Tales of Middle-earth Commander,6,normal,mythic,1,83090,56910251-6339-4f8b-b863-29caab4965d8,0.18,false,false,near_mint,en,EUR
+"Gandalf, Westward Voyager",LTC,Tales of Middle-earth Commander,6,normal,mythic,1,83090,56910251-6339-4f8b-b863-29caab4965d8,0.18,false,false,near_mint,en,EUR
 Nimrodel Watcher,LTR,The Lord of the Rings: Tales of Middle-earth,63,normal,common,1,83473,c253ee40-41c9-4cb5-a1a3-94b0aaed09d4,0.03,false,false,near_mint,en,EUR
 Call of the Ring,LTR,The Lord of the Rings: Tales of Middle-earth,79,normal,rare,1,83376,a92a2c5a-e450-494a-b23b-7ac0a6c50535,1.89,false,false,near_mint,en,EUR
 Knights of Dol Amroth,LTR,The Lord of the Rings: Tales of Middle-earth,432,normal,common,1,82848,0c511371-97d7-47cc-934c-939dfbdd1c0b,0.03,false,false,near_mint,en,EUR
 Foray of Orcs,LTR,The Lord of the Rings: Tales of Middle-earth,417,normal,uncommon,2,83626,ef083f43-4748-42e6-bc22-fc2570db5ca3,0.11,false,false,near_mint,en,EUR
-Sméagol, Helpful Guide,LTR,The Lord of the Rings: Tales of Middle-earth,231,normal,rare,1,82866,13253f8d-1897-41e8-a904-9e57ac7eff0a,0.36,false,false,near_mint,en,EUR
+"SmÃ©agol, Helpful Guide",LTR,The Lord of the Rings: Tales of Middle-earth,231,normal,rare,1,82866,13253f8d-1897-41e8-a904-9e57ac7eff0a,0.36,false,false,near_mint,en,EUR
 Ioreth of the Healing House,LTR,The Lord of the Rings: Tales of Middle-earth,56,normal,uncommon,1,82827,03ab74cd-978a-49eb-9d38-bc8b472b3cef,0.1,false,false,near_mint,en,EUR
-Éomer of the Riddermark,LTR,The Lord of the Rings: Tales of Middle-earth,121,normal,uncommon,1,83552,d920fcaf-4988-4186-962d-cdda25d79e7b,0.05,false,false,near_mint,en,EUR
-Aragorn, Company Leader,LTR,The Lord of the Rings: Tales of Middle-earth,316,normal,rare,1,82872,142c3004-fe39-4ca3-bf14-f4af8b20fa80,0.53,false,false,near_mint,en,EUR
+Ã‰omer of the Riddermark,LTR,The Lord of the Rings: Tales of Middle-earth,121,normal,uncommon,1,83552,d920fcaf-4988-4186-962d-cdda25d79e7b,0.05,false,false,near_mint,en,EUR
+"Aragorn, Company Leader",LTR,The Lord of the Rings: Tales of Middle-earth,316,normal,rare,1,82872,142c3004-fe39-4ca3-bf14-f4af8b20fa80,0.53,false,false,near_mint,en,EUR
 Horn of the Mark,LTR,The Lord of the Rings: Tales of Middle-earth,241,normal,rare,1,83572,dd86b71f-d736-426f-bf15-013bc8da1a08,0.41,false,false,near_mint,en,EUR
 The Torment of Gollum,LTR,The Lord of the Rings: Tales of Middle-earth,110,normal,common,2,83441,ba2c8c25-1fa9-4cc4-a378-5eccc25bacf0,0.04,false,false,near_mint,en,EUR
 Ballistic Boulder,TLTR,Tales of Middle-earth Tokens,8,normal,common,1,83438,b9d70342-9d3c-44cb-9026-db5e5941b9fc,0.11,false,false,near_mint,en,EUR
-Troll of Khazad-dûm,LTR,The Lord of the Rings: Tales of Middle-earth,111,normal,common,1,83371,a6539e26-b63b-4725-9407-caaf451de084,0.75,false,false,near_mint,en,EUR
-Lórien Revealed,LTR,The Lord of the Rings: Tales of Middle-earth,60,normal,common,1,82850,0ce44270-a684-4489-9077-521456e6dfaa,1.96,false,false,near_mint,en,EUR
+Troll of Khazad-dÃ»m,LTR,The Lord of the Rings: Tales of Middle-earth,111,normal,common,1,83371,a6539e26-b63b-4725-9407-caaf451de084,0.75,false,false,near_mint,en,EUR
+LÃ³rien Revealed,LTR,The Lord of the Rings: Tales of Middle-earth,60,normal,common,1,82850,0ce44270-a684-4489-9077-521456e6dfaa,1.96,false,false,near_mint,en,EUR
 Wizard's Rockets,LTR,The Lord of the Rings: Tales of Middle-earth,252,normal,common,1,82906,1c6ed742-dfb1-41e2-8f19-184555109e34,0.08,false,false,near_mint,en,EUR
 Ent's Fury,LTR,The Lord of the Rings: Tales of Middle-earth,164,normal,common,1,83494,c7946af6-69ab-47a1-955c-1954a04752df,0.05,false,false,near_mint,en,EUR
 Gwaihir the Windlord,LTR,The Lord of the Rings: Tales of Middle-earth,210,normal,uncommon,3,82897,1a42c951-1146-4f49-a690-7d385962b191,0.1,false,false,near_mint,en,EUR
@@ -165,21 +165,21 @@ Foray of Orcs,LTR,The Lord of the Rings: Tales of Middle-earth,128,normal,uncomm
 March from the Black Gate,LTR,The Lord of the Rings: Tales of Middle-earth,94,normal,uncommon,1,82810,e57815d4-b21f-4ceb-a3f1-73cff5f0e612,0.08,false,false,near_mint,en,EUR
 Easterling Vanguard,LTR,The Lord of the Rings: Tales of Middle-earth,83,normal,common,2,83607,e860dd40-07c5-47c3-92a8-1ee95a953c2f,0.13,false,false,near_mint,en,EUR
 Knights of Dol Amroth,LTR,The Lord of the Rings: Tales of Middle-earth,59,normal,common,2,83146,661338ff-a192-4007-a144-63d00f2e9ecb,0.03,false,false,near_mint,en,EUR
-Dúnedain Blade,LTR,The Lord of the Rings: Tales of Middle-earth,457,normal,common,2,86494,565905d7-cd02-44cb-bf5f-78cc39540b68,0.12,false,false,near_mint,en,EUR
+DÃºnedain Blade,LTR,The Lord of the Rings: Tales of Middle-earth,457,normal,common,2,86494,565905d7-cd02-44cb-bf5f-78cc39540b68,0.12,false,false,near_mint,en,EUR
 Revive the Shire,LTR,The Lord of the Rings: Tales of Middle-earth,185,normal,common,1,83045,46b7f493-1b57-4b07-8510-30703282f879,0.07,false,false,near_mint,en,EUR
 Rohirrim Lancer,LTR,The Lord of the Rings: Tales of Middle-earth,146,normal,common,5,82963,2f506f9f-4c0d-44e8-9f81-8403d808d0e4,0.04,false,false,near_mint,en,EUR
 Saruman the White,LTR,The Lord of the Rings: Tales of Middle-earth,67,normal,uncommon,2,82903,1bfccbab-29fa-4e92-8919-6cd4815fb655,0.09,false,false,near_mint,en,EUR
 Mountain,LTR,The Lord of the Rings: Tales of Middle-earth,268,normal,common,5,83589,e3731001-4e6a-4a91-9e7d-fc2ea039a60b,0.08,false,false,near_mint,en,EUR
 Exotic Orchard,BLC,Bloomburrow Commander,131,normal,rare,2,96507,e6d8d98d-29b2-4ca2-bbda-4db2e8f6ae0b,0.27,false,false,near_mint,en,EUR
-Grond, the Gatebreaker,LTR,The Lord of the Rings: Tales of Middle-earth,89,normal,uncommon,2,83056,4bc61b28-afdd-4de9-829b-ffe5ca7c7f19,0.06,false,false,near_mint,en,EUR
-Gothmog, Morgul Lieutenant,LTR,The Lord of the Rings: Tales of Middle-earth,87,normal,uncommon,2,83353,a1c10e93-88eb-46b9-8adc-583661807990,0.06,false,false,near_mint,en,EUR
-Grishnákh, Brash Instigator,LTR,The Lord of the Rings: Tales of Middle-earth,134,normal,uncommon,2,83136,6385e769-f805-499d-9f47-494533362152,0.05,false,false,near_mint,en,EUR
+"Grond, the Gatebreaker",LTR,The Lord of the Rings: Tales of Middle-earth,89,normal,uncommon,2,83056,4bc61b28-afdd-4de9-829b-ffe5ca7c7f19,0.06,false,false,near_mint,en,EUR
+"Gothmog, Morgul Lieutenant",LTR,The Lord of the Rings: Tales of Middle-earth,87,normal,uncommon,2,83353,a1c10e93-88eb-46b9-8adc-583661807990,0.06,false,false,near_mint,en,EUR
+"GrishnÃ¡kh, Brash Instigator",LTR,The Lord of the Rings: Tales of Middle-earth,134,normal,uncommon,2,83136,6385e769-f805-499d-9f47-494533362152,0.05,false,false,near_mint,en,EUR
 Olog-hai Crusher,LTR,The Lord of the Rings: Tales of Middle-earth,140,normal,common,3,83476,c33bf593-62e0-491a-a31a-328bce6d8735,0.04,false,false,near_mint,en,EUR
 Haradrim Spearmaster,LTR,The Lord of the Rings: Tales of Middle-earth,135,normal,common,3,83118,6050cf98-cdce-4825-9ab8-2294a2b63faf,0.02,false,false,near_mint,en,EUR
 Relentless Rohirrim,LTR,The Lord of the Rings: Tales of Middle-earth,144,normal,common,5,82924,21b7606a-6a4c-4bf0-b311-1883383161d2,0.03,false,false,near_mint,en,EUR
 Sunset Revelry,LTC,Tales of Middle-earth Commander,177,normal,uncommon,1,83381,a9601594-1efb-4cf7-ad94-76fe6ebfe8ad,0.19,false,false,near_mint,en,EUR
 Lossarnach Captain,LTC,Tales of Middle-earth Commander,16,normal,rare,1,82839,08b78cd2-7c52-4dcd-b063-1ac5e96420d4,0.42,false,false,near_mint,en,EUR
-Aragorn, King of Gondor,LTC,Tales of Middle-earth Commander,5,foil,mythic,1,82907,1c7ac04c-8510-468b-aa6f-f249bde9ff87,0.46,false,false,near_mint,en,EUR
+"Aragorn, King of Gondor",LTC,Tales of Middle-earth Commander,5,foil,mythic,1,82907,1c7ac04c-8510-468b-aa6f-f249bde9ff87,0.46,false,false,near_mint,en,EUR
 Archivist of Gondor,LTC,Tales of Middle-earth Commander,18,normal,rare,1,83621,ec691418-1075-477f-b0df-f0d064588baf,0.18,false,false,near_mint,en,EUR
 Arcane Signet,LTC,Tales of Middle-earth Commander,273,normal,common,1,83071,4e92354d-c203-41e1-822d-8263fadd9eb3,0.39,false,false,near_mint,en,EUR
 Forth Eorlingas!,LTC,Tales of Middle-earth Commander,56,normal,rare,1,82832,06c053d3-028e-4961-93a5-5b7bb5a8601c,6.38,false,false,near_mint,en,EUR
@@ -188,19 +188,19 @@ Vanquisher's Banner,LTC,Tales of Middle-earth Commander,289,normal,rare,1,83601,
 Command Tower,LTC,Tales of Middle-earth Commander,301,normal,common,1,83079,5306a95e-fb18-463d-81a9-3c3b8121fc94,0.21,false,false,near_mint,en,EUR
 Beregond of the Guard,LTC,Tales of Middle-earth Commander,9,normal,rare,1,83168,6aad41a6-e894-43f8-a4b5-abc206836306,0.32,false,false,near_mint,en,EUR
 Bastion Protector,LTC,Tales of Middle-earth Commander,162,normal,rare,1,83651,f6859dfd-64aa-41e4-9b6b-e560af265e44,0.64,false,false,near_mint,en,EUR
-Boromir, Gondor's Hope,LTC,Tales of Middle-earth Commander,49,normal,rare,1,83011,3c9b154f-808f-4338-ad95-a0a478460ad8,0.32,false,false,near_mint,en,EUR
+"Boromir, Gondor's Hope",LTC,Tales of Middle-earth Commander,49,normal,rare,1,83011,3c9b154f-808f-4338-ad95-a0a478460ad8,0.32,false,false,near_mint,en,EUR
 Wayfarer's Bauble,LTC,Tales of Middle-earth Commander,290,normal,common,1,83189,7219d07d-56b3-4522-9552-7f290f2c2176,0.49,false,false,near_mint,en,EUR
 Humble Defector,LTC,Tales of Middle-earth Commander,222,normal,uncommon,1,83403,b2317866-35b3-4348-a5d1-888ef8f9e2ac,0.17,false,false,near_mint,en,EUR
-Denethor, Stone Seer,LTC,Tales of Middle-earth Commander,20,normal,rare,1,83532,d32d3d8a-7450-4a29-abc7-f472426f0c28,0.14,false,false,near_mint,en,EUR
+"Denethor, Stone Seer",LTC,Tales of Middle-earth Commander,20,normal,rare,1,83532,d32d3d8a-7450-4a29-abc7-f472426f0c28,0.14,false,false,near_mint,en,EUR
 Village Bell-Ringer,LTC,Tales of Middle-earth Commander,181,normal,common,1,83598,e62563c6-a7cd-40a9-afb8-14e49d4edb4a,0.24,false,false,near_mint,en,EUR
 Plains,LTR,The Lord of the Rings: Tales of Middle-earth,263,normal,common,4,83106,5bb495cc-9908-455e-bec9-3993d595f4f9,0.07,false,false,near_mint,en,EUR
 Plains,LTR,The Lord of the Rings: Tales of Middle-earth,262,normal,common,6,83656,f724ae86-b968-4f49-8267-c2c34c22f1b6,0.1,false,false,near_mint,en,EUR
 Oath of Eorl,LTC,Tales of Middle-earth Commander,64,normal,rare,1,82918,1ffc7f95-daed-452e-a114-859b8798055b,0.35,false,false,near_mint,en,EUR
 Earthquake,LTC,Tales of Middle-earth Commander,214,normal,rare,1,83630,f1030c6d-e6f4-42e0-84d3-d3916d7f397c,0.39,false,false,near_mint,en,EUR
-Erkenbrand, Lord of Westfold,LTR,The Lord of the Rings: Tales of Middle-earth,123,normal,uncommon,2,82999,38f81e68-cddd-47f4-b1d1-a297c3298c25,0.06,false,false,near_mint,en,EUR
+"Erkenbrand, Lord of Westfold",LTR,The Lord of the Rings: Tales of Middle-earth,123,normal,uncommon,2,82999,38f81e68-cddd-47f4-b1d1-a297c3298c25,0.06,false,false,near_mint,en,EUR
 Exotic Orchard,LTC,Tales of Middle-earth Commander,307,normal,rare,1,83359,a3120b65-f021-467e-bd9f-27329134a743,0.25,false,false,near_mint,en,EUR
 Zealous Conscripts,LTC,Tales of Middle-earth Commander,231,normal,rare,1,83467,c1205f74-ffe3-401f-96ef-96f855b9ae67,0.29,false,false,near_mint,en,EUR
-Faramir, Steward of Gondor,LTC,Tales of Middle-earth Commander,54,normal,rare,1,83108,5c3e8a30-de2a-4d8f-a929-5abeaea2e65a,0.3,false,false,near_mint,en,EUR
+"Faramir, Steward of Gondor",LTC,Tales of Middle-earth Commander,54,normal,rare,1,83108,5c3e8a30-de2a-4d8f-a929-5abeaea2e65a,0.3,false,false,near_mint,en,EUR
 Battlefield Forge,LTC,Tales of Middle-earth Commander,296,normal,rare,1,82871,13cac289-319c-49a7-ab7c-961e147026ea,0.81,false,false,near_mint,en,EUR
 Clifftop Retreat,LTC,Tales of Middle-earth Commander,300,normal,rare,1,83007,3bf1e2f8-426c-4e24-b943-6fb9d5567d70,0.61,false,false,near_mint,en,EUR
 Flamerush Rider,LTC,Tales of Middle-earth Commander,216,normal,rare,1,83398,b0c33673-7fc8-40d2-9718-af234047df7f,0.17,false,false,near_mint,en,EUR
@@ -210,7 +210,7 @@ Mountain,LTR,The Lord of the Rings: Tales of Middle-earth,269,normal,common,2,83
 Thought Vessel,LTC,Tales of Middle-earth Commander,287,normal,common,1,83132,62d4f5fe-d83d-4508-819b-57784ea44fa4,1.21,false,false,near_mint,en,EUR
 Dearly Departed,LTC,Tales of Middle-earth Commander,165,normal,rare,1,83290,900a6221-9222-4645-94e7-1a0fcaf73aae,0.13,false,false,near_mint,en,EUR
 Shared Animosity,LTC,Tales of Middle-earth Commander,226,normal,rare,1,83222,7e735f1a-3925-43f8-bc95-2cadcd44d5e0,1.05,false,false,near_mint,en,EUR
-Gilraen, Dúnedain Protector,LTC,Tales of Middle-earth Commander,13,normal,rare,1,82836,07efe592-5851-4577-b73f-0bb232feb68b,0.31,false,false,near_mint,en,EUR
+"Gilraen, DÃºnedain Protector",LTC,Tales of Middle-earth Commander,13,normal,rare,1,82836,07efe592-5851-4577-b73f-0bb232feb68b,0.31,false,false,near_mint,en,EUR
 Gimli of the Glittering Caves,LTC,Tales of Middle-earth Commander,32,normal,rare,1,83103,5afc0319-9e17-4e81-a0b6-e76645bacb04,1.13,false,false,near_mint,en,EUR
 Glacial Fortress,LTC,Tales of Middle-earth Commander,315,normal,rare,1,82996,381dee46-94c0-4b56-a752-fc0a1e651143,0.49,false,false,near_mint,en,EUR
 Frontier Warmonger,LTC,Tales of Middle-earth Commander,217,normal,rare,1,82914,1ded4ab9-3068-4b7a-99f7-bb51bde5dbee,0.2,false,false,near_mint,en,EUR
@@ -245,7 +245,7 @@ Commander's Sphere,LTC,Tales of Middle-earth Commander,276,normal,common,1,83147
 Talisman of Conviction,LTC,Tales of Middle-earth Commander,285,normal,uncommon,1,83483,c542cc26-f61a-416b-866e-8c500ff24783,0.3,false,false,near_mint,en,EUR
 Talisman of Progress,LTC,Tales of Middle-earth Commander,286,normal,uncommon,1,83058,4c060c49-7bee-4f66-b053-df7db7cefaa7,0.48,false,false,near_mint,en,EUR
 Throne of the High City,LTC,Tales of Middle-earth Commander,339,normal,rare,1,83462,bf43967f-756c-4e01-9fdc-7d4abdf4e9dd,0.17,false,false,near_mint,en,EUR
-Théoden, King of Rohan,LTR,The Lord of the Rings: Tales of Middle-earth,233,normal,uncommon,2,83654,f6dcd1ca-4943-46e4-bb5d-c14949e21e23,0.07,false,false,near_mint,en,EUR
+"ThÃ©oden, King of Rohan",LTR,The Lord of the Rings: Tales of Middle-earth,233,normal,uncommon,2,83654,f6dcd1ca-4943-46e4-bb5d-c14949e21e23,0.07,false,false,near_mint,en,EUR
 Fealty to the Realm,LTC,Tales of Middle-earth Commander,21,normal,rare,1,82818,017a5dbf-5773-448d-abf3-9a3d42bde9e5,0.24,false,false,near_mint,en,EUR
 Door of Destinies,LTC,Tales of Middle-earth Commander,277,normal,rare,1,83625,ef038cae-d00b-42f4-81ae-09929b05d881,6.16,false,false,near_mint,en,EUR
 Fiend Hunter,LTC,Tales of Middle-earth Commander,168,normal,uncommon,1,83182,703c52d2-9e9d-4a54-82af-800fa1456d36,0.15,false,false,near_mint,en,EUR
@@ -260,91 +260,91 @@ Wind-Scarred Crag,LTC,Tales of Middle-earth Commander,344,normal,common,1,83417,
 Furycalm Snarl,LTC,Tales of Middle-earth Commander,313,normal,rare,1,83308,94e25653-b347-4ff3-a914-a00bea46be14,0.27,false,false,near_mint,en,EUR
 Increasing Devotion,LTC,Tales of Middle-earth Commander,171,normal,rare,1,83502,ca0aaf39-0f4d-47c8-834e-f7974e316079,0.16,false,false,near_mint,en,EUR
 Heirloom Blade,LTC,Tales of Middle-earth Commander,279,normal,uncommon,1,83370,a6463bdd-f9b3-46a6-9cb7-e1ba7e800b3c,0.21,false,false,near_mint,en,EUR
-Éomer, King of Rohan,LTC,Tales of Middle-earth Commander,52,normal,rare,1,83113,5f48930a-d7bd-410b-995a-4e2837aabb25,0.44,false,false,near_mint,en,EUR
-Éowyn, Shieldmaiden,LTC,Tales of Middle-earth Commander,1,foil,mythic,1,83570,dd4a00ff-2206-4e12-a0ab-61ed82c9e6c5,0.27,false,false,near_mint,en,EUR
-"Deploy to the Front,40K,""Warhammer 40,000 Commander"",184,normal,rare,1,72483,aa5f9580-4ee8-49bc-9524-44072d6b3a8b,0.33,false,false,near_mint,en,EUR"
-"Arco-Flagellant,40K,""Warhammer 40,000 Commander"",29,normal,rare,1,72274,0894d21c-d44c-4c7c-8693-f32dde67b336,0.27,false,false,near_mint,en,EUR"
-"Arcane Signet,40K,""Warhammer 40,000 Commander"",229,normal,common,1,72443,8191befc-dcf7-4cb8-89ca-3461d55e4682,0.86,false,false,near_mint,en,EUR"
-"Ash Barrens,40K,""Warhammer 40,000 Commander"",265,normal,uncommon,1,72308,2816a820-bde0-404a-ba2c-86fbe461e01b,0.13,false,false,near_mint,en,EUR"
-"Reconnaissance Mission,40K,""Warhammer 40,000 Commander"",193,normal,uncommon,1,72263,009f7603-a6a3-461b-bc73-810db1ab2898,1.57,false,false,near_mint,en,EUR"
-"Utter End,40K,""Warhammer 40,000 Commander"",226,normal,rare,1,72416,70504cce-2525-472b-b189-2cca86157ab3,0.22,false,false,near_mint,en,EUR"
-"Command Tower,40K,""Warhammer 40,000 Commander"",272,normal,common,1,72515,c1bda37b-7702-462e-8851-af6917b78ee1,0.43,false,false,near_mint,en,EUR"
-"Belisarius Cawl,40K,""Warhammer 40,000 Commander"",106,normal,rare,1,72280,102746f5-ba25-45f2-943e-55f9a4458fa7,0.33,false,false,near_mint,en,EUR"
-"Bastion Protector,40K,""Warhammer 40,000 Commander"",182,normal,rare,1,72504,ba272fed-6e1f-47a6-96f5-2ccefbccfa01,0.62,false,false,near_mint,en,EUR"
-"Callidus Assassin,40K,""Warhammer 40,000 Commander"",109,normal,rare,1,72289,18a5e38a-6c8c-427f-9143-59212e711f1c,6.03,false,false,near_mint,en,EUR"
-"Celestine, the Living Saint,40K,""Warhammer 40,000 Commander"",10,normal,rare,1,72471,a099cbd2-e92a-433a-bc51-0aa2f8fc6857,19.39,false,false,near_mint,en,EUR"
-"Cybernetica Datasmith,40K,""Warhammer 40,000 Commander"",114,normal,rare,1,72310,28624370-ba28-4879-bd43-0a00761e780d,0.21,false,false,near_mint,en,EUR"
-"The Flesh Is Weak,40K,""Warhammer 40,000 Commander"",122,normal,rare,1,72517,c382d8ee-6640-4db2-b618-73d315e43526,0.28,false,false,near_mint,en,EUR"
-"And They Shall Know No Fear,40K,""Warhammer 40,000 Commander"",9,normal,uncommon,1,72444,84d1bcef-907c-4c3a-8b52-6e633fa19667,9.36,false,false,near_mint,en,EUR"
-"The Golden Throne,40K,""Warhammer 40,000 Commander"",157,normal,rare,1,72581,fa515b78-f54d-4c65-a197-c860eaf2c780,5.38,false,false,near_mint,en,EUR"
-"Space Marine Devastator,40K,""Warhammer 40,000 Commander"",14,normal,rare,1,72361,4a821438-2b60-421e-9fd2-3ce3ec958eb7,0.63,false,false,near_mint,en,EUR"
-"Launch the Fleet,40K,""Warhammer 40,000 Commander"",188,normal,rare,1,72454,8f16c536-2c32-4758-899a-37c81aaea165,0.3,false,false,near_mint,en,EUR"
-"Fell the Mighty,40K,""Warhammer 40,000 Commander"",186,normal,rare,1,72435,7b28bdec-927a-4737-9b55-d5565c5c69f2,0.25,false,false,near_mint,en,EUR"
-"Thunderwolf Cavalry,40K,""Warhammer 40,000 Commander"",16,normal,uncommon,1,72339,3ec9bc4f-d8b8-4c68-bc4a-923b03a971cf,0.18,false,false,near_mint,en,EUR"
-"Darkwater Catacombs,40K,""Warhammer 40,000 Commander"",274,normal,rare,1,72470,a05ba40c-d2d9-47e0-824c-e1b1c8e27dd9,0.21,false,false,near_mint,en,EUR"
-"Plains,40K,""Warhammer 40,000 Commander"",306,normal,common,8,72337,3cf6c0d0-5de8-4909-aaaa-be46466fb370,0.12,false,false,near_mint,en,EUR"
-"Exotic Orchard,40K,""Warhammer 40,000 Commander"",278,normal,rare,1,72563,ec9c7011-694b-4705-b85c-bf4edf26e437,0.22,false,false,near_mint,en,EUR"
-"Vanguard Suppressor,40K,""Warhammer 40,000 Commander"",27,normal,rare,1,72326,3331d7dd-95c8-4813-a1eb-3966a2c08502,0.39,false,false,near_mint,en,EUR"
-"Exterminatus,40K,""Warhammer 40,000 Commander"",120,normal,rare,1,72291,196703b0-78bf-4f85-ae81-7335fe486982,0.33,false,false,near_mint,en,EUR"
-"Entrapment Maneuver,40K,""Warhammer 40,000 Commander"",185,normal,rare,1,72428,7643bb9a-49b3-4163-9b24-0fefffc69b56,0.23,false,false,near_mint,en,EUR"
-"Tranquil Cove,40K,""Warhammer 40,000 Commander"",303,normal,common,1,72518,c3fb0661-5df4-4935-8f44-a0f83a22a81c,0.21,false,false,near_mint,en,EUR"
-"For the Emperor!,40K,""Warhammer 40,000 Commander"",12,normal,rare,1,72333,3c3e9950-b0b9-425c-8b14-f6450882bd57,0.24,false,false,near_mint,en,EUR"
-"Mind Stone,40K,""Warhammer 40,000 Commander"",244,normal,uncommon,1,72520,c729606e-5b13-4699-b7c8-feca69c91f62,0.32,false,false,near_mint,en,EUR"
-"Memorial to Glory,40K,""Warhammer 40,000 Commander"",283,normal,uncommon,1,72344,409560cb-ecf1-4df2-91b2-75464dc1fe7d,0.14,false,false,near_mint,en,EUR"
-"Birth of the Imperium,40K,""Warhammer 40,000 Commander"",107,normal,rare,1,72305,26386d35-7768-4b06-afe4-823028d99a48,2.89,false,false,near_mint,en,EUR"
-"Port Town,40K,""Warhammer 40,000 Commander"",289,normal,rare,1,72490,b4ab193e-fc0a-4f02-90a2-ea6b3de757d2,0.23,false,false,near_mint,en,EUR"
-"Skycloud Expanse,40K,""Warhammer 40,000 Commander"",294,normal,rare,1,72320,2f829053-b1db-4e64-b243-5be6c93f8af7,0.22,false,false,near_mint,en,EUR"
-"Everflowing Chalice,40K,""Warhammer 40,000 Commander"",238,normal,rare,1,72397,65412ea8-d9c4-481f-ad9e-5fd589bdb2f7,0.34,false,false,near_mint,en,EUR"
-"Terramorphic Expanse,40K,""Warhammer 40,000 Commander"",301,normal,common,1,72402,67161521-aae6-4017-abf8-46f3a41b59bc,0.16,false,false,near_mint,en,EUR"
-"Inquisitor Eisenhorn,40K,""Warhammer 40,000 Commander"",127,normal,rare,1,72510,bdf1ccf7-e95f-4d08-be51-83fba78c4c2d,0.26,false,false,near_mint,en,EUR"
-"Inquisitor Greyfax,40K,""Warhammer 40,000 Commander"",173,foil,mythic,1,72290,1956cebe-bb71-45cc-b4ff-72ee3bb95c81,0.63,false,false,near_mint,en,EUR"
-"Inquisitorial Rosette,40K,""Warhammer 40,000 Commander"",159,normal,rare,1,72537,d44935ea-e8f4-45b1-8bce-e8665317d801,0.67,false,false,near_mint,en,EUR"
-"Island,40K,""Warhammer 40,000 Commander"",307,normal,common,5,72508,bcddeb71-3109-4a08-852f-b437c0a0c4ab,0.12,false,false,near_mint,en,EUR"
-"Mortify,40K,""Warhammer 40,000 Commander"",225,normal,uncommon,1,72265,02040930-4446-4c95-947b-9685c068ce4f,0.2,false,false,near_mint,en,EUR"
-"Commissar Severina Raine,40K,""Warhammer 40,000 Commander"",112,normal,rare,1,72457,94ba8b76-8de7-46da-b641-2503903f0f8a,13.82,false,false,near_mint,en,EUR"
-"Company Commander,40K,""Warhammer 40,000 Commander"",113,normal,rare,1,72456,91c7296e-ec77-4d46-8c53-b042332876a5,0.91,false,false,near_mint,en,EUR"
-"Martial Coup,40K,""Warhammer 40,000 Commander"",189,normal,rare,1,72364,4d7296ef-afe3-4d1d-9cbc-7ee7ad78f297,0.28,false,false,near_mint,en,EUR"
-"Marneus Calgar,40K,""Warhammer 40,000 Commander"",175,foil,mythic,1,72565,eda1fe2f-8a95-4690-ade7-13a5b7f58233,5.19,false,false,near_mint,en,EUR"
-"Arcane Sanctum,40K,""Warhammer 40,000 Commander"",264,normal,uncommon,1,72582,fa675944-8400-4468-bacc-a0d63c767e01,0.48,false,false,near_mint,en,EUR"
-"Neyam Shai Murad,40K,""Warhammer 40,000 Commander"",135,normal,rare,1,72299,211fdfd5-af23-4a16-a80f-1d9ba5ccd255,0.28,false,false,near_mint,en,EUR"
-"Knight Paladin,40K,""Warhammer 40,000 Commander"",160,normal,rare,1,72458,951cff7b-2b17-4903-be92-b9c066adfc83,3.54,false,false,near_mint,en,EUR"
-"Grey Knight Paragon,40K,""Warhammer 40,000 Commander"",13,normal,uncommon,1,72306,27b29b3f-1f99-4880-8f66-442fa5326150,0.29,false,false,near_mint,en,EUR"
-"Path of Ancestry,40K,""Warhammer 40,000 Commander"",287,normal,common,1,72376,5410dbe8-006d-4267-92f1-b9bd7b1069e3,0.22,false,false,near_mint,en,EUR"
-"Reaver Titan,40K,""Warhammer 40,000 Commander"",163,normal,rare,1,72541,dacc5e02-c21e-4a41-a704-5b87151a28c6,16.64,false,false,near_mint,en,EUR"
-"Primaris Eliminator,40K,""Warhammer 40,000 Commander"",50,normal,rare,1,72542,db7ab081-d6cd-4323-98bf-536e4df95115,2.94,false,false,near_mint,en,EUR"
-"Primaris Chaplain,40K,""Warhammer 40,000 Commander"",137,normal,uncommon,1,72383,5b7cb578-968c-408b-b58a-8f38cfc7696b,0.17,false,false,near_mint,en,EUR"
-"Prairie Stream,40K,""Warhammer 40,000 Commander"",290,normal,rare,1,72381,59dd0b5a-db67-4d77-8450-382212009cf4,0.22,false,false,near_mint,en,EUR"
-"Deny the Witch,40K,""Warhammer 40,000 Commander"",116,normal,uncommon,1,72536,d3e5b091-2aa7-4aca-9855-bb802d3d563e,0.27,false,false,near_mint,en,EUR"
-"Redemptor Dreadnought,40K,""Warhammer 40,000 Commander"",164,normal,rare,1,72420,73b09833-c60b-4818-baa6-0bee7558c6f8,0.21,false,false,near_mint,en,EUR"
-"Sanguinary Priest,40K,""Warhammer 40,000 Commander"",53,normal,uncommon,1,72570,f221eccc-3bd2-4629-aacc-7abf8c11449f,1.2,false,false,near_mint,en,EUR"
-"Swords to Plowshares,40K,""Warhammer 40,000 Commander"",190,normal,uncommon,1,72461,99263917-25ca-4d54-b1f9-d6d316747088,1.35,false,false,near_mint,en,EUR"
-"Sister of Silence,40K,""Warhammer 40,000 Commander"",26,normal,rare,1,72286,15d56042-db45-40dc-a197-e2b7a3e6ab06,0.34,false,false,near_mint,en,EUR"
-"Skullclamp,40K,""Warhammer 40,000 Commander"",248,normal,uncommon,1,72267,04733881-38a3-404c-837f-fad3fc5a5647,7.42,false,false,near_mint,en,EUR"
-"Space Marine Scout,40K,""Warhammer 40,000 Commander"",15,normal,uncommon,1,72296,1d7c6801-2c75-435c-a16b-a30b8c3a6be2,0.21,false,false,near_mint,en,EUR"
-"Epistolary Librarian,40K,""Warhammer 40,000 Commander"",118,normal,rare,1,72512,c109ab72-2293-4c7e-bc68-62da268d2562,0.29,false,false,near_mint,en,EUR"
-"Sicarian Infiltrator,40K,""Warhammer 40,000 Commander"",25,normal,uncommon,1,72526,cc0aa0eb-dc26-49d8-bbff-74fb3d597a72,3.44,false,false,near_mint,en,EUR"
-"Evolving Wilds,40K,""Warhammer 40,000 Commander"",277,normal,common,1,72288,184e5367-e901-4a0b-a2f5-06db42e6cf31,0.13,false,false,near_mint,en,EUR"
-"Sol Ring,40K,""Warhammer 40,000 Commander"",251,normal,uncommon,1,72562,ebfcda26-1f28-4d60-bc7b-8c0bafc6b132,1.93,false,false,near_mint,en,EUR"
-"Sister Hospitaller,40K,""Warhammer 40,000 Commander"",141,normal,rare,1,72584,fb086307-b089-45ba-81d3-789ed35dc5b8,7.41,false,false,near_mint,en,EUR"
-"Sister Repentia,40K,""Warhammer 40,000 Commander"",142,normal,rare,1,72423,743c5111-9e94-4f08-9c01-92411e8a2317,0.35,false,false,near_mint,en,EUR"
-"Commander's Sphere,40K,""Warhammer 40,000 Commander"",233,normal,common,1,72433,790882a8-a1b7-421a-b840-045bd12a0a55,0.18,false,false,near_mint,en,EUR"
-"Hour of Reckoning,40K,""Warhammer 40,000 Commander"",187,normal,rare,1,72451,8d787021-6a02-4394-875d-ef529fa3d38e,0.26,false,false,near_mint,en,EUR"
-"Assault Intercessor,40K,""Warhammer 40,000 Commander"",104,normal,rare,1,72264,019b1f71-2d99-47da-8df3-237ef25a4916,0.77,false,false,near_mint,en,EUR"
-"Swamp,40K,""Warhammer 40,000 Commander"",314,normal,common,7,72378,575fadbe-75a6-4183-be46-53de6af74790,0.14,false,false,near_mint,en,EUR"
-"Talisman of Dominance,40K,""Warhammer 40,000 Commander"",254,normal,uncommon,1,72588,fea79e31-97f9-4131-8101-99f7265758dd,0.96,false,false,near_mint,en,EUR"
-"Talisman of Hierarchy,40K,""Warhammer 40,000 Commander"",256,normal,uncommon,1,72569,f1be61f4-84e6-4d7b-8755-2651edfe7c92,1.65,false,false,near_mint,en,EUR"
-"Talisman of Progress,40K,""Warhammer 40,000 Commander"",258,normal,uncommon,1,72315,2c42da3b-8ff6-46b9-81c9-d18adf6dfd40,0.53,false,false,near_mint,en,EUR"
-"Thunderhawk Gunship,40K,""Warhammer 40,000 Commander"",167,normal,rare,1,72404,6790720a-e1f3-4533-acd8-b002c8e91929,11.98,false,false,near_mint,en,EUR"
-"Choked Estuary,40K,""Warhammer 40,000 Commander"",268,normal,rare,1,72324,313bef3c-fe65-4959-8170-477ea9cd5e48,0.33,false,false,near_mint,en,EUR"
-"Dismal Backwater,40K,""Warhammer 40,000 Commander"",276,normal,common,1,72450,8c8099d6-44c1-48c7-ae87-985160eee63c,0.19,false,false,near_mint,en,EUR"
-"Triumph of Saint Katherine,40K,""Warhammer 40,000 Commander"",17,normal,rare,1,72527,cc5338e1-26a6-466e-9393-788f69370e15,6.45,false,false,near_mint,en,EUR"
-"Ultramarines Honour Guard,40K,""Warhammer 40,000 Commander"",18,normal,rare,1,72453,8e1915c3-6dda-49fd-be5e-9d4713f00cfd,1.68,false,false,near_mint,en,EUR"
-"Collective Effort,40K,""Warhammer 40,000 Commander"",183,normal,rare,1,72426,75958e64-6d12-4c80-b321-9bc0cceb17fd,0.32,false,false,near_mint,en,EUR"
-"Scoured Barrens,40K,""Warhammer 40,000 Commander"",293,normal,common,1,72314,2b7d85b4-3abc-49a8-8ff2-715ad8cbf4ab,0.14,false,false,near_mint,en,EUR"
-"Sunken Hollow,40K,""Warhammer 40,000 Commander"",295,normal,rare,1,72448,8b195fba-e0e0-4f89-b667-8d54286dd6fe,0.29,false,false,near_mint,en,EUR"
-"Defenders of Humanity,40K,""Warhammer 40,000 Commander"",11,normal,rare,1,72357,495c6b21-3e2b-417c-9387-6747993cbffe,0.34,false,false,near_mint,en,EUR"
-"Vexilus Praetor,40K,""Warhammer 40,000 Commander"",19,normal,rare,1,72398,6584cc58-c88e-4cf6-9983-5e08fd8609c3,5.76,false,false,near_mint,en,EUR"
-"Zephyrim,40K,""Warhammer 40,000 Commander"",20,normal,rare,1,72575,f78f5b9a-bd80-41e9-873e-826628dc44a7,0.37,false,false,near_mint,en,EUR"
+"Ã‰omer, King of Rohan",LTC,Tales of Middle-earth Commander,52,normal,rare,1,83113,5f48930a-d7bd-410b-995a-4e2837aabb25,0.44,false,false,near_mint,en,EUR
+"Ã‰owyn, Shieldmaiden",LTC,Tales of Middle-earth Commander,1,foil,mythic,1,83570,dd4a00ff-2206-4e12-a0ab-61ed82c9e6c5,0.27,false,false,near_mint,en,EUR
+Deploy to the Front,40K,"Warhammer 40,000 Commander",184,normal,rare,1,72483,aa5f9580-4ee8-49bc-9524-44072d6b3a8b,0.33,false,false,near_mint,en,EUR
+Arco-Flagellant,40K,"Warhammer 40,000 Commander",29,normal,rare,1,72274,0894d21c-d44c-4c7c-8693-f32dde67b336,0.27,false,false,near_mint,en,EUR
+Arcane Signet,40K,"Warhammer 40,000 Commander",229,normal,common,1,72443,8191befc-dcf7-4cb8-89ca-3461d55e4682,0.86,false,false,near_mint,en,EUR
+Ash Barrens,40K,"Warhammer 40,000 Commander",265,normal,uncommon,1,72308,2816a820-bde0-404a-ba2c-86fbe461e01b,0.13,false,false,near_mint,en,EUR
+Reconnaissance Mission,40K,"Warhammer 40,000 Commander",193,normal,uncommon,1,72263,009f7603-a6a3-461b-bc73-810db1ab2898,1.57,false,false,near_mint,en,EUR
+Utter End,40K,"Warhammer 40,000 Commander",226,normal,rare,1,72416,70504cce-2525-472b-b189-2cca86157ab3,0.22,false,false,near_mint,en,EUR
+Command Tower,40K,"Warhammer 40,000 Commander",272,normal,common,1,72515,c1bda37b-7702-462e-8851-af6917b78ee1,0.43,false,false,near_mint,en,EUR
+Belisarius Cawl,40K,"Warhammer 40,000 Commander",106,normal,rare,1,72280,102746f5-ba25-45f2-943e-55f9a4458fa7,0.33,false,false,near_mint,en,EUR
+Bastion Protector,40K,"Warhammer 40,000 Commander",182,normal,rare,1,72504,ba272fed-6e1f-47a6-96f5-2ccefbccfa01,0.62,false,false,near_mint,en,EUR
+Callidus Assassin,40K,"Warhammer 40,000 Commander",109,normal,rare,1,72289,18a5e38a-6c8c-427f-9143-59212e711f1c,6.03,false,false,near_mint,en,EUR
+"Celestine, the Living Saint",40K,"Warhammer 40,000 Commander",10,normal,rare,1,72471,a099cbd2-e92a-433a-bc51-0aa2f8fc6857,19.39,false,false,near_mint,en,EUR
+Cybernetica Datasmith,40K,"Warhammer 40,000 Commander",114,normal,rare,1,72310,28624370-ba28-4879-bd43-0a00761e780d,0.21,false,false,near_mint,en,EUR
+The Flesh Is Weak,40K,"Warhammer 40,000 Commander",122,normal,rare,1,72517,c382d8ee-6640-4db2-b618-73d315e43526,0.28,false,false,near_mint,en,EUR
+And They Shall Know No Fear,40K,"Warhammer 40,000 Commander",9,normal,uncommon,1,72444,84d1bcef-907c-4c3a-8b52-6e633fa19667,9.36,false,false,near_mint,en,EUR
+The Golden Throne,40K,"Warhammer 40,000 Commander",157,normal,rare,1,72581,fa515b78-f54d-4c65-a197-c860eaf2c780,5.38,false,false,near_mint,en,EUR
+Space Marine Devastator,40K,"Warhammer 40,000 Commander",14,normal,rare,1,72361,4a821438-2b60-421e-9fd2-3ce3ec958eb7,0.63,false,false,near_mint,en,EUR
+Launch the Fleet,40K,"Warhammer 40,000 Commander",188,normal,rare,1,72454,8f16c536-2c32-4758-899a-37c81aaea165,0.3,false,false,near_mint,en,EUR
+Fell the Mighty,40K,"Warhammer 40,000 Commander",186,normal,rare,1,72435,7b28bdec-927a-4737-9b55-d5565c5c69f2,0.25,false,false,near_mint,en,EUR
+Thunderwolf Cavalry,40K,"Warhammer 40,000 Commander",16,normal,uncommon,1,72339,3ec9bc4f-d8b8-4c68-bc4a-923b03a971cf,0.18,false,false,near_mint,en,EUR
+Darkwater Catacombs,40K,"Warhammer 40,000 Commander",274,normal,rare,1,72470,a05ba40c-d2d9-47e0-824c-e1b1c8e27dd9,0.21,false,false,near_mint,en,EUR
+Plains,40K,"Warhammer 40,000 Commander",306,normal,common,8,72337,3cf6c0d0-5de8-4909-aaaa-be46466fb370,0.12,false,false,near_mint,en,EUR
+Exotic Orchard,40K,"Warhammer 40,000 Commander",278,normal,rare,1,72563,ec9c7011-694b-4705-b85c-bf4edf26e437,0.22,false,false,near_mint,en,EUR
+Vanguard Suppressor,40K,"Warhammer 40,000 Commander",27,normal,rare,1,72326,3331d7dd-95c8-4813-a1eb-3966a2c08502,0.39,false,false,near_mint,en,EUR
+Exterminatus,40K,"Warhammer 40,000 Commander",120,normal,rare,1,72291,196703b0-78bf-4f85-ae81-7335fe486982,0.33,false,false,near_mint,en,EUR
+Entrapment Maneuver,40K,"Warhammer 40,000 Commander",185,normal,rare,1,72428,7643bb9a-49b3-4163-9b24-0fefffc69b56,0.23,false,false,near_mint,en,EUR
+Tranquil Cove,40K,"Warhammer 40,000 Commander",303,normal,common,1,72518,c3fb0661-5df4-4935-8f44-a0f83a22a81c,0.21,false,false,near_mint,en,EUR
+For the Emperor!,40K,"Warhammer 40,000 Commander",12,normal,rare,1,72333,3c3e9950-b0b9-425c-8b14-f6450882bd57,0.24,false,false,near_mint,en,EUR
+Mind Stone,40K,"Warhammer 40,000 Commander",244,normal,uncommon,1,72520,c729606e-5b13-4699-b7c8-feca69c91f62,0.32,false,false,near_mint,en,EUR
+Memorial to Glory,40K,"Warhammer 40,000 Commander",283,normal,uncommon,1,72344,409560cb-ecf1-4df2-91b2-75464dc1fe7d,0.14,false,false,near_mint,en,EUR
+Birth of the Imperium,40K,"Warhammer 40,000 Commander",107,normal,rare,1,72305,26386d35-7768-4b06-afe4-823028d99a48,2.89,false,false,near_mint,en,EUR
+Port Town,40K,"Warhammer 40,000 Commander",289,normal,rare,1,72490,b4ab193e-fc0a-4f02-90a2-ea6b3de757d2,0.23,false,false,near_mint,en,EUR
+Skycloud Expanse,40K,"Warhammer 40,000 Commander",294,normal,rare,1,72320,2f829053-b1db-4e64-b243-5be6c93f8af7,0.22,false,false,near_mint,en,EUR
+Everflowing Chalice,40K,"Warhammer 40,000 Commander",238,normal,rare,1,72397,65412ea8-d9c4-481f-ad9e-5fd589bdb2f7,0.34,false,false,near_mint,en,EUR
+Terramorphic Expanse,40K,"Warhammer 40,000 Commander",301,normal,common,1,72402,67161521-aae6-4017-abf8-46f3a41b59bc,0.16,false,false,near_mint,en,EUR
+Inquisitor Eisenhorn,40K,"Warhammer 40,000 Commander",127,normal,rare,1,72510,bdf1ccf7-e95f-4d08-be51-83fba78c4c2d,0.26,false,false,near_mint,en,EUR
+Inquisitor Greyfax,40K,"Warhammer 40,000 Commander",173,foil,mythic,1,72290,1956cebe-bb71-45cc-b4ff-72ee3bb95c81,0.63,false,false,near_mint,en,EUR
+Inquisitorial Rosette,40K,"Warhammer 40,000 Commander",159,normal,rare,1,72537,d44935ea-e8f4-45b1-8bce-e8665317d801,0.67,false,false,near_mint,en,EUR
+Island,40K,"Warhammer 40,000 Commander",307,normal,common,5,72508,bcddeb71-3109-4a08-852f-b437c0a0c4ab,0.12,false,false,near_mint,en,EUR
+Mortify,40K,"Warhammer 40,000 Commander",225,normal,uncommon,1,72265,02040930-4446-4c95-947b-9685c068ce4f,0.2,false,false,near_mint,en,EUR
+Commissar Severina Raine,40K,"Warhammer 40,000 Commander",112,normal,rare,1,72457,94ba8b76-8de7-46da-b641-2503903f0f8a,13.82,false,false,near_mint,en,EUR
+Company Commander,40K,"Warhammer 40,000 Commander",113,normal,rare,1,72456,91c7296e-ec77-4d46-8c53-b042332876a5,0.91,false,false,near_mint,en,EUR
+Martial Coup,40K,"Warhammer 40,000 Commander",189,normal,rare,1,72364,4d7296ef-afe3-4d1d-9cbc-7ee7ad78f297,0.28,false,false,near_mint,en,EUR
+Marneus Calgar,40K,"Warhammer 40,000 Commander",175,foil,mythic,1,72565,eda1fe2f-8a95-4690-ade7-13a5b7f58233,5.19,false,false,near_mint,en,EUR
+Arcane Sanctum,40K,"Warhammer 40,000 Commander",264,normal,uncommon,1,72582,fa675944-8400-4468-bacc-a0d63c767e01,0.48,false,false,near_mint,en,EUR
+Neyam Shai Murad,40K,"Warhammer 40,000 Commander",135,normal,rare,1,72299,211fdfd5-af23-4a16-a80f-1d9ba5ccd255,0.28,false,false,near_mint,en,EUR
+Knight Paladin,40K,"Warhammer 40,000 Commander",160,normal,rare,1,72458,951cff7b-2b17-4903-be92-b9c066adfc83,3.54,false,false,near_mint,en,EUR
+Grey Knight Paragon,40K,"Warhammer 40,000 Commander",13,normal,uncommon,1,72306,27b29b3f-1f99-4880-8f66-442fa5326150,0.29,false,false,near_mint,en,EUR
+Path of Ancestry,40K,"Warhammer 40,000 Commander",287,normal,common,1,72376,5410dbe8-006d-4267-92f1-b9bd7b1069e3,0.22,false,false,near_mint,en,EUR
+Reaver Titan,40K,"Warhammer 40,000 Commander",163,normal,rare,1,72541,dacc5e02-c21e-4a41-a704-5b87151a28c6,16.64,false,false,near_mint,en,EUR
+Primaris Eliminator,40K,"Warhammer 40,000 Commander",50,normal,rare,1,72542,db7ab081-d6cd-4323-98bf-536e4df95115,2.94,false,false,near_mint,en,EUR
+Primaris Chaplain,40K,"Warhammer 40,000 Commander",137,normal,uncommon,1,72383,5b7cb578-968c-408b-b58a-8f38cfc7696b,0.17,false,false,near_mint,en,EUR
+Prairie Stream,40K,"Warhammer 40,000 Commander",290,normal,rare,1,72381,59dd0b5a-db67-4d77-8450-382212009cf4,0.22,false,false,near_mint,en,EUR
+Deny the Witch,40K,"Warhammer 40,000 Commander",116,normal,uncommon,1,72536,d3e5b091-2aa7-4aca-9855-bb802d3d563e,0.27,false,false,near_mint,en,EUR
+Redemptor Dreadnought,40K,"Warhammer 40,000 Commander",164,normal,rare,1,72420,73b09833-c60b-4818-baa6-0bee7558c6f8,0.21,false,false,near_mint,en,EUR
+Sanguinary Priest,40K,"Warhammer 40,000 Commander",53,normal,uncommon,1,72570,f221eccc-3bd2-4629-aacc-7abf8c11449f,1.2,false,false,near_mint,en,EUR
+Swords to Plowshares,40K,"Warhammer 40,000 Commander",190,normal,uncommon,1,72461,99263917-25ca-4d54-b1f9-d6d316747088,1.35,false,false,near_mint,en,EUR
+Sister of Silence,40K,"Warhammer 40,000 Commander",26,normal,rare,1,72286,15d56042-db45-40dc-a197-e2b7a3e6ab06,0.34,false,false,near_mint,en,EUR
+Skullclamp,40K,"Warhammer 40,000 Commander",248,normal,uncommon,1,72267,04733881-38a3-404c-837f-fad3fc5a5647,7.42,false,false,near_mint,en,EUR
+Space Marine Scout,40K,"Warhammer 40,000 Commander",15,normal,uncommon,1,72296,1d7c6801-2c75-435c-a16b-a30b8c3a6be2,0.21,false,false,near_mint,en,EUR
+Epistolary Librarian,40K,"Warhammer 40,000 Commander",118,normal,rare,1,72512,c109ab72-2293-4c7e-bc68-62da268d2562,0.29,false,false,near_mint,en,EUR
+Sicarian Infiltrator,40K,"Warhammer 40,000 Commander",25,normal,uncommon,1,72526,cc0aa0eb-dc26-49d8-bbff-74fb3d597a72,3.44,false,false,near_mint,en,EUR
+Evolving Wilds,40K,"Warhammer 40,000 Commander",277,normal,common,1,72288,184e5367-e901-4a0b-a2f5-06db42e6cf31,0.13,false,false,near_mint,en,EUR
+Sol Ring,40K,"Warhammer 40,000 Commander",251,normal,uncommon,1,72562,ebfcda26-1f28-4d60-bc7b-8c0bafc6b132,1.93,false,false,near_mint,en,EUR
+Sister Hospitaller,40K,"Warhammer 40,000 Commander",141,normal,rare,1,72584,fb086307-b089-45ba-81d3-789ed35dc5b8,7.41,false,false,near_mint,en,EUR
+Sister Repentia,40K,"Warhammer 40,000 Commander",142,normal,rare,1,72423,743c5111-9e94-4f08-9c01-92411e8a2317,0.35,false,false,near_mint,en,EUR
+Commander's Sphere,40K,"Warhammer 40,000 Commander",233,normal,common,1,72433,790882a8-a1b7-421a-b840-045bd12a0a55,0.18,false,false,near_mint,en,EUR
+Hour of Reckoning,40K,"Warhammer 40,000 Commander",187,normal,rare,1,72451,8d787021-6a02-4394-875d-ef529fa3d38e,0.26,false,false,near_mint,en,EUR
+Assault Intercessor,40K,"Warhammer 40,000 Commander",104,normal,rare,1,72264,019b1f71-2d99-47da-8df3-237ef25a4916,0.77,false,false,near_mint,en,EUR
+Swamp,40K,"Warhammer 40,000 Commander",314,normal,common,7,72378,575fadbe-75a6-4183-be46-53de6af74790,0.14,false,false,near_mint,en,EUR
+Talisman of Dominance,40K,"Warhammer 40,000 Commander",254,normal,uncommon,1,72588,fea79e31-97f9-4131-8101-99f7265758dd,0.96,false,false,near_mint,en,EUR
+Talisman of Hierarchy,40K,"Warhammer 40,000 Commander",256,normal,uncommon,1,72569,f1be61f4-84e6-4d7b-8755-2651edfe7c92,1.65,false,false,near_mint,en,EUR
+Talisman of Progress,40K,"Warhammer 40,000 Commander",258,normal,uncommon,1,72315,2c42da3b-8ff6-46b9-81c9-d18adf6dfd40,0.53,false,false,near_mint,en,EUR
+Thunderhawk Gunship,40K,"Warhammer 40,000 Commander",167,normal,rare,1,72404,6790720a-e1f3-4533-acd8-b002c8e91929,11.98,false,false,near_mint,en,EUR
+Choked Estuary,40K,"Warhammer 40,000 Commander",268,normal,rare,1,72324,313bef3c-fe65-4959-8170-477ea9cd5e48,0.33,false,false,near_mint,en,EUR
+Dismal Backwater,40K,"Warhammer 40,000 Commander",276,normal,common,1,72450,8c8099d6-44c1-48c7-ae87-985160eee63c,0.19,false,false,near_mint,en,EUR
+Triumph of Saint Katherine,40K,"Warhammer 40,000 Commander",17,normal,rare,1,72527,cc5338e1-26a6-466e-9393-788f69370e15,6.45,false,false,near_mint,en,EUR
+Ultramarines Honour Guard,40K,"Warhammer 40,000 Commander",18,normal,rare,1,72453,8e1915c3-6dda-49fd-be5e-9d4713f00cfd,1.68,false,false,near_mint,en,EUR
+Collective Effort,40K,"Warhammer 40,000 Commander",183,normal,rare,1,72426,75958e64-6d12-4c80-b321-9bc0cceb17fd,0.32,false,false,near_mint,en,EUR
+Scoured Barrens,40K,"Warhammer 40,000 Commander",293,normal,common,1,72314,2b7d85b4-3abc-49a8-8ff2-715ad8cbf4ab,0.14,false,false,near_mint,en,EUR
+Sunken Hollow,40K,"Warhammer 40,000 Commander",295,normal,rare,1,72448,8b195fba-e0e0-4f89-b667-8d54286dd6fe,0.29,false,false,near_mint,en,EUR
+Defenders of Humanity,40K,"Warhammer 40,000 Commander",11,normal,rare,1,72357,495c6b21-3e2b-417c-9387-6747993cbffe,0.34,false,false,near_mint,en,EUR
+Vexilus Praetor,40K,"Warhammer 40,000 Commander",19,normal,rare,1,72398,6584cc58-c88e-4cf6-9983-5e08fd8609c3,5.76,false,false,near_mint,en,EUR
+Zephyrim,40K,"Warhammer 40,000 Commander",20,normal,rare,1,72575,f78f5b9a-bd80-41e9-873e-826628dc44a7,0.37,false,false,near_mint,en,EUR
 Rat Rogue,TNEO,Kamigawa: Neon Dynasty Tokens,5,normal,common,1,67114,695f72ea-13e6-40ab-afc7-55657701c82d,0.18,false,false,near_mint,en,EUR
 Plains,NEO,Kamigawa: Neon Dynasty,294,normal,common,1,66488,7a76d8ee-28fc-49ac-951c-a4d29822f91e,1.21,false,false,near_mint,en,EUR
 Kami of Transience,NEO,Kamigawa: Neon Dynasty,197,normal,rare,1,66736,7d038a59-e589-45f4-b5ef-6d2f9875d560,0.3,false,false,near_mint,en,EUR
@@ -357,10 +357,10 @@ Mukotai Ambusher,NEO,Kamigawa: Neon Dynasty,112,normal,common,1,66639,0adf3293-c
 Brute Suit,NEO,Kamigawa: Neon Dynasty,241,normal,common,2,66866,363cb43a-e358-4380-a42f-9b095ca522c6,0.05,false,false,near_mint,en,EUR
 Seven-Tail Mentor,NEO,Kamigawa: Neon Dynasty,313,normal,common,1,66509,267efff1-cbe6-40b0-959e-72b81cbda1d0,0.05,false,false,near_mint,en,EUR
 Last March of the Ents,LTR,The Lord of the Rings: Tales of Middle-earth,172,normal,mythic,1,83227,7f1b99e0-ffb7-4f98-8ee5-4357bb79dd2e,18.26,false,false,near_mint,en,EUR
-Nazgûl,LTR,The Lord of the Rings: Tales of Middle-earth,338,normal,uncommon,1,83465,bf96c268-c86b-4d5e-bf04-200c427e5fa5,11.58,false,false,near_mint,en,EUR
-Ghalta, Primal Hunger,FDN,Foundations,222,normal,rare,1,100635,6a9c39e4-a8cf-42dd-8d0e-45634b335546,0.69,false,false,near_mint,en,EUR
+NazgÃ»l,LTR,The Lord of the Rings: Tales of Middle-earth,338,normal,uncommon,1,83465,bf96c268-c86b-4d5e-bf04-200c427e5fa5,11.58,false,false,near_mint,en,EUR
+"Ghalta, Primal Hunger",FDN,Foundations,222,normal,rare,1,100635,6a9c39e4-a8cf-42dd-8d0e-45634b335546,0.69,false,false,near_mint,en,EUR
 Misty Rainforest,SPG,Special Guests,111,normal,mythic,1,104321,894105c4-d3ce-4d38-855b-24aa47b112c1,30.94,false,false,near_mint,en,EUR
-The Balrog, Durin's Bane,LTR,The Lord of the Rings: Tales of Middle-earth,195,normal,rare,1,83028,416880c3-cefb-45ea-bcc3-2ec7a70c8097,0.47,false,false,near_mint,en,EUR
+"The Balrog, Durin's Bane",LTR,The Lord of the Rings: Tales of Middle-earth,195,normal,rare,1,83028,416880c3-cefb-45ea-bcc3-2ec7a70c8097,0.47,false,false,near_mint,en,EUR
 Angler Turtle,CLB,Commander Legends: Battle for Baldur's Gate,713,normal,rare,2,69605,9c8d57fc-9695-45df-8b88-0048330608bd,0.16,false,false,near_mint,en,EUR
 Agitator Ant,CLB,Commander Legends: Battle for Baldur's Gate,776,normal,rare,1,69700,e885f56a-a1e8-4289-bbf5-3b156e53f7db,0.2,false,false,near_mint,en,EUR
 Arcane Signet,CLB,Commander Legends: Battle for Baldur's Gate,298,normal,uncommon,1,69049,5b245a5b-5a99-4d22-99ef-3f5bf49c3262,0.45,false,false,near_mint,en,EUR
@@ -368,7 +368,7 @@ Ash Barrens,CLB,Commander Legends: Battle for Baldur's Gate,880,normal,uncommon,
 Astral Dragon,CLB,Commander Legends: Battle for Baldur's Gate,664,normal,rare,1,69546,670fbc63-4c9b-4e57-b53e-4ca4d7a224ba,19.13,false,false,near_mint,en,EUR
 Stuffy Doll,CLB,Commander Legends: Battle for Baldur's Gate,875,normal,rare,1,69601,978c2c7d-6898-4be2-aed7-e673210ce654,1.48,false,false,near_mint,en,EUR
 Avatar of Slaughter,CLB,Commander Legends: Battle for Baldur's Gate,779,normal,rare,1,69567,7951ef42-8e14-4920-bf8a-75ab48e8645a,0.24,false,false,near_mint,en,EUR
-Baeloth Barrityl, Entertainer,CLB,Commander Legends: Battle for Baldur's Gate,655,foil,mythic,1,69705,ec983aac-9eda-4086-ad7e-34da9b2987cc,8.62,false,false,near_mint,en,EUR
+"Baeloth Barrityl, Entertainer",CLB,Commander Legends: Battle for Baldur's Gate,655,foil,mythic,1,69705,ec983aac-9eda-4086-ad7e-34da9b2987cc,8.62,false,false,near_mint,en,EUR
 Command Tower,CLB,Commander Legends: Battle for Baldur's Gate,351,normal,common,2,69121,7eafe88e-ab38-442c-b147-bb01cc81178d,0.21,false,false,near_mint,en,EUR
 Domineering Will,CLB,Commander Legends: Battle for Baldur's Gate,719,normal,rare,2,69701,e8c3836d-a08b-424c-aefe-e1585161edf7,0.42,false,false,near_mint,en,EUR
 Blasphemous Act,CLB,Commander Legends: Battle for Baldur's Gate,780,normal,rare,1,69638,ba975f60-ca29-4fc8-b2f0-416be395f200,2.25,false,false,near_mint,en,EUR
@@ -378,10 +378,10 @@ Chaos Dragon,CLB,Commander Legends: Battle for Baldur's Gate,784,normal,rare,2,6
 Chaos Warp,CLB,Commander Legends: Battle for Baldur's Gate,785,normal,rare,1,69594,8d8ee7b0-ea23-4657-a171-ac8a1308cc4d,0.37,false,false,near_mint,en,EUR
 The Akroan War,CLB,Commander Legends: Battle for Baldur's Gate,777,normal,rare,1,69565,78161e60-878a-45a2-aced-40b739bd0a07,0.22,false,false,near_mint,en,EUR
 Thunder Dragon,CLB,Commander Legends: Battle for Baldur's Gate,810,normal,rare,1,69609,9ff75ff4-495f-4a0c-9d98-69eff1b3fa32,0.36,false,false,near_mint,en,EUR
-Drakuseth, Maw of Flames,CLB,Commander Legends: Battle for Baldur's Gate,790,normal,rare,1,69440,1c8429f1-1a91-4f29-8d56-4c061f21c183,0.51,false,false,near_mint,en,EUR
+"Drakuseth, Maw of Flames",CLB,Commander Legends: Battle for Baldur's Gate,790,normal,rare,1,69440,1c8429f1-1a91-4f29-8d56-4c061f21c183,0.51,false,false,near_mint,en,EUR
 Solemn Simulacrum,CLB,Commander Legends: Battle for Baldur's Gate,872,normal,rare,1,69534,5fec09ec-a300-4d3c-8054-0250bb70b93b,0.41,false,false,near_mint,en,EUR
 Fellwar Stone,CLB,Commander Legends: Battle for Baldur's Gate,860,normal,uncommon,1,69506,4bca6877-4e1d-4ecb-8812-d75d3470ffee,1.13,false,false,near_mint,en,EUR
-Firkraag, Cunning Instigator,CLB,Commander Legends: Battle for Baldur's Gate,648,foil,mythic,1,69242,b55e624b-6f6a-42ae-89aa-0cc62ee55a31,7.35,false,false,near_mint,en,EUR
+"Firkraag, Cunning Instigator",CLB,Commander Legends: Battle for Baldur's Gate,648,foil,mythic,1,69242,b55e624b-6f6a-42ae-89aa-0cc62ee55a31,7.35,false,false,near_mint,en,EUR
 Curse of Verbosity,CLB,Commander Legends: Battle for Baldur's Gate,717,normal,uncommon,1,69731,ff611add-0b1b-4008-a78b-e793ccb38260,0.6,false,false,near_mint,en,EUR
 Curse of the Swine,CLB,Commander Legends: Battle for Baldur's Gate,716,normal,rare,1,69610,a0ef264e-f987-422e-aac1-ae4963c797f5,0.19,false,false,near_mint,en,EUR
 Curse of Opulence,CLB,Commander Legends: Battle for Baldur's Gate,786,normal,uncommon,1,69496,440acae3-aadb-40f0-a608-d1d93578c6b0,0.84,false,false,near_mint,en,EUR
@@ -398,8 +398,8 @@ Dragon's Hoard,CLB,Commander Legends: Battle for Baldur's Gate,858,normal,rare,1
 Island,CLB,Commander Legends: Battle for Baldur's Gate,455,normal,common,13,69400,ff3ffe47-53a3-42ec-ae89-afc79793380d,0.12,false,false,near_mint,en,EUR
 Izzet Boilerworks,CLB,Commander Legends: Battle for Baldur's Gate,897,normal,uncommon,1,69649,c86e42c6-342b-443f-9b99-a68cf536ff45,0.36,false,false,near_mint,en,EUR
 Izzet Signet,CLB,Commander Legends: Battle for Baldur's Gate,863,normal,common,1,69607,9ddc741b-18d8-41b1-b61b-e2249cad8526,0.41,false,false,near_mint,en,EUR
-Kazuul, Tyrant of the Cliffs,CLB,Commander Legends: Battle for Baldur's Gate,800,normal,rare,1,69508,4ce569cd-964e-44d6-a155-5a853ccc1478,0.25,false,false,near_mint,en,EUR
-Keiga, the Tide Star,CLB,Commander Legends: Battle for Baldur's Gate,725,normal,rare,1,69497,44d544dc-1d2a-4b33-ae62-d0e0217db0a2,0.47,false,false,near_mint,en,EUR
+"Kazuul, Tyrant of the Cliffs",CLB,Commander Legends: Battle for Baldur's Gate,800,normal,rare,1,69508,4ce569cd-964e-44d6-a155-5a853ccc1478,0.25,false,false,near_mint,en,EUR
+"Keiga, the Tide Star",CLB,Commander Legends: Battle for Baldur's Gate,725,normal,rare,1,69497,44d544dc-1d2a-4b33-ae62-d0e0217db0a2,0.47,false,false,near_mint,en,EUR
 Chain Reaction,CLB,Commander Legends: Battle for Baldur's Gate,783,normal,rare,1,69596,92ca793e-a54a-4e8f-a87d-f0dc4f178412,0.2,false,false,near_mint,en,EUR
 Kher Keep,CLB,Commander Legends: Battle for Baldur's Gate,899,normal,rare,1,69693,e44bba8e-59e9-4a06-b845-c3ba7625ff58,0.25,false,false,near_mint,en,EUR
 Clan Crafter,CLB,Commander Legends: Battle for Baldur's Gate,651,foil,mythic,2,69487,3e82f96f-bd2b-4672-b729-c44c943fcac9,0.35,false,false,near_mint,en,EUR
@@ -409,7 +409,7 @@ Bothersome Quasit,CLB,Commander Legends: Battle for Baldur's Gate,674,normal,rar
 Myriad Landscape,CLB,Commander Legends: Battle for Baldur's Gate,904,normal,uncommon,1,69456,276f49f9-019b-44cb-a551-0fba9851ecc7,0.19,false,false,near_mint,en,EUR
 Territorial Hellkite,CLB,Commander Legends: Battle for Baldur's Gate,809,normal,rare,1,69451,21618490-f33b-4607-ac61-25df8cb096a1,0.36,false,false,near_mint,en,EUR
 Midnight Clock,CLB,Commander Legends: Battle for Baldur's Gate,727,normal,rare,1,69562,72ca85ed-3870-4ba4-abe7-cdcab3cad122,0.28,false,false,near_mint,en,EUR
-Niv-Mizzet, Parun,CLB,Commander Legends: Battle for Baldur's Gate,851,normal,rare,1,69464,3035a97f-5104-4b56-84a4-5206e75607fc,1.68,false,false,near_mint,en,EUR
+"Niv-Mizzet, Parun",CLB,Commander Legends: Battle for Baldur's Gate,851,normal,rare,1,69464,3035a97f-5104-4b56-84a4-5206e75607fc,1.68,false,false,near_mint,en,EUR
 Path of Ancestry,CLB,Commander Legends: Battle for Baldur's Gate,907,normal,common,1,69493,43710f35-c43f-48bf-82e1-64ba5c3fa03e,0.13,false,false,near_mint,en,EUR
 Hedron Archive,CLB,Commander Legends: Battle for Baldur's Gate,861,normal,uncommon,1,69482,3d76d25c-b962-43e4-aa6f-7c6e3bd79f16,0.15,false,false,near_mint,en,EUR
 Prismari Campus,CLB,Commander Legends: Battle for Baldur's Gate,909,normal,common,2,69645,bf90c219-508f-49af-a7f9-540021d49d8c,0.18,false,false,near_mint,en,EUR
@@ -417,7 +417,7 @@ Propaganda,CLB,Commander Legends: Battle for Baldur's Gate,730,normal,uncommon,1
 Psychic Impetus,CLB,Commander Legends: Battle for Baldur's Gate,89,normal,common,1,68927,288e811e-7beb-4379-95a3-e5f4e759aa9d,0.07,false,false,near_mint,en,EUR
 Vengeful Ancestor,CLB,Commander Legends: Battle for Baldur's Gate,812,normal,rare,1,69616,a5dabc03-a706-4e84-83e4-dbd405dfb025,0.59,false,false,near_mint,en,EUR
 Rowan Kenrith,CLB,Commander Legends: Battle for Baldur's Gate,805,normal,mythic,1,69642,bcf0514e-63b3-4695-93ae-527524d48c25,0.36,false,false,near_mint,en,EUR
-Ryusei, the Falling Star,CLB,Commander Legends: Battle for Baldur's Gate,806,normal,rare,1,69549,68d57ab8-fbe0-4f01-b7f7-2a5cccd2d13a,0.75,false,false,near_mint,en,EUR
+"Ryusei, the Falling Star",CLB,Commander Legends: Battle for Baldur's Gate,806,normal,rare,1,69549,68d57ab8-fbe0-4f01-b7f7-2a5cccd2d13a,0.75,false,false,near_mint,en,EUR
 Castle Vantress,CLB,Commander Legends: Battle for Baldur's Gate,885,normal,rare,1,69677,dcf70844-18b1-4046-ae1d-ef41790bdcde,0.37,false,false,near_mint,en,EUR
 Sol Ring,CLB,Commander Legends: Battle for Baldur's Gate,871,normal,uncommon,1,69435,199cde21-5bc3-49cd-acd4-bae3af6e5881,0.88,false,false,near_mint,en,EUR
 Spectacular Showdown,CLB,Commander Legends: Battle for Baldur's Gate,679,normal,rare,1,69670,d5b1cbee-528f-48f7-b7c9-16aa3dab850a,0.46,false,false,near_mint,en,EUR
@@ -439,7 +439,7 @@ Will Kenrith,CLB,Commander Legends: Battle for Baldur's Gate,738,normal,mythic,2
 Dissipation Field,CLB,Commander Legends: Battle for Baldur's Gate,718,normal,rare,1,69679,dd2d9f47-2bd2-4a97-90c7-beca18a8e7fa,1.82,false,false,near_mint,en,EUR
 Compulsive Research,CLB,Commander Legends: Battle for Baldur's Gate,715,normal,common,1,69457,27bc62c8-c795-4e4a-a57c-a5f34121b5d1,0.2,false,false,near_mint,en,EUR
 Reins of Power,CLB,Commander Legends: Battle for Baldur's Gate,734,normal,rare,2,69604,9b5730aa-c74a-4c74-bb1b-a133a3c353ec,1.24,false,false,near_mint,en,EUR
-Shigeki, Jukai Visionary,NEO,Kamigawa: Neon Dynasty,394,normal,rare,1,66718,62c303e5-a0af-4e42-afcc-1d3a81c78e8e,0.94,false,false,near_mint,en,EUR
+"Shigeki, Jukai Visionary",NEO,Kamigawa: Neon Dynasty,394,normal,rare,1,66718,62c303e5-a0af-4e42-afcc-1d3a81c78e8e,0.94,false,false,near_mint,en,EUR
 The Modern Age // Vector Glider,NEO,Kamigawa: Neon Dynasty,66,normal,common,1,66475,ee60a8e9-3201-4a7e-8aa4-2c5e1042c8a5,0.23,false,false,near_mint,en,EUR
 Spirit-Sister's Call,DSC,Duskmourn: House of Horror Commander,232,normal,mythic,1,99321,bc495d03-9340-47cd-afc2-82a1677e69df,0.23,false,false,near_mint,en,EUR
 Inkrise Infiltrator,NEO,Kamigawa: Neon Dynasty,341,normal,common,1,66625,f66aaba3-4a28-4fcf-926a-34bbbf0dbeb4,0.05,false,false,near_mint,en,EUR
@@ -450,7 +450,7 @@ Reality Heist,NEO,Kamigawa: Neon Dynasty,75,normal,uncommon,1,66544,5bc954d7-322
 Careful Cultivation,WOC,Wilds of Eldraine Commander,122,normal,common,1,85468,68d56fac-4dca-47b8-b48e-0a3d532004a5,0.22,false,false,near_mint,en,EUR
 Season of Renewal,NEO,Kamigawa: Neon Dynasty,205,normal,common,1,66894,841f0ec2-94c7-4cec-94bb-b365084ca45f,0.1,false,false,near_mint,en,EUR
 Bamboo Grove Archer,NEO,Kamigawa: Neon Dynasty,173,normal,common,1,66407,8b43bb9f-1b84-41cc-a4f9-5875ae6d207c,0.03,false,false,near_mint,en,EUR
-Isshin, Two Heavens as One,NEO,Kamigawa: Neon Dynasty,224,normal,rare,1,66767,a062a004-984e-4b62-960c-af7288f7a3e9,3.94,false,false,near_mint,en,EUR
+"Isshin, Two Heavens as One",NEO,Kamigawa: Neon Dynasty,224,normal,rare,1,66767,a062a004-984e-4b62-960c-af7288f7a3e9,3.94,false,false,near_mint,en,EUR
 Go-Shintai of Shared Purpose,NEO,Kamigawa: Neon Dynasty,14,normal,uncommon,1,66323,0ab91962-ebad-46f6-9f90-7477c224d93d,0.18,false,false,near_mint,en,EUR
 Silver-Fur Master,NEO,Kamigawa: Neon Dynasty,236,normal,uncommon,1,66452,cacc36d9-4c4b-43b2-a8b4-d265deb1e6b2,0.19,false,false,near_mint,en,EUR
 Spinning Wheel Kick,NEO,Kamigawa: Neon Dynasty,207,normal,uncommon,1,66545,5f36ddd7-82c1-45ef-a966-ae2a34c540e1,0.2,false,false,near_mint,en,EUR
@@ -473,7 +473,7 @@ Festering Goblin,DMR,Dominaria Remastered,85,normal,common,1,78085,b039f65e-1287
 Grapeshot,DMR,Dominaria Remastered,125,normal,common,1,78038,923e1291-3999-4f81-ade4-073fb982143f,0.11,false,false,near_mint,en,EUR
 Absorb,DMR,Dominaria Remastered,186,normal,rare,1,77825,21892cbc-1af2-4ea1-8907-cec514b53004,0.35,false,false,near_mint,en,EUR
 Sevinne's Reclamation,MH3,Modern Horizons 3,267,normal,rare,1,94343,0f055754-58cf-474a-a3a9-59490dbf9dce,0.31,false,false,near_mint,en,EUR
-Radha, Heir to Keld,DMR,Dominaria Remastered,196,normal,uncommon,1,78176,ecb7c19a-b4af-405d-b016-a546ed12a99d,0.08,false,false,near_mint,en,EUR
+"Radha, Heir to Keld",DMR,Dominaria Remastered,196,normal,uncommon,1,78176,ecb7c19a-b4af-405d-b016-a546ed12a99d,0.08,false,false,near_mint,en,EUR
 Renewed Faith,DMR,Dominaria Remastered,23,normal,common,1,78070,a7d66dd3-330f-4b12-81f6-52d7a31013a9,0.08,false,false,near_mint,en,EUR
 Call the Skybreaker,C21,Commander 2021,211,normal,rare,1,58592,6cbcf7d1-ed1c-4d80-b724-7d7e88547bae,0.09,false,false,near_mint,en,EUR
 Arcane Signet,C21,Commander 2021,234,normal,common,1,58485,01b186af-8825-4257-80fd-9c1ecdb21414,0.36,false,false,near_mint,en,EUR
@@ -487,7 +487,7 @@ Humble Defector,C21,Commander 2021,174,normal,uncommon,1,58715,e2093386-ad77-4b3
 Lonely Sandbar,C21,Commander 2021,298,normal,uncommon,1,58815,81992bb6-b1c0-4c3f-b745-b700d18dec9d,0.17,false,false,near_mint,en,EUR
 Elemental Masterpiece,STX,Strixhaven: School of Mages,182,normal,common,1,58078,4331a7a6-e98e-4517-b0f9-ace379426a94,0.03,false,false,near_mint,en,EUR
 Epic Experiment,C21,Commander 2021,216,normal,mythic,1,58666,b672f90f-c03a-4eab-b52a-5bbca3c4294c,0.46,false,false,near_mint,en,EUR
-Etali, Primal Storm,C21,Commander 2021,167,normal,rare,1,58655,a9ac0e01-9732-470c-abd1-560386e30f80,0.56,false,false,near_mint,en,EUR
+"Etali, Primal Storm",C21,Commander 2021,167,normal,rare,1,58655,a9ac0e01-9732-470c-abd1-560386e30f80,0.56,false,false,near_mint,en,EUR
 Exotic Orchard,C21,Commander 2021,288,normal,rare,1,58846,b45cbc0e-3f5c-4f27-9463-3cffb0f63e3c,0.3,false,false,near_mint,en,EUR
 Fiery Encore,C21,Commander 2021,51,normal,rare,1,58658,ae544d03-2d12-4994-b573-424c41ecc91d,0.23,false,false,near_mint,en,EUR
 Fiery Fall,C21,Commander 2021,170,normal,common,1,58672,b9bb28d4-c902-49e2-9fb9-746f2591af36,0.06,false,false,near_mint,en,EUR
@@ -517,15 +517,15 @@ Myriad Landscape,C21,Commander 2021,304,normal,uncommon,1,58811,7eadf4ea-1fd8-4f
 Metallurgic Summonings,C21,Commander 2021,122,normal,mythic,1,58546,3a769d7e-c749-4845-ba87-808f0386df80,1.54,false,false,near_mint,en,EUR
 Rousing Refrain,C21,Commander 2021,56,normal,rare,1,58709,dc2a5627-8726-45d6-bb1b-a6172096a28a,1.17,false,false,near_mint,en,EUR
 Muse Vortex,C21,Commander 2021,28,normal,rare,1,58682,c11b6560-51e8-42d2-a51d-fca70a5807b5,0.22,false,false,near_mint,en,EUR
-Naru Meha, Master Wizard,C21,Commander 2021,124,normal,mythic,1,58695,cf44910a-4e24-4e36-a58e-ae7f463db368,0.66,false,false,near_mint,en,EUR
+"Naru Meha, Master Wizard",C21,Commander 2021,124,normal,mythic,1,58695,cf44910a-4e24-4e36-a58e-ae7f463db368,0.66,false,false,near_mint,en,EUR
 Reinterpret,C21,Commander 2021,73,normal,rare,1,58599,765e64ae-699c-46bd-a8cc-c8c1075d644f,0.49,false,false,near_mint,en,EUR
-Octavia, Living Thesis,C21,Commander 2021,29,normal,rare,1,58730,eb5e63cc-eb4f-40c6-b298-99cb8fe8585f,0.64,false,false,near_mint,en,EUR
+"Octavia, Living Thesis",C21,Commander 2021,29,normal,rare,1,58730,eb5e63cc-eb4f-40c6-b298-99cb8fe8585f,0.64,false,false,near_mint,en,EUR
 Elementalist's Palette,C21,Commander 2021,76,normal,rare,1,58703,d66053f6-9313-4ff1-9618-3403c2cc6ec8,8.11,false,false,near_mint,en,EUR
 Hedron Archive,C21,Commander 2021,244,normal,uncommon,1,58742,f8900980-6e0d-4d78-91a7-60a2e8cc92a5,0.23,false,false,near_mint,en,EUR
 Prismari Campus,STX,Strixhaven: School of Mages,270,normal,common,1,58153,768120f5-9401-4e52-924e-3374bde65b3d,0.11,false,false,near_mint,en,EUR
 Resculpt,STX,Strixhaven: School of Mages,51,normal,common,1,58018,1bfb1fcb-a411-4c1c-b8fc-496242ae3a9b,0.28,false,false,near_mint,en,EUR
-Rionya, Fire Dancer,C21,Commander 2021,55,normal,rare,1,58664,b1e92b9c-4234-436d-a741-37c5e45859e5,10.1,false,false,near_mint,en,EUR
-Rootha, Mercurial Artist,STX,Strixhaven: School of Mages,227,normal,uncommon,1,58267,acb8f24d-8d1d-48aa-a534-238e969a474c,0.06,false,false,near_mint,en,EUR
+"Rionya, Fire Dancer",C21,Commander 2021,55,normal,rare,1,58664,b1e92b9c-4234-436d-a741-37c5e45859e5,10.1,false,false,near_mint,en,EUR
+"Rootha, Mercurial Artist",STX,Strixhaven: School of Mages,227,normal,uncommon,1,58267,acb8f24d-8d1d-48aa-a534-238e969a474c,0.06,false,false,near_mint,en,EUR
 Dazzling Sphinx,C21,Commander 2021,25,normal,rare,1,58557,47287f15-c480-4c93-8f04-10f57a089c2e,0.31,false,false,near_mint,en,EUR
 Pyromancer's Goggles,C21,Commander 2021,259,normal,mythic,1,58503,0f92d8df-e913-4a95-9f65-4fe98c332a6e,1.65,false,false,near_mint,en,EUR
 Swarm Intelligence,C21,Commander 2021,130,normal,rare,1,58531,2c573d12-4c69-4a54-b1b9-236c003ba98a,0.26,false,false,near_mint,en,EUR
@@ -537,7 +537,7 @@ Study Hall,C21,Commander 2021,80,normal,common,1,58649,a3de9859-98b6-4efe-847a-4
 Storm-Kiln Artist,STX,Strixhaven: School of Mages,115,normal,uncommon,1,58405,fa96b8dc-233a-4884-ab84-235cbc7df0b6,1.07,false,false,near_mint,en,EUR
 Aether Gale,C21,Commander 2021,113,normal,rare,1,58643,9f04015b-0286-4230-a72f-36c511d89f45,0.25,false,false,near_mint,en,EUR
 Talisman of Creativity,C21,Commander 2021,269,normal,uncommon,1,58511,14a506e4-9a46-4499-a986-eb258e809344,1.8,false,false,near_mint,en,EUR
-Talrand, Sky Summoner,C21,Commander 2021,131,normal,rare,1,58644,9f4e8d4c-79f8-4313-bdb4-2062d8f5299b,0.23,false,false,near_mint,en,EUR
+"Talrand, Sky Summoner",C21,Commander 2021,131,normal,rare,1,58644,9f4e8d4c-79f8-4313-bdb4-2062d8f5299b,0.23,false,false,near_mint,en,EUR
 Temple of Epiphany,C21,Commander 2021,322,normal,rare,1,58719,e6f282cd-af76-4b31-a12c-4d601fc986c4,0.33,false,false,near_mint,en,EUR
 Temple of the False God,C21,Commander 2021,326,normal,uncommon,1,58868,dfc7261b-cf34-4bdb-a0f4-704e22ac3865,0.21,false,false,near_mint,en,EUR
 Brass's Bounty,C21,Commander 2021,160,normal,rare,1,58572,571797ef-1e44-4b1c-9c88-3d4c60358175,0.41,false,false,near_mint,en,EUR
@@ -547,23 +547,23 @@ Reliquary Tower,C21,Commander 2021,311,normal,uncommon,1,58585,642054bb-e581-4d8
 Erratic Cyclops,C21,Commander 2021,166,normal,rare,1,58558,48dae537-ff11-438f-8367-46121a88f60f,0.11,false,false,near_mint,en,EUR
 Forgotten Cave,C21,Commander 2021,289,normal,common,1,58797,62b0b5f8-6b51-4fa5-85ae-290475525a9d,0.13,false,false,near_mint,en,EUR
 Blighted Cataract,C21,Commander 2021,279,normal,uncommon,1,58652,a6d03a79-4219-492f-bf9a-0b810e97e5f5,0.12,false,false,near_mint,en,EUR
-Veyran, Voice of Duality,C21,Commander 2021,3,foil,mythic,1,58568,56d93855-c749-4bdf-9a90-4f69f4226e46,5.55,false,false,near_mint,en,EUR
+"Veyran, Voice of Duality",C21,Commander 2021,3,foil,mythic,1,58568,56d93855-c749-4bdf-9a90-4f69f4226e46,5.55,false,false,near_mint,en,EUR
 Serum Visions,C21,Commander 2021,129,normal,uncommon,1,58745,fbff5161-ed36-429a-b06a-a1c5a6afd9bc,0.58,false,false,near_mint,en,EUR
 Surge to Victory,C21,Commander 2021,58,normal,rare,1,58501,0f02698f-d954-42e0-b4d6-9daf65f29e36,1.14,false,false,near_mint,en,EUR
 Volcanic Vision,C21,Commander 2021,182,normal,rare,1,58743,f973e1a6-c6f9-47f5-9bf0-b7fa06959bd4,0.25,false,false,near_mint,en,EUR
 Wildfire Devils,C21,Commander 2021,183,normal,rare,1,58737,f2181ef5-963a-4e3b-805d-b3a04f4bef5e,0.17,false,false,near_mint,en,EUR
 Desert of the Mindful,C21,Commander 2021,287,normal,common,1,58564,517f71a7-ec5b-46a6-b5ff-8c06abf0a630,0.07,false,false,near_mint,en,EUR
 Desert of the Fervent,C21,Commander 2021,286,normal,common,1,58616,873ed0cd-60ea-4869-b794-e626f0058871,0.09,false,false,near_mint,en,EUR
-Zaffai, Thunder Conductor,C21,Commander 2021,4,foil,mythic,1,57963,ea1ab937-8647-4c83-99d5-6a40dffa4c9b,1.03,false,false,near_mint,en,EUR
-Zaffai, Thunder Conductor,OC21,Commander 2021 Display Commanders,4,etched,mythic,1,58922,38400a08-4af1-415a-a9bd-8dc80fb771a0,0.29,false,false,near_mint,en,EUR
+"Zaffai, Thunder Conductor",C21,Commander 2021,4,foil,mythic,1,57963,ea1ab937-8647-4c83-99d5-6a40dffa4c9b,1.03,false,false,near_mint,en,EUR
+"Zaffai, Thunder Conductor",OC21,Commander 2021 Display Commanders,4,etched,mythic,1,58922,38400a08-4af1-415a-a9bd-8dc80fb771a0,0.29,false,false,near_mint,en,EUR
 Charmbreaker Devils,C21,Commander 2021,162,normal,rare,1,58560,4abf9b03-4157-42f0-ab3d-484bd9b64bb2,0.16,false,false,near_mint,en,EUR
 Dualcaster Mage,C21,Commander 2021,165,normal,rare,1,58712,defcc4a3-40e0-4f5d-b23c-6cd6a614abc1,0.99,false,false,near_mint,en,EUR
 Aetherspouts,C21,Commander 2021,114,normal,rare,1,58490,04a19129-312b-47e3-abed-1dc39e432921,0.44,false,false,near_mint,en,EUR
-Fang, Fearless l'Cie,FIN,Final Fantasy,99,normal,uncommon,2,105759,f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8,0.16,false,false,near_mint,en,EUR
+"Fang, Fearless l'Cie",FIN,Final Fantasy,99,normal,uncommon,2,105759,f73a5cbb-905f-4b99-8d23-9d1b6bd47ee8,0.16,false,false,near_mint,en,EUR
 Chocobo Kick,FIN,Final Fantasy,178,normal,common,3,106698,ff8c8be0-8223-499c-8704-cb68e0a42ce2,0.07,false,false,near_mint,en,EUR
 Dovin's Veto,FCA,Final Fantasy: Through the Ages,51,normal,uncommon,1,106360,ba332954-ed8c-48d7-8d85-971c7b71dccf,0.67,false,false,near_mint,en,EUR
-Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal,FIN,Final Fantasy,39,normal,rare,2,106526,2625c00d-0a51-4481-bf36-cf13a2546242,0.78,false,false,near_mint,en,EUR
-Rydia, Summoner of Mist,FIN,Final Fantasy,239,normal,uncommon,2,106724,99450143-6ab5-463d-9e04-e8e6703a8b92,0.17,false,false,near_mint,en,EUR
+"Venat, Heart of Hydaelyn // Hydaelyn, the Mothercrystal",FIN,Final Fantasy,39,normal,rare,2,106526,2625c00d-0a51-4481-bf36-cf13a2546242,0.78,false,false,near_mint,en,EUR
+"Rydia, Summoner of Mist",FIN,Final Fantasy,239,normal,uncommon,2,106724,99450143-6ab5-463d-9e04-e8e6703a8b92,0.17,false,false,near_mint,en,EUR
 Undercity Dire Rat,FIN,Final Fantasy,123,normal,common,2,106270,274788f4-fbf3-4a15-bdc0-f513a2fde30d,0.09,false,false,near_mint,en,EUR
 Retrieve the Esper,FIN,Final Fantasy,68,normal,common,2,106301,ebd733f0-8883-434a-b36c-ef76b091fe8e,0.05,false,false,near_mint,en,EUR
 Suplex,FIN,Final Fantasy,164,normal,common,2,106376,f61693a2-7042-44e0-85ba-9bf12ab94e7e,0.16,false,false,near_mint,en,EUR
@@ -588,16 +588,16 @@ Reigning Victor,TDM,Tarkir: Dragonstorm,216,normal,common,2,104334,a394112a-032b
 Knockout Maneuver,TDM,Tarkir: Dragonstorm,147,normal,uncommon,3,105149,9d218831-2a41-46a3-8e9d-93462cae5cab,0.03,false,false,near_mint,en,EUR
 Riling Dawnbreaker // Signaling Roar,TDM,Tarkir: Dragonstorm,292,normal,common,1,104607,48b73810-3abd-4469-a6f0-993b6fedc315,0.06,false,false,near_mint,en,EUR
 Swamp,TDM,Tarkir: Dragonstorm,274,normal,common,1,104382,ef235170-8276-4ef0-bdfd-ba68d5b218ec,0.7,false,false,near_mint,en,EUR
-Taigam, Master Opportunist,TDM,Tarkir: Dragonstorm,335,normal,mythic,1,104243,0ea8c278-781d-4c9c-9f1c-99d799384a29,2.33,false,false,near_mint,en,EUR
+"Taigam, Master Opportunist",TDM,Tarkir: Dragonstorm,335,normal,mythic,1,104243,0ea8c278-781d-4c9c-9f1c-99d799384a29,2.33,false,false,near_mint,en,EUR
 Transforming Flourish,TDC,Tarkir: Dragonstorm Commander,39,normal,rare,1,104805,914fdddb-cf66-4631-94e7-ce682a99fcf8,0.39,false,false,near_mint,en,EUR
-Sidisi, Regent of the Mire,TDM,Tarkir: Dragonstorm,92,normal,rare,2,104281,47374d23-662b-4ba7-a94f-37c9bc759cc6,0.42,false,false,near_mint,en,EUR
+"Sidisi, Regent of the Mire",TDM,Tarkir: Dragonstorm,92,normal,rare,2,104281,47374d23-662b-4ba7-a94f-37c9bc759cc6,0.42,false,false,near_mint,en,EUR
 Flamehold Grappler,TDM,Tarkir: Dragonstorm,359,normal,rare,1,104681,60667979-40c1-4144-a3f8-0115fb77341d,0.34,false,false,near_mint,en,EUR
 Winternight Stories,TDM,Tarkir: Dragonstorm,336,normal,rare,1,104948,c94538c3-320c-4903-a689-bb8e9f4ae40f,0.87,false,false,near_mint,en,EUR
 Become the Avalanche,TDC,Tarkir: Dragonstorm Commander,43,normal,rare,1,105053,f49b7b11-ce78-44c4-98c2-dc8e2332c667,0.52,false,false,near_mint,en,EUR
 Hollowmurk Siege,TDM,Tarkir: Dragonstorm,192,normal,rare,2,104668,5ac0e136-8877-4bfc-a831-2bf7b7b5ad1e,0.53,false,false,near_mint,en,EUR
 Corroding Dragonstorm,TDM,Tarkir: Dragonstorm,297,normal,uncommon,1,104339,a8f19964-b37b-4877-bdd5-c5c3022439ef,0.23,false,false,near_mint,en,EUR
 Stillness in Motion,TDM,Tarkir: Dragonstorm,334,normal,rare,2,104726,70ae35fd-5fb6-440a-9e82-13998b928ee3,0.17,false,false,near_mint,en,EUR
-Sidisi, Regent of the Mire,TDM,Tarkir: Dragonstorm,341,normal,rare,1,104301,5f9e3ddc-a4e7-4304-bfd8-890c9c71f53d,0.34,false,false,near_mint,en,EUR
+"Sidisi, Regent of the Mire",TDM,Tarkir: Dragonstorm,341,normal,rare,1,104301,5f9e3ddc-a4e7-4304-bfd8-890c9c71f53d,0.34,false,false,near_mint,en,EUR
 Warden of the Grove,TDM,Tarkir: Dragonstorm,166,normal,rare,1,104498,2414db96-0e2b-4f7c-9b97-41f8e310b752,0.83,false,false,near_mint,en,EUR
 War Effort,TDM,Tarkir: Dragonstorm,131,normal,uncommon,3,105007,dd7f0413-c009-4c08-b877-9c1b776cbf26,0.11,false,false,near_mint,en,EUR
 Scoured Barrens,TDM,Tarkir: Dragonstorm,267,normal,common,3,104346,b4b47b80-69ed-44b0-afa0-ca90206dc16d,0.02,false,false,near_mint,en,EUR
@@ -607,7 +607,7 @@ Frostcliff Siege,TDM,Tarkir: Dragonstorm,187,normal,rare,1,104338,a750aabb-9788-
 Stormshriek Feral // Flush Out,TDM,Tarkir: Dragonstorm,304,normal,common,1,104535,322e4880-f3f0-44d8-8f95-48b496af0e81,0.11,false,false,near_mint,en,EUR
 Stormshriek Feral // Flush Out,TDM,Tarkir: Dragonstorm,124,normal,common,2,104447,0ec92c44-7cf0-48a5-a3ca-bc633496d887,0.09,false,false,near_mint,en,EUR
 Spectral Denial,TDM,Tarkir: Dragonstorm,58,normal,uncommon,1,105037,ee4e732a-1ffd-463d-92c2-26187659cfc3,0.11,false,false,near_mint,en,EUR
-Zurgo, Thunder's Decree,TDM,Tarkir: Dragonstorm,237,normal,rare,1,104921,bd93fb95-4268-45dc-8f0d-590c481a526d,0.37,false,false,near_mint,en,EUR
+"Zurgo, Thunder's Decree",TDM,Tarkir: Dragonstorm,237,normal,rare,1,104921,bd93fb95-4268-45dc-8f0d-590c481a526d,0.37,false,false,near_mint,en,EUR
 Meticulous Artisan,TDM,Tarkir: Dragonstorm,112,normal,common,2,104912,baf4c9dd-0546-41ac-a7ba-0bc312fef31e,0.04,false,false,near_mint,en,EUR
 Sunbaked Canyon,MH1,Modern Horizons,247,foil,rare,1,44687,c36820fa-ee86-4206-9a0d-737a67cf5208,8.8,false,false,near_mint,en,EUR
 Forest,LCI,The Lost Caverns of Ixalan,291,normal,common,1,86327,8c13cafb-3078-4856-a5b0-c38aace8a34a,0.45,false,false,near_mint,en,EUR
@@ -626,7 +626,7 @@ Skirmish Rhino,TDM,Tarkir: Dragonstorm,224,normal,uncommon,1,103992,4a2e9ba1-c25
 Reverberating Summons,TDM,Tarkir: Dragonstorm,117,normal,uncommon,1,104475,1af19ce8-bc0c-420c-9e3b-9059b4df32cb,0.05,false,false,near_mint,en,EUR
 Bloodfell Caves,TDM,Tarkir: Dragonstorm,250,normal,common,2,104250,1dde3c68-6f29-4c00-b668-c25ac9e3e13b,0.02,false,false,near_mint,en,EUR
 Karakyk Guardian,TDM,Tarkir: Dragonstorm,198,normal,uncommon,1,104859,a4c77b08-c3f6-4458-8636-f226f9843b6d,0.09,false,false,near_mint,en,EUR
-Teval, Arbiter of Virtue,TDM,Tarkir: Dragonstorm,230,normal,mythic,1,104256,27a93f5b-7b32-49f0-a179-b897828fe49a,0.91,false,false,near_mint,en,EUR
+"Teval, Arbiter of Virtue",TDM,Tarkir: Dragonstorm,230,normal,mythic,1,104256,27a93f5b-7b32-49f0-a179-b897828fe49a,0.91,false,false,near_mint,en,EUR
 Auroral Procession,TDM,Tarkir: Dragonstorm,169,normal,uncommon,1,104701,672f94ad-65d6-4c7d-925d-165ef264626f,0.23,false,false,near_mint,en,EUR
 Static Snare,TDM,Tarkir: Dragonstorm,26,normal,uncommon,1,104478,1ce50932-03a6-48bc-8aee-bc8defd896cf,0.11,false,false,near_mint,en,EUR
 Krumar Initiate,TDM,Tarkir: Dragonstorm,84,normal,uncommon,1,104916,bc66680f-24ab-433a-8197-feac3a174075,0.03,false,false,near_mint,en,EUR
@@ -641,7 +641,7 @@ Spirit,TTDM,Tarkir: Dragonstorm Tokens,9,normal,common,1,105143,8ea4fc2f-95a4-49
 Rugged Highlands,TDM,Tarkir: Dragonstorm,265,normal,common,1,104267,31261eca-28ad-407c-84ef-0c124d0d7451,0.05,false,false,near_mint,en,EUR
 Defibrillating Current,TDM,Tarkir: Dragonstorm,177,normal,uncommon,1,104925,bf3a18cf-03db-4eb0-8d53-0c1a71e184da,0.11,false,false,near_mint,en,EUR
 Hardened Tactician,TDM,Tarkir: Dragonstorm,191,normal,uncommon,1,104780,86b225cb-5c45-4da1-a64e-b04091e483e8,0.15,false,false,near_mint,en,EUR
-Myrkul, Lord of Bones,CLB,Commander Legends: Battle for Baldur's Gate,287,normal,rare,3,69133,82824d05-5215-459a-aa73-3c5a6be3d464,0.14,false,false,near_mint,en,EUR
+"Myrkul, Lord of Bones",CLB,Commander Legends: Battle for Baldur's Gate,287,normal,rare,3,69133,82824d05-5215-459a-aa73-3c5a6be3d464,0.14,false,false,near_mint,en,EUR
 Riverwalk Technique,TDM,Tarkir: Dragonstorm,54,normal,common,3,105118,043c25d5-13ee-4cab-98d5-fb89db9cf6e3,0.08,false,false,near_mint,en,EUR
 Heritage Reclamation,TDM,Tarkir: Dragonstorm,145,normal,common,2,104636,4f8fee37-a050-4329-8b10-46d150e7a95e,0.25,false,false,near_mint,en,EUR
 Sagu Wildling // Roost Seek,TDM,Tarkir: Dragonstorm,306,normal,common,2,104903,b72ee8f9-5e79-4f77-ae7e-e4c274f78187,0.22,false,false,near_mint,en,EUR
@@ -649,7 +649,7 @@ Breaching Dragonstorm,TDM,Tarkir: Dragonstorm,101,normal,uncommon,3,105013,e2c2a
 Embermouth Sentinel,TDM,Tarkir: Dragonstorm,242,normal,common,4,104606,485f75d5-da5b-4605-885a-561ccd999cc6,0.11,false,false,near_mint,en,EUR
 Inspirited Vanguard,TDM,Tarkir: Dragonstorm,146,normal,uncommon,2,105165,c642d6ac-f0f0-4b4c-a7ee-50631531f6d1,0.07,false,false,near_mint,en,EUR
 Runescale Stormbrood // Chilling Screech,TDM,Tarkir: Dragonstorm,221,normal,uncommon,2,104533,317744d1-ed78-4b53-a4d8-8c7ecfd9c4ae,0.1,false,false,near_mint,en,EUR
-Dúnedain Rangers,LTR,The Lord of the Rings: Tales of Middle-earth,159,normal,uncommon,1,83133,630e1e36-2f5d-44d4-9ff2-19ae75295016,0.03,false,false,near_mint,en,EUR
+DÃºnedain Rangers,LTR,The Lord of the Rings: Tales of Middle-earth,159,normal,uncommon,1,83133,630e1e36-2f5d-44d4-9ff2-19ae75295016,0.03,false,false,near_mint,en,EUR
 Shortcut to Mushrooms,LTR,The Lord of the Rings: Tales of Middle-earth,187,normal,uncommon,1,82870,13bc14f9-c90c-499d-9024-3182d78e0a88,0.09,false,false,near_mint,en,EUR
 Hithlain Knots,LTR,The Lord of the Rings: Tales of Middle-earth,54,normal,common,1,83448,bbcc27e7-cbe4-45c2-b157-7251a10e7ba4,0.07,false,false,near_mint,en,EUR
 Grey Havens Navigator,LTR,The Lord of the Rings: Tales of Middle-earth,53,normal,common,1,83068,4dd89994-bdff-47ca-a65d-10afcc7e773e,0.03,false,false,near_mint,en,EUR
@@ -662,25 +662,25 @@ Bitter Downfall,LTR,The Lord of the Rings: Tales of Middle-earth,77,normal,uncom
 Gollum's Bite,LTR,The Lord of the Rings: Tales of Middle-earth,85,normal,uncommon,3,82900,1b1e790e-ff82-4888-8aee-9986c646241a,0.09,false,false,near_mint,en,EUR
 The Black Breath,LTR,The Lord of the Rings: Tales of Middle-earth,78,normal,common,2,82916,1e63983d-c36b-4440-b9e1-baaa6c7c0ba9,0.06,false,false,near_mint,en,EUR
 The Mouth of Sauron,LTR,The Lord of the Rings: Tales of Middle-earth,216,normal,uncommon,1,83201,76a88814-aa30-4297-b338-3d851bfe7256,0.09,false,false,near_mint,en,EUR
-Uglúk of the White Hand,LTR,The Lord of the Rings: Tales of Middle-earth,235,normal,uncommon,1,83610,e914c7fc-be3c-4346-bf37-6e10f4998204,0.04,false,false,near_mint,en,EUR
+UglÃºk of the White Hand,LTR,The Lord of the Rings: Tales of Middle-earth,235,normal,uncommon,1,83610,e914c7fc-be3c-4346-bf37-6e10f4998204,0.04,false,false,near_mint,en,EUR
 Gorbag of Minas Morgul,LTR,The Lord of the Rings: Tales of Middle-earth,86,normal,uncommon,1,83097,58aafdb6-1c8c-4fc4-a52e-3e601be7fb0c,0.06,false,false,near_mint,en,EUR
 Saruman's Trickery,LTR,The Lord of the Rings: Tales of Middle-earth,68,normal,uncommon,1,83284,8eb6c23b-e52e-4533-9625-884eb0a4d866,0.1,false,false,near_mint,en,EUR
-Gothmog, Morgul Lieutenant,LTR,The Lord of the Rings: Tales of Middle-earth,429,normal,uncommon,1,83055,4b9af0ce-db08-4ccf-a9f3-b7c1eea14423,0.13,false,false,near_mint,en,EUR
+"Gothmog, Morgul Lieutenant",LTR,The Lord of the Rings: Tales of Middle-earth,429,normal,uncommon,1,83055,4b9af0ce-db08-4ccf-a9f3-b7c1eea14423,0.13,false,false,near_mint,en,EUR
 Horn of Gondor,LTR,The Lord of the Rings: Tales of Middle-earth,240,normal,rare,1,83400,b14eaeec-d7ce-462a-90d3-2ae5ff605fdb,1.22,false,false,near_mint,en,EUR
 Mechanized Production,MKC,Murders at Karlov Manor Commander,109,normal,mythic,1,90574,eaf86997-68e8-4c37-99f1-db10ac08f54c,0.62,false,false,near_mint,en,EUR
 Dark Suspicions,PLS,Planeshift,40,normal,rare,1,32912,d518e2fd-7767-43d7-92e3-62a4a465154c,0.39,false,false,near_mint,en,EUR
-Sauron, the Necromancer,LTR,The Lord of the Rings: Tales of Middle-earth,106,normal,rare,1,82994,377d65d8-21c8-4292-97db-610e0173ba59,0.22,false,false,near_mint,en,EUR
+"Sauron, the Necromancer",LTR,The Lord of the Rings: Tales of Middle-earth,106,normal,rare,1,82994,377d65d8-21c8-4292-97db-610e0173ba59,0.22,false,false,near_mint,en,EUR
 Bombadil's Song,LTR,The Lord of the Rings: Tales of Middle-earth,154,normal,common,1,83137,6391699e-987a-499f-9fec-96f2362760b9,0.08,false,false,near_mint,en,EUR
 Slip On the Ring,LTR,The Lord of the Rings: Tales of Middle-earth,31,normal,common,1,82961,2e20c2b8-ffe3-4d14-8588-f89719358e3d,0.06,false,false,near_mint,en,EUR
 Birthday Escape,LTR,The Lord of the Rings: Tales of Middle-earth,43,normal,common,1,83034,42db2313-b13d-4292-bef2-bf86f989d32f,0.07,false,false,near_mint,en,EUR
 Shire Scarecrow,LTR,The Lord of the Rings: Tales of Middle-earth,249,normal,common,2,83421,b60b4f2e-ff47-4762-a803-30e81b665c09,0.04,false,false,near_mint,en,EUR
-Fangorn, Tree Shepherd,LTR,The Lord of the Rings: Tales of Middle-earth,166,normal,rare,1,82855,0fb0f946-2127-4aa3-88ac-9bd2e94d8983,0.18,false,false,near_mint,en,EUR
-Shagrat, Loot Bearer,LTR,The Lord of the Rings: Tales of Middle-earth,228,normal,rare,1,82834,0731f64a-15da-4814-82e9-3a42e1657f36,0.14,false,false,near_mint,en,EUR
-Legolas, Counter of Kills,LTR,The Lord of the Rings: Tales of Middle-earth,212,normal,uncommon,1,83496,c8bd408c-9e6d-436d-9c4f-9ef3203aeb64,0.09,false,false,near_mint,en,EUR
-Arwen Undómiel,LTR,The Lord of the Rings: Tales of Middle-earth,194,normal,uncommon,2,83484,c544e301-13b4-4dec-b65c-d54809bb7736,0.11,false,false,near_mint,en,EUR
+"Fangorn, Tree Shepherd",LTR,The Lord of the Rings: Tales of Middle-earth,166,normal,rare,1,82855,0fb0f946-2127-4aa3-88ac-9bd2e94d8983,0.18,false,false,near_mint,en,EUR
+"Shagrat, Loot Bearer",LTR,The Lord of the Rings: Tales of Middle-earth,228,normal,rare,1,82834,0731f64a-15da-4814-82e9-3a42e1657f36,0.14,false,false,near_mint,en,EUR
+"Legolas, Counter of Kills",LTR,The Lord of the Rings: Tales of Middle-earth,212,normal,uncommon,1,83496,c8bd408c-9e6d-436d-9c4f-9ef3203aeb64,0.09,false,false,near_mint,en,EUR
+Arwen UndÃ³miel,LTR,The Lord of the Rings: Tales of Middle-earth,194,normal,uncommon,2,83484,c544e301-13b4-4dec-b65c-d54809bb7736,0.11,false,false,near_mint,en,EUR
 Gimli's Fury,LTR,The Lord of the Rings: Tales of Middle-earth,131,normal,common,2,83627,efde011d-8732-49b3-9204-8b114a3d81ba,0.03,false,false,near_mint,en,EUR
 Phial of Galadriel,LTR,The Lord of the Rings: Tales of Middle-earth,248,normal,rare,1,83386,ac6d60fe-681b-495e-813c-c8418f3f29e5,0.36,false,false,near_mint,en,EUR
-Barad-dûr,LTR,The Lord of the Rings: Tales of Middle-earth,253,normal,rare,1,83616,eb5038af-06b0-401e-8dea-a1a8483788ae,0.71,false,false,near_mint,en,EUR
+Barad-dÃ»r,LTR,The Lord of the Rings: Tales of Middle-earth,253,normal,rare,1,83616,eb5038af-06b0-401e-8dea-a1a8483788ae,0.71,false,false,near_mint,en,EUR
 Mithril Coat,LTR,The Lord of the Rings: Tales of Middle-earth,245,normal,rare,1,82856,0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec,13.33,false,false,near_mint,en,EUR
 Gather Courage,RVR,Ravnica Remastered,143,normal,common,1,89882,bf059c8d-6e61-41ca-ac79-3bf82fa2d4b3,0.06,false,false,near_mint,en,EUR
 Forest,LTR,The Lord of the Rings: Tales of Middle-earth,281,normal,common,1,83018,3efeaa30-9db9-4e68-a658-9064d6e67516,0.35,false,false,near_mint,en,EUR
@@ -691,12 +691,12 @@ Orcish Medicine,LTR,The Lord of the Rings: Tales of Middle-earth,104,normal,comm
 Mordor Muster,LTR,The Lord of the Rings: Tales of Middle-earth,96,normal,common,1,83385,aae2f15a-0629-453e-992c-a199af194a3c,0.06,false,false,near_mint,en,EUR
 Forest,LTR,The Lord of the Rings: Tales of Middle-earth,270,normal,common,1,83507,cbe793e4-c034-4a22-929d-d743c0255bf1,0.09,false,false,near_mint,en,EUR
 Forest,LTR,The Lord of the Rings: Tales of Middle-earth,280,normal,common,1,82964,2f5b488e-d725-4ef7-90f4-71091325c0b6,0.27,false,false,near_mint,en,EUR
-Lothlórien Lookout,LTR,The Lord of the Rings: Tales of Middle-earth,175,normal,common,1,83070,4e3639c1-ebc3-4a0b-ab93-549e45aff0f7,0.03,false,false,near_mint,en,EUR
+LothlÃ³rien Lookout,LTR,The Lord of the Rings: Tales of Middle-earth,175,normal,common,1,83070,4e3639c1-ebc3-4a0b-ab93-549e45aff0f7,0.03,false,false,near_mint,en,EUR
 Chance-Met Elves,LTR,The Lord of the Rings: Tales of Middle-earth,157,normal,common,1,82843,0aa57431-39e2-4152-8a30-1c1e8faef153,0.06,false,false,near_mint,en,EUR
 Galadhrim Guide,LTR,The Lord of the Rings: Tales of Middle-earth,168,normal,common,1,83642,f4603f59-f899-4caf-a874-bf234d2045fb,0.02,false,false,near_mint,en,EUR
 Enraged Huorn,LTR,The Lord of the Rings: Tales of Middle-earth,162,normal,common,1,83383,a9b48836-6d37-46eb-8c41-a3eeecc72ae1,0.07,false,false,near_mint,en,EUR
 Shower of Arrows,LTR,The Lord of the Rings: Tales of Middle-earth,188,normal,common,1,83300,92cd3884-18d1-4200-b28e-a52349ef37aa,0.05,false,false,near_mint,en,EUR
-Glorfindel, Dauntless Rescuer,LTR,The Lord of the Rings: Tales of Middle-earth,171,normal,uncommon,2,83444,baf7a546-8a8b-4396-ab64-9a5b9abffe79,0.05,false,false,near_mint,en,EUR
+"Glorfindel, Dauntless Rescuer",LTR,The Lord of the Rings: Tales of Middle-earth,171,normal,uncommon,2,83444,baf7a546-8a8b-4396-ab64-9a5b9abffe79,0.05,false,false,near_mint,en,EUR
 Stew the Coneys,LTR,The Lord of the Rings: Tales of Middle-earth,189,normal,uncommon,1,83455,bcc7c41c-f416-457e-91ba-1f338f45eeac,0.09,false,false,near_mint,en,EUR
 Lembas,LTR,The Lord of the Rings: Tales of Middle-earth,243,normal,common,1,83004,3b46aacf-b31a-4380-9e4b-82795fbaba3b,0.57,false,false,near_mint,en,EUR
 Mirkwood Channeler,LTR,The Lord of the Rings: Tales of Middle-earth,828,normal,rare,1,86745,ca533454-8bea-4e08-ab0b-e2f4affffaef,0.83,false,false,near_mint,en,EUR
@@ -706,34 +706,34 @@ Soldier of the Grey Host,LTR,The Lord of the Rings: Tales of Middle-earth,32,nor
 Second Breakfast,LTR,The Lord of the Rings: Tales of Middle-earth,29,normal,common,1,82814,002f647a-25f8-461b-8617-52674f5d577c,0.03,false,false,near_mint,en,EUR
 Fog on the Barrow-Downs,LTR,The Lord of the Rings: Tales of Middle-earth,16,normal,common,1,83446,bb0cda3a-20d7-425a-89fe-b0a3cd7ced03,0.06,false,false,near_mint,en,EUR
 Shire Shirriff,LTR,The Lord of the Rings: Tales of Middle-earth,30,normal,uncommon,1,83039,444b687f-2571-4c55-a497-d24b9e18bc0f,0.05,false,false,near_mint,en,EUR
-Éowyn, Lady of Rohan,LTR,The Lord of the Rings: Tales of Middle-earth,10,normal,uncommon,1,83594,e59710c4-24de-419e-a8a0-e8392d450c23,0.04,false,false,near_mint,en,EUR
-Faramir, Field Commander,LTR,The Lord of the Rings: Tales of Middle-earth,14,normal,uncommon,1,82889,17c2250a-9af1-40de-9f09-7e8c7daec520,0.1,false,false,near_mint,en,EUR
+"Ã‰owyn, Lady of Rohan",LTR,The Lord of the Rings: Tales of Middle-earth,10,normal,uncommon,1,83594,e59710c4-24de-419e-a8a0-e8392d450c23,0.04,false,false,near_mint,en,EUR
+"Faramir, Field Commander",LTR,The Lord of the Rings: Tales of Middle-earth,14,normal,uncommon,1,82889,17c2250a-9af1-40de-9f09-7e8c7daec520,0.1,false,false,near_mint,en,EUR
 Barrow-Blade,LTR,The Lord of the Rings: Tales of Middle-earth,237,normal,uncommon,1,83629,f0eb7284-78a5-4b5e-8f6d-6be540e0bef8,0.07,false,false,near_mint,en,EUR
 Plains,LTR,The Lord of the Rings: Tales of Middle-earth,272,normal,common,1,83073,4ff9fbf5-de6f-4ef9-a6ab-56da4b341b77,0.26,false,false,near_mint,en,EUR
 Eagle of Deliverance,LTR,The Lord of the Rings: Tales of Middle-earth,824,normal,rare,1,86659,a4631187-9a5b-43d5-92d8-de6e609d2a03,0.78,false,false,near_mint,en,EUR
 Gimli's Axe,LTR,The Lord of the Rings: Tales of Middle-earth,130,normal,common,2,83550,d8999b6c-e501-48d0-ae51-a35b96f996ec,0.07,false,false,near_mint,en,EUR
 Forest,AFR,Adventures in the Forgotten Realms,280,normal,common,1,60275,6cdc5ca9-6d01-4ee3-8117-3c1e74320553,0.08,false,false,near_mint,en,EUR
 Gift of Strands,LTR,The Lord of the Rings: Tales of Middle-earth,170,normal,uncommon,1,83277,8c54ee0c-1432-4f20-9a92-2cdfcbab30ac,0.02,false,false,near_mint,en,EUR
-Gandalf, Friend of the Shire,LTR,The Lord of the Rings: Tales of Middle-earth,50,normal,uncommon,1,83510,cc9cfcc7-be64-4871-8d52-851e43fe3305,0.12,false,false,near_mint,en,EUR
-Elrond, Lord of Rivendell,LTR,The Lord of the Rings: Tales of Middle-earth,49,normal,uncommon,1,83369,a62a5e55-fa1b-4c70-9293-740dd513d52e,0.06,false,false,near_mint,en,EUR
+"Gandalf, Friend of the Shire",LTR,The Lord of the Rings: Tales of Middle-earth,50,normal,uncommon,1,83510,cc9cfcc7-be64-4871-8d52-851e43fe3305,0.12,false,false,near_mint,en,EUR
+"Elrond, Lord of Rivendell",LTR,The Lord of the Rings: Tales of Middle-earth,49,normal,uncommon,1,83369,a62a5e55-fa1b-4c70-9293-740dd513d52e,0.06,false,false,near_mint,en,EUR
 Horses of the Bruinen,LTR,The Lord of the Rings: Tales of Middle-earth,55,normal,uncommon,1,83659,f7725dc2-2654-4ffb-b6b3-510ae64ec6af,0.06,false,false,near_mint,en,EUR
 Shelob's Ambush,LTR,The Lord of the Rings: Tales of Middle-earth,108,normal,common,1,82941,25e69fa8-7339-4bfa-8e35-9cbfe0001d8b,0.06,false,false,near_mint,en,EUR
 Hobbit's Sting,LTR,The Lord of the Rings: Tales of Middle-earth,20,normal,common,1,82820,019eab42-9e0c-4958-ac97-74d3db5580f3,0.11,false,false,near_mint,en,EUR
 Pippin's Bravery,LTR,The Lord of the Rings: Tales of Middle-earth,182,normal,common,1,83453,bc60dc65-6813-4d57-877b-df195ed00d00,0.02,false,false,near_mint,en,EUR
 Many Partings,LTR,The Lord of the Rings: Tales of Middle-earth,176,normal,common,1,83528,d179dbbe-9c79-4dbc-955a-5209a3e2745a,0.09,false,false,near_mint,en,EUR
-Gollum, Patient Plotter,LTR,The Lord of the Rings: Tales of Middle-earth,309,normal,uncommon,1,83375,a881aa61-fc7c-4ffb-a129-f75be8b2e498,0.1,false,false,near_mint,en,EUR
+"Gollum, Patient Plotter",LTR,The Lord of the Rings: Tales of Middle-earth,309,normal,uncommon,1,83375,a881aa61-fc7c-4ffb-a129-f75be8b2e498,0.1,false,false,near_mint,en,EUR
 Flame of Anor,LTR,The Lord of the Rings: Tales of Middle-earth,203,normal,rare,1,82828,04779a7e-b453-48b9-b392-6d6fd0b8d283,4.32,false,false,near_mint,en,EUR
 The Ring // The Ring Tempts You,TLTR,Tales of Middle-earth Tokens,H13,normal,common,1,82677,7215460e-8c06-47d0-94e5-d1832d0218af,0.14,false,false,near_mint,en,EUR
 Kemba's Legion,MBS,Mirrodin Besieged,9,normal,uncommon,1,20132,30731756-81a8-480b-938f-48c1d0cb95d7,0.03,false,false,near_mint,en,EUR
-Sting, the Glinting Dagger,LTR,The Lord of the Rings: Tales of Middle-earth,250,normal,rare,1,83396,afbec7e7-f5b9-407e-bf96-2e088710e791,1.04,false,false,near_mint,en,EUR
+"Sting, the Glinting Dagger",LTR,The Lord of the Rings: Tales of Middle-earth,250,normal,rare,1,83396,afbec7e7-f5b9-407e-bf96-2e088710e791,1.04,false,false,near_mint,en,EUR
 Frodo Baggins,LTR,The Lord of the Rings: Tales of Middle-earth,320,normal,uncommon,1,83196,741a266c-b2e9-4981-93ef-843cea95ca76,0.06,false,false,near_mint,en,EUR
-Quickbeam, Upstart Ent,LTR,The Lord of the Rings: Tales of Middle-earth,183,normal,uncommon,1,83434,b889037f-b95f-4756-80aa-04097d2818c3,0.02,false,false,near_mint,en,EUR
+"Quickbeam, Upstart Ent",LTR,The Lord of the Rings: Tales of Middle-earth,183,normal,uncommon,1,83434,b889037f-b95f-4756-80aa-04097d2818c3,0.02,false,false,near_mint,en,EUR
 Gandalf the Grey,LTR,The Lord of the Rings: Tales of Middle-earth,322,normal,rare,1,83525,d0ff7dea-1ed2-4987-b42a-6d1d8c493f5a,0.37,false,false,near_mint,en,EUR
 Many Partings,LTR,The Lord of the Rings: Tales of Middle-earth,445,normal,common,1,83204,7769f0ce-b31b-4cb5-8635-2b9b70114180,0.06,false,false,near_mint,en,EUR
 Lobelia Sackville-Baggins,LTR,The Lord of the Rings: Tales of Middle-earth,93,normal,rare,1,83263,87500b92-3d68-42f3-afa9-f8206b2ebcbb,0.24,false,false,near_mint,en,EUR
-Tale of Tinúviel,LTR,The Lord of the Rings: Tales of Middle-earth,34,normal,uncommon,1,83330,9ae65f96-7bfd-4390-88bf-764c26bf4668,0.07,false,false,near_mint,en,EUR
+Tale of TinÃºviel,LTR,The Lord of the Rings: Tales of Middle-earth,34,normal,uncommon,1,83330,9ae65f96-7bfd-4390-88bf-764c26bf4668,0.07,false,false,near_mint,en,EUR
 Samwise the Stouthearted,LTR,The Lord of the Rings: Tales of Middle-earth,28,normal,uncommon,1,82922,214c270e-29ca-4d69-bea6-9252ae7707ad,0.11,false,false,near_mint,en,EUR
-Gollum, Patient Plotter,LTR,The Lord of the Rings: Tales of Middle-earth,84,normal,uncommon,1,83069,4ddda7d4-0226-404f-8418-f1f5720dcef8,0.1,false,false,near_mint,en,EUR
+"Gollum, Patient Plotter",LTR,The Lord of the Rings: Tales of Middle-earth,84,normal,uncommon,1,83069,4ddda7d4-0226-404f-8418-f1f5720dcef8,0.1,false,false,near_mint,en,EUR
 Wose Pathfinder,LTR,The Lord of the Rings: Tales of Middle-earth,190,normal,common,1,83144,6589b339-9067-4e9b-bfdb-c49f8b3ef2d4,0.08,false,false,near_mint,en,EUR
 Pelargir Survivor,LTR,The Lord of the Rings: Tales of Middle-earth,64,normal,common,1,83384,aa59141a-4645-4316-b714-bbf2c139786e,0.08,false,false,near_mint,en,EUR
 Captain of Umbar,LTR,The Lord of the Rings: Tales of Middle-earth,45,normal,common,1,83472,c222577d-a3c7-41d9-b11b-62065bdb98ef,0.06,false,false,near_mint,en,EUR
@@ -741,7 +741,7 @@ Orc Army,TLTR,Tales of Middle-earth Tokens,6,normal,common,1,83558,db598f33-2ff9
 Prince Imrahil the Fair,LTR,The Lord of the Rings: Tales of Middle-earth,431,normal,uncommon,1,83349,a0c9c814-df6b-4b54-a233-9bed31009bed,0.09,false,false,near_mint,en,EUR
 Sauron's Ransom,LTR,The Lord of the Rings: Tales of Middle-earth,225,normal,rare,1,83170,6b98850c-ad69-42da-b91a-8dc5e226c444,0.56,false,false,near_mint,en,EUR
 Human Soldier,TLTR,Tales of Middle-earth Tokens,2,normal,common,1,83655,f6df0025-8f6a-43e1-8f07-36f18da3a485,0.09,false,false,near_mint,en,EUR
-Goldberry, River-Daughter,LTR,The Lord of the Rings: Tales of Middle-earth,52,normal,rare,1,83463,bf4f0a7c-620e-4ed8-8da3-fa6564e8a0cd,0.39,false,false,near_mint,en,EUR
+"Goldberry, River-Daughter",LTR,The Lord of the Rings: Tales of Middle-earth,52,normal,rare,1,83463,bf4f0a7c-620e-4ed8-8da3-fa6564e8a0cd,0.39,false,false,near_mint,en,EUR
 Lash of the Balrog,LTR,The Lord of the Rings: Tales of Middle-earth,408,normal,common,1,83360,a3bb0051-3ba3-4e22-9098-42ee0d9b645c,0.06,false,false,near_mint,en,EUR
 Old Man Willow,LTR,The Lord of the Rings: Tales of Middle-earth,217,normal,uncommon,1,82826,0362b7c4-fff5-4bc2-b32d-913f85c23cc4,0.03,false,false,near_mint,en,EUR
 Inherited Envelope,LTR,The Lord of the Rings: Tales of Middle-earth,242,normal,common,1,83418,b590d028-ea6a-4550-b5e2-ba328a81bbc0,0.09,false,false,near_mint,en,EUR
@@ -749,26 +749,26 @@ Stalwarts of Osgiliath,LTR,The Lord of the Rings: Tales of Middle-earth,33,norma
 Protector of Gondor,LTR,The Lord of the Rings: Tales of Middle-earth,25,normal,common,1,83256,85708748-40ca-4066-a287-7a6a189ff3df,0.05,false,false,near_mint,en,EUR
 Celeborn the Wise,LTR,The Lord of the Rings: Tales of Middle-earth,156,normal,uncommon,2,82959,2daf449a-5f3e-44fd-968e-55d8517ae797,0.07,false,false,near_mint,en,EUR
 Breaking of the Fellowship,LTR,The Lord of the Rings: Tales of Middle-earth,117,normal,common,2,82865,130f60d0-4fac-4e4e-a938-58f3b96e5335,0.05,false,false,near_mint,en,EUR
-Landroval, Horizon Witness,LTR,The Lord of the Rings: Tales of Middle-earth,21,normal,uncommon,2,83089,5684483b-9a6a-499b-a5e1-e2815ee03cdb,0.07,false,false,near_mint,en,EUR
-Now for Wrath, Now for Ruin!,LTR,The Lord of the Rings: Tales of Middle-earth,24,normal,common,3,83475,c2e2c80d-7581-46ba-8237-7886b91c19b3,0.06,false,false,near_mint,en,EUR
+"Landroval, Horizon Witness",LTR,The Lord of the Rings: Tales of Middle-earth,21,normal,uncommon,2,83089,5684483b-9a6a-499b-a5e1-e2815ee03cdb,0.07,false,false,near_mint,en,EUR
+"Now for Wrath, Now for Ruin!",LTR,The Lord of the Rings: Tales of Middle-earth,24,normal,common,3,83475,c2e2c80d-7581-46ba-8237-7886b91c19b3,0.06,false,false,near_mint,en,EUR
 Stone of Erech,LTR,The Lord of the Rings: Tales of Middle-earth,251,normal,uncommon,2,83452,bc02e193-df33-4eb1-adc1-b51ee931218a,0.15,false,false,near_mint,en,EUR
 Council's Deliberation,LTR,The Lord of the Rings: Tales of Middle-earth,46,normal,uncommon,2,83142,651503a2-5d1e-408a-9cdc-0cee05ab3ef0,0.11,false,false,near_mint,en,EUR
-Dúnedain Blade,LTR,The Lord of the Rings: Tales of Middle-earth,6,normal,common,2,83014,3d5f92bf-e4e7-487a-834c-964fdd6ad674,0.02,false,false,near_mint,en,EUR
+DÃºnedain Blade,LTR,The Lord of the Rings: Tales of Middle-earth,6,normal,common,2,83014,3d5f92bf-e4e7-487a-834c-964fdd6ad674,0.02,false,false,near_mint,en,EUR
 Book of Mazarbul,LTR,The Lord of the Rings: Tales of Middle-earth,116,normal,uncommon,2,82829,04dcef75-6f98-4233-ae32-6fe41724c8e0,0.07,false,false,near_mint,en,EUR
 Gandalf's Sanction,LTR,The Lord of the Rings: Tales of Middle-earth,208,normal,uncommon,3,83286,8ebf2a25-9bee-4146-af83-f22aab6db2a8,0.11,false,false,near_mint,en,EUR
 Sam's Desperate Rescue,LTR,The Lord of the Rings: Tales of Middle-earth,105,normal,common,2,83456,bdd4d735-8cda-47c1-865b-48b51ac8f666,0.08,false,false,near_mint,en,EUR
 Mirror of Galadriel,LTR,The Lord of the Rings: Tales of Middle-earth,244,normal,uncommon,2,83454,bc95036f-98f2-4ea7-93bb-542ad7064540,0.1,false,false,near_mint,en,EUR
 Errand-Rider of Gondor,LTR,The Lord of the Rings: Tales of Middle-earth,11,normal,common,2,83534,d3f990e7-54a3-4893-8510-645b2065447b,0.03,false,false,near_mint,en,EUR
-Soothing of Sméagol,LTR,The Lord of the Rings: Tales of Middle-earth,70,normal,common,2,83459,be6400e8-7f99-4005-9a92-ffbc359d3871,0.05,false,false,near_mint,en,EUR
-Meneldor, Swift Savior,LTR,The Lord of the Rings: Tales of Middle-earth,62,normal,uncommon,2,83131,62d2ee20-abbc-4a9d-8d30-4223242123e8,0.07,false,false,near_mint,en,EUR
+Soothing of SmÃ©agol,LTR,The Lord of the Rings: Tales of Middle-earth,70,normal,common,2,83459,be6400e8-7f99-4005-9a92-ffbc359d3871,0.05,false,false,near_mint,en,EUR
+"Meneldor, Swift Savior",LTR,The Lord of the Rings: Tales of Middle-earth,62,normal,uncommon,2,83131,62d2ee20-abbc-4a9d-8d30-4223242123e8,0.07,false,false,near_mint,en,EUR
 Banish from Edoras,LTR,The Lord of the Rings: Tales of Middle-earth,1,normal,common,2,83363,a4410076-e1fe-45f3-a0ca-a91ab0133ff4,0.02,false,false,near_mint,en,EUR
 Peregrin Took,LTR,The Lord of the Rings: Tales of Middle-earth,315,normal,uncommon,2,83673,fbbdd288-83ec-4be9-b55f-17771fd5ecc4,0.14,false,false,near_mint,en,EUR
 Rosie Cotton of South Lane,LTR,The Lord of the Rings: Tales of Middle-earth,27,normal,uncommon,1,83198,75338f49-1f02-4333-87e4-5779ef14e688,0.11,false,false,near_mint,en,EUR
 Mordor Trebuchet,LTR,The Lord of the Rings: Tales of Middle-earth,97,normal,common,1,83140,648bc8ae-1798-4c2f-a372-0487a90ba4d3,0.09,false,false,near_mint,en,EUR
 Food,TLTR,Tales of Middle-earth Tokens,10,normal,common,1,83466,bfcff41e-b6ff-4ddd-bcb6-8943f7d88aef,0.13,false,false,near_mint,en,EUR
-Éowyn, Fearless Knight,LTR,The Lord of the Rings: Tales of Middle-earth,430,normal,rare,1,82989,35b6da81-dc24-45b3-b94c-0d6fa00fad0c,0.87,false,false,near_mint,en,EUR
-Aragorn, Company Leader,LTR,The Lord of the Rings: Tales of Middle-earth,191,normal,rare,1,83194,73ca5f48-0117-49d6-8b00-b8482e3545b3,0.2,false,false,near_mint,en,EUR
-Legolas, Counter of Kills,LTR,The Lord of the Rings: Tales of Middle-earth,324,normal,uncommon,1,82970,30fe0cb4-71f0-4acb-af1a-a48775826487,0.05,false,false,near_mint,en,EUR
+"Ã‰owyn, Fearless Knight",LTR,The Lord of the Rings: Tales of Middle-earth,430,normal,rare,1,82989,35b6da81-dc24-45b3-b94c-0d6fa00fad0c,0.87,false,false,near_mint,en,EUR
+"Aragorn, Company Leader",LTR,The Lord of the Rings: Tales of Middle-earth,191,normal,rare,1,83194,73ca5f48-0117-49d6-8b00-b8482e3545b3,0.2,false,false,near_mint,en,EUR
+"Legolas, Counter of Kills",LTR,The Lord of the Rings: Tales of Middle-earth,324,normal,uncommon,1,82970,30fe0cb4-71f0-4acb-af1a-a48775826487,0.05,false,false,near_mint,en,EUR
 Orc Army,TLTR,Tales of Middle-earth Tokens,5,normal,common,1,82965,2f8b43e8-dd89-452e-b572-8559e19fdea2,0.1,false,false,near_mint,en,EUR
 Great Hall of the Citadel,LTR,The Lord of the Rings: Tales of Middle-earth,254,normal,common,1,82923,219c7b57-b62b-42d1-85d9-4b57624a3f54,0.17,false,false,near_mint,en,EUR
 Copy,TCLB,Battle for Baldur's Gate Tokens,19,normal,common,2,69515,51d7dc49-7116-489b-a719-7b293a513cdc,0.36,false,false,near_mint,en,EUR
@@ -788,8 +788,8 @@ Blessed Hippogriff // Tyr's Blessing,CLB,Commander Legends: Battle for Baldur's 
 Deadly Dispute,TDC,Tarkir: Dragonstorm Commander,177,normal,common,2,104890,b22ef77b-67a3-45d3-9d18-12b7b124cbf4,1.11,false,false,near_mint,en,EUR
 Blade of Selves,TDC,Tarkir: Dragonstorm Commander,313,normal,rare,1,104974,d0ca6a34-724f-47bb-b12d-c4998ffc3bf7,3.14,false,false,near_mint,en,EUR
 Street Urchin,CLB,Commander Legends: Battle for Baldur's Gate,197,normal,uncommon,1,69381,f6d5249c-52b6-4349-adcd-dafdc21f572b,0.17,false,false,near_mint,en,EUR
-Sarevok, Deathbringer,CLB,Commander Legends: Battle for Baldur's Gate,144,normal,uncommon,1,68984,4009d5ab-945d-43c3-9077-f10f96249fc4,0.08,false,false,near_mint,en,EUR
-Livaan, Cultist of Tiamat,CLB,Commander Legends: Battle for Baldur's Gate,188,normal,uncommon,3,69065,616c5b52-94bc-48e3-8e4f-e2db1eca7536,0.16,false,false,near_mint,en,EUR
+"Sarevok, Deathbringer",CLB,Commander Legends: Battle for Baldur's Gate,144,normal,uncommon,1,68984,4009d5ab-945d-43c3-9077-f10f96249fc4,0.08,false,false,near_mint,en,EUR
+"Livaan, Cultist of Tiamat",CLB,Commander Legends: Battle for Baldur's Gate,188,normal,uncommon,3,69065,616c5b52-94bc-48e3-8e4f-e2db1eca7536,0.16,false,false,near_mint,en,EUR
 Candlekeep Inspiration,CLB,Commander Legends: Battle for Baldur's Gate,59,normal,uncommon,1,68948,33464767-45f3-42b8-8d83-33b090eead93,0.17,false,false,near_mint,en,EUR
 Cast Down,CLB,Commander Legends: Battle for Baldur's Gate,119,normal,uncommon,1,69212,aba79021-39af-4e74-beb5-f2f508c865b2,0.53,false,false,near_mint,en,EUR
 Navigation Orb,CLB,Commander Legends: Battle for Baldur's Gate,329,normal,common,1,69317,d512a77e-2435-4695-9408-df8e17dd1fbd,0.2,false,false,near_mint,en,EUR
@@ -804,55 +804,55 @@ Bane's Invoker,CLB,Commander Legends: Battle for Baldur's Gate,7,normal,common,1
 Tymora's Invoker,CLB,Commander Legends: Battle for Baldur's Gate,101,normal,common,1,69223,af5535db-696f-4c43-a8b9-c8e521b62c9c,0.08,false,false,near_mint,en,EUR
 Bhaal's Invoker,CLB,Commander Legends: Battle for Baldur's Gate,163,normal,common,2,68982,3fd3e535-8412-4f79-a2b1-dfda9db1c496,0.09,false,false,near_mint,en,EUR
 Criminal Past,CLB,Commander Legends: Battle for Baldur's Gate,122,normal,uncommon,1,69070,6410a2a2-48d9-4032-b585-4eaa5bc06581,0.12,false,false,near_mint,en,EUR
-Erinis, Gloom Stalker,CLB,Commander Legends: Battle for Baldur's Gate,230,normal,uncommon,1,69247,b6a7d041-957a-4b19-9517-214689dadd45,0.16,false,false,near_mint,en,EUR
+"Erinis, Gloom Stalker",CLB,Commander Legends: Battle for Baldur's Gate,230,normal,uncommon,1,69247,b6a7d041-957a-4b19-9517-214689dadd45,0.16,false,false,near_mint,en,EUR
 Far Traveler,CLB,Commander Legends: Battle for Baldur's Gate,17,normal,uncommon,3,69294,cabc3688-2362-4757-a5be-087e577c4691,0.19,false,false,near_mint,en,EUR
 Altar of Bhaal // Bone Offering,CLB,Commander Legends: Battle for Baldur's Gate,109,normal,rare,2,68958,37bd2e21-b292-4c86-bd01-010d4a1af7b2,0.38,false,false,near_mint,en,EUR
-Oji, the Exquisite Blade,CLB,Commander Legends: Battle for Baldur's Gate,436,normal,uncommon,1,69369,f1d41d4f-d2e0-490c-bde0-ce57eb8fda22,0.09,false,false,near_mint,en,EUR
+"Oji, the Exquisite Blade",CLB,Commander Legends: Battle for Baldur's Gate,436,normal,uncommon,1,69369,f1d41d4f-d2e0-490c-bde0-ce57eb8fda22,0.09,false,false,near_mint,en,EUR
 Chardalyn Dragon,CLB,Commander Legends: Battle for Baldur's Gate,306,normal,common,1,69209,a950d8be-dcf7-4253-a3cc-c040ba632355,0.06,false,false,near_mint,en,EUR
 Scaled Nurturer,CLB,Commander Legends: Battle for Baldur's Gate,252,normal,common,1,69137,84ae5a76-b8b9-431d-8060-a6a96f5d1e0b,0.18,false,false,near_mint,en,EUR
 Ambitious Dragonborn,CLB,Commander Legends: Battle for Baldur's Gate,213,normal,common,1,69057,5e56a516-d71a-49c4-a929-9a8973125d3c,0.14,false,false,near_mint,en,EUR
-Abdel Adrian, Gorion's Ward,CLB,Commander Legends: Battle for Baldur's Gate,2,normal,uncommon,1,68967,396f9198-67b6-45d8-91b4-dc853bff9623,0.21,false,false,near_mint,en,EUR
-Halsin, Emerald Archdruid,CLB,Commander Legends: Battle for Baldur's Gate,234,normal,uncommon,3,69056,5e185e5c-b6f9-4d36-a6b1-d7315de38fca,0.1,false,false,near_mint,en,EUR
+"Abdel Adrian, Gorion's Ward",CLB,Commander Legends: Battle for Baldur's Gate,2,normal,uncommon,1,68967,396f9198-67b6-45d8-91b4-dc853bff9623,0.21,false,false,near_mint,en,EUR
+"Halsin, Emerald Archdruid",CLB,Commander Legends: Battle for Baldur's Gate,234,normal,uncommon,3,69056,5e185e5c-b6f9-4d36-a6b1-d7315de38fca,0.1,false,false,near_mint,en,EUR
 The Council of Four,CLB,Commander Legends: Battle for Baldur's Gate,271,normal,rare,1,68832,0873cfa8-046c-4b14-ae22-3fd6a691f763,0.47,false,false,near_mint,en,EUR
 Hardy Outlander,CLB,Commander Legends: Battle for Baldur's Gate,235,normal,uncommon,2,68992,44498893-3ff8-4d1e-abdf-4579e0c67020,0.13,false,false,near_mint,en,EUR
 Barroom Brawl,CLB,Commander Legends: Battle for Baldur's Gate,217,normal,rare,1,68825,0452a08e-1a04-432f-9c35-11699d7d44fe,0.21,false,false,near_mint,en,EUR
 Irenicus's Vile Duplication,CLB,Commander Legends: Battle for Baldur's Gate,78,normal,uncommon,1,68985,40a791df-2483-406d-90b0-a8d402d615d6,5.04,false,false,near_mint,en,EUR
 Island,CLB,Commander Legends: Battle for Baldur's Gate,456,normal,common,1,68910,21b99a83-bfe4-4149-b626-269953c5ac51,0.12,false,false,near_mint,en,EUR
-Alora, Merry Thief,CLB,Commander Legends: Battle for Baldur's Gate,55,normal,uncommon,1,68894,1c3c779b-d1d8-4b1e-bb06-ed7071a5ec0b,0.14,false,false,near_mint,en,EUR
-Ganax, Astral Hunter,CLB,Commander Legends: Battle for Baldur's Gate,176,normal,uncommon,1,69188,9f5bb319-29b2-4a7c-82e9-f8b5e47909a1,0.4,false,false,near_mint,en,EUR
+"Alora, Merry Thief",CLB,Commander Legends: Battle for Baldur's Gate,55,normal,uncommon,1,68894,1c3c779b-d1d8-4b1e-bb06-ed7071a5ec0b,0.14,false,false,near_mint,en,EUR
+"Ganax, Astral Hunter",CLB,Commander Legends: Battle for Baldur's Gate,176,normal,uncommon,1,69188,9f5bb319-29b2-4a7c-82e9-f8b5e47909a1,0.4,false,false,near_mint,en,EUR
 Swashbuckler Extraordinaire,CLB,Commander Legends: Battle for Baldur's Gate,198,normal,uncommon,1,69226,b06604f3-c70c-44d6-b1b9-e915552084e0,0.26,false,false,near_mint,en,EUR
 Guild Artisan,CLB,Commander Legends: Battle for Baldur's Gate,179,normal,uncommon,1,69214,abe5cc84-db39-4f64-b877-599880a8729a,0.15,false,false,near_mint,en,EUR
 Lightning Bolt,CLB,Commander Legends: Battle for Baldur's Gate,401,foil,common,1,67526,c69f668b-cf28-495a-bbe1-24e9d0089fa1,1.64,false,false,near_mint,en,EUR
 Avatar of Slaughter,CMM,Commander Masters,206,normal,rare,1,84865,c93dd6cc-53e8-4c67-8838-180b19f02088,0.18,false,false,near_mint,en,EUR
 Chaos Warp,TDC,Tarkir: Dragonstorm Commander,208,normal,rare,1,104572,3e78cf93-3b4e-4cd7-a9f8-0a8737013856,0.5,false,false,near_mint,en,EUR
-Kazuul, Tyrant of the Cliffs,MKC,Murders at Karlov Manor Commander,157,normal,rare,1,90400,721df547-d777-4247-b130-a4e247445b04,0.12,false,false,near_mint,en,EUR
+"Kazuul, Tyrant of the Cliffs",MKC,Murders at Karlov Manor Commander,157,normal,rare,1,90400,721df547-d777-4247-b130-a4e247445b04,0.12,false,false,near_mint,en,EUR
 Mountain,CLB,Commander Legends: Battle for Baldur's Gate,465,normal,common,1,68824,0333e39b-45e7-46df-908c-0748092ce8c1,0.12,false,false,near_mint,en,EUR
 Talisman of Creativity,TDC,Tarkir: Dragonstorm Commander,330,normal,uncommon,1,104926,bfe00640-e775-4b2e-91a8-081c7ec0125c,1.49,false,false,near_mint,en,EUR
 Desolate Lighthouse,LCC,The Lost Caverns of Ixalan Commander,327,normal,rare,1,88868,c155cc10-09f4-424b-b366-142adf9c1712,0.18,false,false,near_mint,en,EUR
 Sol Ring,M3C,Modern Horizons 3 Commander,305,normal,uncommon,1,94714,19911e6e-7c35-4281-b31c-266382f052cc,0.96,false,false,near_mint,en,EUR
-Ganax, Astral Hunter,CLB,Commander Legends: Battle for Baldur's Gate,398,foil,uncommon,2,69332,dc3347e3-df90-465d-9346-77d3b4fead10,0.55,false,false,near_mint,en,EUR
+"Ganax, Astral Hunter",CLB,Commander Legends: Battle for Baldur's Gate,398,foil,uncommon,2,69332,dc3347e3-df90-465d-9346-77d3b4fead10,0.55,false,false,near_mint,en,EUR
 Mystery Key,CLB,Commander Legends: Battle for Baldur's Gate,85,normal,uncommon,1,69143,8894a0f5-2e1d-474f-9400-bdaa91b19fda,0.06,false,false,near_mint,en,EUR
 Ancient Bronze Dragon,CLB,Commander Legends: Battle for Baldur's Gate,214,normal,mythic,1,69111,781af4dd-9e3c-48af-80e9-b52c427d2120,11.89,false,false,near_mint,en,EUR
 Spirit of the Labyrinth,BNG,Born of the Gods,27,normal,rare,1,14933,f44e5128-e146-4e46-b313-a40d82719d1d,1.06,false,false,near_mint,en,EUR
-Baba Lysaga, Night Witch,CLB,Commander Legends: Battle for Baldur's Gate,266,normal,rare,1,68940,2ef42c3f-f22e-4e99-adb0-9e8f8d442347,0.25,false,false,near_mint,en,EUR
+"Baba Lysaga, Night Witch",CLB,Commander Legends: Battle for Baldur's Gate,266,normal,rare,1,68940,2ef42c3f-f22e-4e99-adb0-9e8f8d442347,0.25,false,false,near_mint,en,EUR
 Undercity // The Initiative,TCLB,Battle for Baldur's Gate Tokens,20,normal,common,2,68937,2c65185b-6cf0-451d-985e-56aa45d9a57d,0.15,false,false,near_mint,en,EUR
 Nimbleclaw Adept,CLB,Commander Legends: Battle for Baldur's Gate,86,normal,common,2,68850,0df69a02-0b89-46af-abbc-51d1c419daed,0.14,false,false,near_mint,en,EUR
 Candlekeep Sage,CLB,Commander Legends: Battle for Baldur's Gate,60,normal,common,2,69091,6f706ac3-0ad8-44ac-a99e-21c04075951d,0.07,false,false,near_mint,en,EUR
 Traverse the Outlands,CLB,Commander Legends: Battle for Baldur's Gate,258,normal,rare,1,69365,ef192364-713a-42ff-8249-69a73ae61bd8,2.0,false,false,near_mint,en,EUR
 Rabbit,TCLB,Battle for Baldur's Gate Tokens,4,normal,common,1,69454,22ca55e0-d269-4178-bc90-920a12066e4f,1.8,false,false,near_mint,en,EUR
-Oji, the Exquisite Blade,CLB,Commander Legends: Battle for Baldur's Gate,290,normal,uncommon,1,68861,13129e63-558d-415d-87eb-616868205341,0.09,false,false,near_mint,en,EUR
+"Oji, the Exquisite Blade",CLB,Commander Legends: Battle for Baldur's Gate,290,normal,uncommon,1,68861,13129e63-558d-415d-87eb-616868205341,0.09,false,false,near_mint,en,EUR
 Githzerai Monk,CLB,Commander Legends: Battle for Baldur's Gate,20,normal,uncommon,1,68990,43a088ea-c397-4bdd-8779-59561ff73ec2,0.08,false,false,near_mint,en,EUR
 Hammers of Moradin,CLB,Commander Legends: Battle for Baldur's Gate,25,normal,uncommon,1,69354,e7429a5b-5579-4c4e-89ff-ee7f43db37e4,0.27,false,false,near_mint,en,EUR
 Marble Diamond,CLB,Commander Legends: Battle for Baldur's Gate,446,normal,common,1,69349,e5c6efa9-f198-4d8c-8a30-36a620679477,0.07,false,false,near_mint,en,EUR
 Run Away Together,CLB,Commander Legends: Battle for Baldur's Gate,92,normal,common,1,69239,b43c6427-6d7d-4a90-b4b9-529895082d60,0.06,false,false,near_mint,en,EUR
 Young Red Dragon // Bathe in Gold,CLB,Commander Legends: Battle for Baldur's Gate,210,normal,common,1,69305,d0b9865a-be87-48fd-a325-be6aca8a31e9,0.12,false,false,near_mint,en,EUR
 Dungeon Delver,CLB,Commander Legends: Battle for Baldur's Gate,67,normal,uncommon,1,69295,cba131bb-b8b3-4577-9f41-4700d9985134,0.14,false,false,near_mint,en,EUR
-Imoen, Mystic Trickster,CLB,Commander Legends: Battle for Baldur's Gate,77,normal,uncommon,1,68856,1097264b-e383-4864-a587-dc7d5468f359,0.11,false,false,near_mint,en,EUR
-Rilsa Rael, Kingpin,CLB,Commander Legends: Battle for Baldur's Gate,293,normal,uncommon,1,69023,54484439-6f8a-47f1-8d62-4689af7f00c2,0.16,false,false,near_mint,en,EUR
+"Imoen, Mystic Trickster",CLB,Commander Legends: Battle for Baldur's Gate,77,normal,uncommon,1,68856,1097264b-e383-4864-a587-dc7d5468f359,0.11,false,false,near_mint,en,EUR
+"Rilsa Rael, Kingpin",CLB,Commander Legends: Battle for Baldur's Gate,293,normal,uncommon,1,69023,54484439-6f8a-47f1-8d62-4689af7f00c2,0.16,false,false,near_mint,en,EUR
 Breath Weapon,CLB,Commander Legends: Battle for Baldur's Gate,165,normal,common,1,68819,0174e40a-0ef5-4439-91e6-3fc39f482520,2.64,false,false,near_mint,en,EUR
 Amethyst Dragon // Explosive Crystal,CLB,Commander Legends: Battle for Baldur's Gate,160,normal,uncommon,1,69038,57adbd6e-88ec-4472-a9c9-90b679fa881f,0.16,false,false,near_mint,en,EUR
 Emerald Dragon // Dissonant Wave,CLB,Commander Legends: Battle for Baldur's Gate,229,normal,uncommon,1,68896,1d07c21e-55dc-45b2-b406-2ac38ca5d871,0.15,false,false,near_mint,en,EUR
-Wilson, Refined Grizzly,CLB,Commander Legends: Battle for Baldur's Gate,411,normal,uncommon,1,69389,fb3ebc0c-ae58-46c9-addc-a91d32201a95,0.15,false,false,near_mint,en,EUR
+"Wilson, Refined Grizzly",CLB,Commander Legends: Battle for Baldur's Gate,411,normal,uncommon,1,69389,fb3ebc0c-ae58-46c9-addc-a91d32201a95,0.15,false,false,near_mint,en,EUR
 Elder Brain,CLB,Commander Legends: Battle for Baldur's Gate,125,normal,rare,1,67524,b82a13bf-da32-4c12-a9dd-271d8ca45c21,0.66,false,false,near_mint,en,EUR
 Minimus Containment,CLB,Commander Legends: Battle for Baldur's Gate,34,normal,common,1,69141,874b3590-932a-46b7-a7aa-e3e864ec22d1,0.13,false,false,near_mint,en,EUR
 Arms of Hadar,CLB,Commander Legends: Battle for Baldur's Gate,113,normal,common,1,69329,db1fd431-8f6d-4ca5-bc0c-53881c500da1,0.35,false,false,near_mint,en,EUR
@@ -896,14 +896,14 @@ Lightfoot Rogue,AFR,Adventures in the Forgotten Realms,111,normal,uncommon,1,603
 Reaper's Talisman,AFR,Adventures in the Forgotten Realms,117,normal,uncommon,1,60335,93b68168-e77d-4745-9393-726ef9fb72ec,0.08,false,false,near_mint,en,EUR
 Forsworn Paladin,AFR,Adventures in the Forgotten Realms,104,normal,rare,1,60232,4acaf396-f950-42da-85ab-149ffb31fee6,0.37,false,false,near_mint,en,EUR
 Tomb of Annihilation,TAFR,Adventures in the Forgotten Realms Tokens,22,normal,common,1,60282,70b284bd-7a8f-4b60-8238-f746bdc5b236,0.08,false,false,near_mint,en,EUR
-Kalain, Reclusive Painter,AFR,Adventures in the Forgotten Realms,342,normal,uncommon,1,60256,5df8cb7c-ad05-473b-9deb-7ce56c6799b8,0.18,false,false,near_mint,en,EUR
+"Kalain, Reclusive Painter",AFR,Adventures in the Forgotten Realms,342,normal,uncommon,1,60256,5df8cb7c-ad05-473b-9deb-7ce56c6799b8,0.18,false,false,near_mint,en,EUR
 Eyes of the Beholder,AFR,Adventures in the Forgotten Realms,101,normal,common,1,60216,3f9e5402-690f-497d-ada3-aa41fa900fdd,0.06,false,false,near_mint,en,EUR
 Valor Singer,AFR,Adventures in the Forgotten Realms,165,normal,common,1,60321,89bc162c-bdf1-43f7-882f-d8cee4f3f415,0.08,false,false,near_mint,en,EUR
 Scaled Herbalist,AFR,Adventures in the Forgotten Realms,204,normal,common,1,60274,6cb05274-5a94-44e3-889a-667cba1da033,0.09,false,false,near_mint,en,EUR
 You Find a Cursed Idol,AFR,Adventures in the Forgotten Realms,213,normal,common,1,60497,efb5671a-942a-4730-9756-32fe600e0528,0.1,false,false,near_mint,en,EUR
 Baleful Beholder,AFR,Adventures in the Forgotten Realms,89,normal,common,1,60477,e52d6ef6-d8a3-4288-8917-4c0a179ed4e0,0.05,false,false,near_mint,en,EUR
 Manticore,AFR,Adventures in the Forgotten Realms,113,normal,common,1,60211,3b3d9117-724a-4b67-be27-142b9c283788,0.03,false,false,near_mint,en,EUR
-Shessra, Death's Whisper,AFR,Adventures in the Forgotten Realms,231,normal,uncommon,1,60258,60ca5fef-af21-4e2b-9efa-61e08a638a1f,0.11,false,false,near_mint,en,EUR
+"Shessra, Death's Whisper",AFR,Adventures in the Forgotten Realms,231,normal,uncommon,1,60258,60ca5fef-af21-4e2b-9efa-61e08a638a1f,0.11,false,false,near_mint,en,EUR
 Circle of the Moon Druid,AFR,Adventures in the Forgotten Realms,177,normal,common,1,60280,700c9ed8-6bfe-4f1e-855a-5f31e0d2fc9b,0.05,false,false,near_mint,en,EUR
 Thieves' Tools,CLB,Commander Legends: Battle for Baldur's Gate,152,normal,common,1,69276,c3bf4ee1-b6a8-4a69-adab-6839c1786cc9,0.11,false,false,near_mint,en,EUR
 Potion of Healing,AFR,Adventures in the Forgotten Realms,34,normal,common,1,60454,d5edb608-c7d7-4fa9-b969-262c9789fc17,0.1,false,false,near_mint,en,EUR
@@ -948,9 +948,9 @@ White Dragon,AFR,Adventures in the Forgotten Realms,41,normal,uncommon,1,60177,2
 Dragon's Disciple,AFR,Adventures in the Forgotten Realms,13,normal,uncommon,1,60351,9e5e6b78-3e99-49f5-9eaf-bbb2e9789fbe,0.04,false,false,near_mint,en,EUR
 Bar the Gate,AFR,Adventures in the Forgotten Realms,47,normal,common,1,60401,b9b1e53f-1384-4860-9944-e68922afc65c,0.1,false,false,near_mint,en,EUR
 Veteran Dungeoneer,AFR,Adventures in the Forgotten Realms,40,normal,common,1,60458,d8fe33b3-afaf-4a98-ae64-7d7e0eabe993,0.13,false,false,near_mint,en,EUR
-Delina, Wild Mage,AFR,Adventures in the Forgotten Realms,138,foil,rare,1,60485,e87459aa-af8f-4bd2-a310-151353083a2e,10.53,false,false,near_mint,en,EUR
+"Delina, Wild Mage",AFR,Adventures in the Forgotten Realms,138,foil,rare,1,60485,e87459aa-af8f-4bd2-a310-151353083a2e,10.53,false,false,near_mint,en,EUR
 Displacer Beast,AFR,Adventures in the Forgotten Realms,54,normal,uncommon,1,60336,95d5c36c-bcc8-459c-9f4b-b265ccdb1f06,0.05,false,false,near_mint,en,EUR
-Kalain, Reclusive Painter,AFR,Adventures in the Forgotten Realms,225,normal,uncommon,1,60476,e45e9552-7737-4c61-89b0-5a3bec3c8f34,0.3,false,false,near_mint,en,EUR
+"Kalain, Reclusive Painter",AFR,Adventures in the Forgotten Realms,225,normal,uncommon,1,60476,e45e9552-7737-4c61-89b0-5a3bec3c8f34,0.3,false,false,near_mint,en,EUR
 Skullport Merchant,AFR,Adventures in the Forgotten Realms,120,normal,uncommon,1,60190,2bbb8865-dc37-4d56-9a2d-a92f7462c338,0.13,false,false,near_mint,en,EUR
 Gloom Stalker,AFR,Adventures in the Forgotten Realms,16,normal,common,1,60209,388722ad-dcc6-41b9-afd8-a93be91b30e0,0.09,false,false,near_mint,en,EUR
 Loathsome Troll,AFR,Adventures in the Forgotten Realms,327,normal,uncommon,1,60442,d0505a8a-841b-471b-970d-125583b9ba9d,0.12,false,false,near_mint,en,EUR
@@ -970,8 +970,8 @@ Bronze Walrus,CLB,Commander Legends: Battle for Baldur's Gate,302,normal,common,
 Stunning Strike,CLB,Commander Legends: Battle for Baldur's Gate,97,normal,common,1,69039,582dffab-2851-4498-ad69-c4d072617f32,0.04,false,false,near_mint,en,EUR
 Agent of the Iron Throne,CLB,Commander Legends: Battle for Baldur's Gate,107,normal,uncommon,1,69046,5a5984d3-1e76-4d97-9373-b59cfa9c38ae,0.54,false,false,near_mint,en,EUR
 Chain Devil,CLB,Commander Legends: Battle for Baldur's Gate,120,normal,common,1,68971,3b434c1d-792e-4ca7-aea0-938e85fe167c,0.15,false,false,near_mint,en,EUR
-Gluntch, the Bestower,CLB,Commander Legends: Battle for Baldur's Gate,275,normal,rare,1,68970,3b3e889a-5865-4464-9923-bffa25c50cd2,0.26,false,false,near_mint,en,EUR
-Raggadragga, Goreguts Boss,CLB,Commander Legends: Battle for Baldur's Gate,291,normal,rare,1,68859,1166ce2a-4e0b-4a57-929d-566f461a6282,0.23,false,false,near_mint,en,EUR
+"Gluntch, the Bestower",CLB,Commander Legends: Battle for Baldur's Gate,275,normal,rare,1,68970,3b3e889a-5865-4464-9923-bffa25c50cd2,0.26,false,false,near_mint,en,EUR
+"Raggadragga, Goreguts Boss",CLB,Commander Legends: Battle for Baldur's Gate,291,normal,rare,1,68859,1166ce2a-4e0b-4a57-929d-566f461a6282,0.23,false,false,near_mint,en,EUR
 Green Dragon,AFR,Adventures in the Forgotten Realms,186,normal,uncommon,2,60222,45804134-cc04-4587-9674-2c884964083d,0.1,false,false,near_mint,en,EUR
 Faerie Dragon,TCLB,Battle for Baldur's Gate Tokens,6,normal,common,2,69558,6f1eb498-8496-4234-8e87-78dc3f647534,0.35,false,false,near_mint,en,EUR
 Hoarding Ogre,CLB,Commander Legends: Battle for Baldur's Gate,181,normal,common,2,69102,746fec80-5ddb-42b8-bc54-728bcd3863b3,0.11,false,false,near_mint,en,EUR
@@ -995,7 +995,7 @@ Outlaws' Fury,OTJ,Outlaws of Thunder Junction,136,normal,common,1,93428,f7502b9c
 Fleeting Reflection,OTJ,Outlaws of Thunder Junction,49,normal,uncommon,1,93258,8f8c931e-219f-4032-b55b-b5975fbea1e7,0.17,false,false,near_mint,en,EUR
 Nurturing Pixie,OTJ,Outlaws of Thunder Junction,20,normal,uncommon,1,93046,0fe155f6-888b-41a0-a9a0-be7bea998718,0.42,false,false,near_mint,en,EUR
 Deepmuck Desperado,OTJ,Outlaws of Thunder Junction,42,normal,uncommon,1,93435,f95ee726-7465-40f8-a954-19b19e636c12,0.15,false,false,near_mint,en,EUR
-Lilah, Undefeated Slickshot,OTJ,Outlaws of Thunder Junction,217,normal,rare,1,93384,e21f90ea-5934-4757-8515-38ef116afac1,0.19,false,false,near_mint,en,EUR
+"Lilah, Undefeated Slickshot",OTJ,Outlaws of Thunder Junction,217,normal,rare,1,93384,e21f90ea-5934-4757-8515-38ef116afac1,0.19,false,false,near_mint,en,EUR
 Fierce Retribution,OTP,Breaking News,2,normal,uncommon,1,93264,92270719-352d-426f-b498-fbeaf8fd087b,0.03,false,false,near_mint,en,EUR
 Jailbreak Scheme,OTJ,Outlaws of Thunder Junction,53,normal,common,1,93293,a4be8e47-9006-4770-8d99-68a684064a43,0.11,false,false,near_mint,en,EUR
 Jagged Barrens,OTJ,Outlaws of Thunder Junction,259,normal,common,1,93178,5d809f5b-d965-4cb1-a9f8-2048f8534373,1.95,false,false,near_mint,en,EUR
@@ -1019,7 +1019,7 @@ Sterling Hound,OTJ,Outlaws of Thunder Junction,249,normal,common,1,93284,9e5bfcf
 Stagecoach Security,OTJ,Outlaws of Thunder Junction,30,normal,common,1,93086,21301998-b3e6-4f3d-89f4-5e17aeb79a1e,0.02,false,false,near_mint,en,EUR
 Rise of the Varmints,OTJ,Outlaws of Thunder Junction,179,normal,uncommon,1,93423,f4e879d8-a058-48e8-9733-f58b1e0da4b9,0.06,false,false,near_mint,en,EUR
 Cactusfolk Sureshot,OTJ,Outlaws of Thunder Junction,199,normal,uncommon,1,93109,318b8c5d-9fb0-488f-9b32-c2e29d1f1dbb,0.14,false,false,near_mint,en,EUR
-Magda, the Hoardmaster,OTJ,Outlaws of Thunder Junction,133,normal,rare,1,93141,4443d112-209b-49ec-bc40-3a11dcdb092e,0.46,false,false,near_mint,en,EUR
+"Magda, the Hoardmaster",OTJ,Outlaws of Thunder Junction,133,normal,rare,1,93141,4443d112-209b-49ec-bc40-3a11dcdb092e,0.46,false,false,near_mint,en,EUR
 Journey to Nowhere,OTP,Breaking News,3,normal,uncommon,1,93140,442bb671-8b23-4e3b-bf39-18152a68887e,0.3,false,false,near_mint,en,EUR
 Djinn of Fool's Fall,OTJ,Outlaws of Thunder Junction,43,normal,common,1,93146,48bfc6af-c651-485e-a1cc-f9d00aeaf812,0.06,false,false,near_mint,en,EUR
 Mercenary,TOTJ,Outlaws of Thunder Junction Tokens,10,normal,common,1,93659,5f04607f-eed2-462e-897f-82e41e5f7049,0.18,false,false,near_mint,en,EUR
@@ -1033,7 +1033,7 @@ Sterling Keykeeper,OTJ,Outlaws of Thunder Junction,32,normal,common,1,93026,019d
 Forsaken Miner,OTJ,Outlaws of Thunder Junction,88,normal,uncommon,1,93059,1679f74d-00f8-436c-9f8c-aa3f843a546c,0.64,false,false,near_mint,en,EUR
 Outlaw Stitcher,OTJ,Outlaws of Thunder Junction,59,normal,uncommon,1,93320,ba9584f0-55b8-448d-99a7-041934053f42,0.1,false,false,near_mint,en,EUR
 Cunning Coyote,OTJ,Outlaws of Thunder Junction,118,normal,uncommon,1,93176,5b4ac6ea-c67b-4f90-be4f-aa25882f5794,0.07,false,false,near_mint,en,EUR
-Breeches, the Blastmaker,OTJ,Outlaws of Thunder Junction,197,normal,rare,1,93354,cf3bda9e-42af-4f99-a504-c96c25c2794b,0.22,false,false,near_mint,en,EUR
+"Breeches, the Blastmaker",OTJ,Outlaws of Thunder Junction,197,normal,rare,1,93354,cf3bda9e-42af-4f99-a504-c96c25c2794b,0.22,false,false,near_mint,en,EUR
 Blacksnag Buzzard,OTJ,Outlaws of Thunder Junction,79,normal,common,1,93414,ef10b2ad-9b9b-4c5d-a2c7-3ce742224b50,0.05,false,false,near_mint,en,EUR
 Bristling Backwoods,OTJ,Outlaws of Thunder Junction,253,normal,common,1,93365,d61dfeb7-7f6b-4601-8396-2cbb98165489,0.17,false,false,near_mint,en,EUR
 Construct,TBIG,The Big Score Tokens,3,normal,common,1,93573,3877d2d1-61f2-4295-b0fc-827965eaaefc,2.49,false,false,near_mint,en,EUR
@@ -1046,9 +1046,9 @@ Waterwind Scout,LCI,The Lost Caverns of Ixalan,84,normal,common,1,88669,8a7738fb
 Soulcoil Viper,LCI,The Lost Caverns of Ixalan,120,normal,uncommon,1,88285,1125fdf2-2dbb-49a6-b76f-8cd6c3d6fab4,0.06,false,false,near_mint,en,EUR
 Deep-Cavern Bat,LCI,The Lost Caverns of Ixalan,102,normal,uncommon,1,88565,69c68c95-b788-43b1-9f22-1b22c5a00b25,0.75,false,false,near_mint,en,EUR
 Ruin-Lurker Bat,LCI,The Lost Caverns of Ixalan,33,normal,uncommon,1,88934,d6bedf13-c2bc-4e5d-aba3-3c0d5495a9bb,0.17,false,false,near_mint,en,EUR
-Captain Storm, Cosmium Raider,LCI,The Lost Caverns of Ixalan,303,normal,uncommon,1,89035,f5e13dad-e326-4b8e-91c7-dc0d6c3bf51d,0.11,false,false,near_mint,en,EUR
-Ojer Axonil, Deepest Might // Temple of Power,LCI,The Lost Caverns of Ixalan,317,normal,mythic,1,86318,5140d5d0-15ad-45b2-8ae8-aa53b1cd8132,10.84,false,false,near_mint,en,EUR
-Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun,LCI,The Lost Caverns of Ixalan,188,normal,rare,1,88213,004524bf-b249-4dac-9c10-44d57143feb9,3.43,false,false,near_mint,en,EUR
+"Captain Storm, Cosmium Raider",LCI,The Lost Caverns of Ixalan,303,normal,uncommon,1,89035,f5e13dad-e326-4b8e-91c7-dc0d6c3bf51d,0.11,false,false,near_mint,en,EUR
+"Ojer Axonil, Deepest Might // Temple of Power",LCI,The Lost Caverns of Ixalan,317,normal,mythic,1,86318,5140d5d0-15ad-45b2-8ae8-aa53b1cd8132,10.84,false,false,near_mint,en,EUR
+"Growing Rites of Itlimoc // Itlimoc, Cradle of the Sun",LCI,The Lost Caverns of Ixalan,188,normal,rare,1,88213,004524bf-b249-4dac-9c10-44d57143feb9,3.43,false,false,near_mint,en,EUR
 Gnome,TLCI,The Lost Caverns of Ixalan Tokens,16,normal,common,1,88580,6def709a-53b3-4520-9544-74ab6472d256,0.22,false,false,near_mint,en,EUR
 Burning Sun Cavalry,LCI,The Lost Caverns of Ixalan,138,normal,common,1,88264,0c491ac0-4752-47a7-967e-456b6e4245de,0.04,false,false,near_mint,en,EUR
 Acrobatic Leap,LCI,The Lost Caverns of Ixalan,2,normal,common,1,88457,47f82d84-03ad-42dd-80ce-f0ac5e353e46,0.11,false,false,near_mint,en,EUR
@@ -1056,8 +1056,8 @@ Earthshaker Dreadmaw,LCI,The Lost Caverns of Ixalan,325,normal,uncommon,1,88300,
 Amalia Benavides Aguirre,LCI,The Lost Caverns of Ixalan,221,normal,rare,1,88733,9acf80a5-f2ca-45b4-aca8-fbc690e35401,0.76,false,false,near_mint,en,EUR
 Wail of the Forgotten,LCI,The Lost Caverns of Ixalan,244,normal,rare,1,88557,67108256-b7da-44bd-9639-4264931d348f,0.16,false,false,near_mint,en,EUR
 Fungus,TLCI,The Lost Caverns of Ixalan Tokens,7,normal,common,1,88599,73ff66e3-ea24-4542-887f-c41abb1759e6,0.14,false,false,near_mint,en,EUR
-Bartolomé del Presidio,LCI,The Lost Caverns of Ixalan,301,normal,uncommon,1,89045,f82bb486-7009-4b53-973f-477fc13ad7e7,0.17,false,false,near_mint,en,EUR
-Akawalli, the Seething Tower,LCI,The Lost Caverns of Ixalan,298,normal,uncommon,1,88665,88e9dbe6-5685-480d-b0d7-828a7058fb22,0.08,false,false,near_mint,en,EUR
+BartolomÃ© del Presidio,LCI,The Lost Caverns of Ixalan,301,normal,uncommon,1,89045,f82bb486-7009-4b53-973f-477fc13ad7e7,0.17,false,false,near_mint,en,EUR
+"Akawalli, the Seething Tower",LCI,The Lost Caverns of Ixalan,298,normal,uncommon,1,88665,88e9dbe6-5685-480d-b0d7-828a7058fb22,0.08,false,false,near_mint,en,EUR
 Get Lost,LCI,The Lost Caverns of Ixalan,333,normal,rare,1,88626,7d60e0bc-1ce1-4b91-9952-16b394b5a348,6.17,false,false,near_mint,en,EUR
 Marauding Brinefang,LCI,The Lost Caverns of Ixalan,64,normal,common,1,88610,78328899-7996-4cfd-bf00-d2a0d0ff3ef8,0.09,false,false,near_mint,en,EUR
 Panicked Altisaur,LCI,The Lost Caverns of Ixalan,159,normal,common,1,88807,ad371c97-a266-4a88-9d28-2e889a37ba00,0.1,false,false,near_mint,en,EUR
@@ -1066,7 +1066,7 @@ Fanatical Offering,LCI,The Lost Caverns of Ixalan,105,normal,common,1,88940,d896
 Acolyte of Aclazotz,LCI,The Lost Caverns of Ixalan,89,normal,common,1,88726,99009400-ffa4-40af-8305-78295ae605ac,0.08,false,false,near_mint,en,EUR
 Vito's Inquisitor,LCI,The Lost Caverns of Ixalan,130,normal,common,1,88689,9030048a-b866-4a89-8d4a-aa55411463e4,0.06,false,false,near_mint,en,EUR
 Mephitic Draught,LCI,The Lost Caverns of Ixalan,112,normal,common,1,88811,adcae196-dbcc-44d5-b700-c57b0b646483,0.13,false,false,near_mint,en,EUR
-Kutzil, Malamet Exemplar,LCI,The Lost Caverns of Ixalan,232,normal,uncommon,1,88890,c9f88a40-a6ed-4c1f-a309-011aca1acddd,0.75,false,false,near_mint,en,EUR
+"Kutzil, Malamet Exemplar",LCI,The Lost Caverns of Ixalan,232,normal,uncommon,1,88890,c9f88a40-a6ed-4c1f-a309-011aca1acddd,0.75,false,false,near_mint,en,EUR
 Malamet War Scribe,LCI,The Lost Caverns of Ixalan,21,normal,uncommon,1,88843,b92a6ba0-cea0-4084-92f1-2bd60ea25fb0,0.03,false,false,near_mint,en,EUR
 Helping Hand,LCI,The Lost Caverns of Ixalan,17,normal,uncommon,1,88840,b8aa7126-5df3-42dd-b4a3-0d0ea59eeebd,0.18,false,false,near_mint,en,EUR
 Copy,TLCI,The Lost Caverns of Ixalan Tokens,1,normal,common,1,88219,01c3b739-89b3-4ad8-aab9-76e8f87cf123,0.0,false,false,near_mint,en,EUR
@@ -1103,12 +1103,12 @@ Pigment Storm,STX,Strixhaven: School of Mages,111,normal,common,1,58330,d285a7a1
 Bestial Bloodline,WOE,Wilds of Eldraine,162,normal,common,1,85402,55b9b8e5-1ed8-4be0-aad5-041a599c6841,0.05,false,false,near_mint,en,EUR
 Redtooth Genealogist,WOE,Wilds of Eldraine,179,normal,common,1,85600,99c81440-66eb-4443-a83f-e2f15cb68a3e,0.06,false,false,near_mint,en,EUR
 Curse of the Werefox,WOE,Wilds of Eldraine,167,normal,common,1,85547,89148458-1fd6-48ef-a2d9-7b434c9723ec,0.04,false,false,near_mint,en,EUR
-Syr Armont, the Redeemer,WOE,Wilds of Eldraine,214,normal,uncommon,1,85533,85050609-baf0-430a-ab33-83a6ea6d4741,0.03,false,false,near_mint,en,EUR
+"Syr Armont, the Redeemer",WOE,Wilds of Eldraine,214,normal,uncommon,1,85533,85050609-baf0-430a-ab33-83a6ea6d4741,0.03,false,false,near_mint,en,EUR
 Royal Treatment,WOE,Wilds of Eldraine,183,normal,uncommon,1,85671,b6516b8f-ecfb-401e-ba8e-bf561aa2be64,0.34,false,false,near_mint,en,EUR
 Woodland Acolyte // Mend the Wilds,WOE,Wilds of Eldraine,241,normal,uncommon,1,85687,b9f10623-4783-4773-b9c8-a5a2bcfdb5d9,0.09,false,false,near_mint,en,EUR
 Shrouded Shepherd // Cleave Shadows,WOE,Wilds of Eldraine,236,normal,uncommon,1,85644,ab03c342-2bf4-41bf-8bb8-472d978d238a,0.05,false,false,near_mint,en,EUR
 Virtue of Strength // Garenbrig Growth,WOE,Wilds of Eldraine,284,normal,mythic,1,85465,684f8568-390f-426f-ba71-e4be5fdaceee,3.77,false,false,near_mint,en,EUR
-Rowan, Scion of War,WOE,Wilds of Eldraine,211,normal,mythic,1,85391,4ee179ab-a15b-4bd6-b7f8-1e1abeeb31b7,0.44,false,false,near_mint,en,EUR
+"Rowan, Scion of War",WOE,Wilds of Eldraine,211,normal,mythic,1,85391,4ee179ab-a15b-4bd6-b7f8-1e1abeeb31b7,0.44,false,false,near_mint,en,EUR
 Polluted Bonds,WOT,Wilds of Eldraine: Enchanting Tales,34,normal,rare,1,85781,e15e0521-1abf-4426-9f31-4081f068b184,1.32,false,false,near_mint,en,EUR
 Sweettooth Witch,WOE,Wilds of Eldraine,111,normal,common,1,85629,a6bdb984-06f8-4bca-a943-17fe5db97682,0.16,false,false,near_mint,en,EUR
 Maraleaf Pixie,ELD,Throne of Eldraine,196,normal,uncommon,1,46142,e6d7f9c9-dd83-4684-a949-1c22f316138a,0.14,false,false,near_mint,en,EUR
@@ -1145,8 +1145,8 @@ Spectral Searchlight,CMM,Commander Masters,411,normal,uncommon,1,84375,542eed4a-
 Opal Palace,CMM,Commander Masters,422,normal,common,1,84994,e64ed120-1e33-4e31-8f16-ba56497c3c84,0.14,false,false,near_mint,en,EUR
 Path of Ancestry,TDC,Tarkir: Dragonstorm Commander,382,normal,common,1,104906,b8504812-fcf5-47d3-977d-1d9a11231fd0,0.18,false,false,near_mint,en,EUR
 Command Tower,M3C,Modern Horizons 3 Commander,331,normal,common,1,94722,27e36832-09ca-4070-8511-94580014c3ed,0.19,false,false,near_mint,en,EUR
-Molimo, Maro-Sorcerer,CMM,Commander Masters,305,normal,uncommon,1,84456,6c5d3eba-e456-47c2-992b-a97ba66e9676,0.09,false,false,near_mint,en,EUR
-Yisan, the Wanderer Bard,CMM,Commander Masters,334,normal,rare,1,84632,94e3a130-deeb-4bf4-a1f6-9219c3d8c373,0.26,false,false,near_mint,en,EUR
+"Molimo, Maro-Sorcerer",CMM,Commander Masters,305,normal,uncommon,1,84456,6c5d3eba-e456-47c2-992b-a97ba66e9676,0.09,false,false,near_mint,en,EUR
+"Yisan, the Wanderer Bard",CMM,Commander Masters,334,normal,rare,1,84632,94e3a130-deeb-4bf4-a1f6-9219c3d8c373,0.26,false,false,near_mint,en,EUR
 Grave Pact,CMM,Commander Masters,165,normal,mythic,1,85057,f5a4970b-2ba6-4c91-a301-369369cdf360,15.76,false,false,near_mint,en,EUR
 Inspiring Statuary,MKC,Murders at Karlov Manor Commander,230,normal,rare,1,90349,4f7e4c0a-683b-4b22-9ea5-ed6470b8b1d7,0.26,false,false,near_mint,en,EUR
 Captain Ripley Vance,CMM,Commander Masters,209,normal,uncommon,1,84931,d640bc10-51ce-48e9-bceb-c3e69d7eae31,0.08,false,false,near_mint,en,EUR
@@ -1175,7 +1175,7 @@ Signature Slam,MH3,Modern Horizons 3,168,normal,uncommon,1,94478,634e05c9-96da-4
 Monstrous Vortex,MH3,Modern Horizons 3,162,normal,uncommon,1,94713,162fcdec-bf3c-43ba-9ada-212f7dec5fbd,0.19,false,false,near_mint,en,EUR
 Stump Stomp // Burnwillow Clearing,MH3,Modern Horizons 3,259,normal,uncommon,1,94432,49974246-0a3b-4ec9-b5ea-2a89df9bb0b5,0.36,false,false,near_mint,en,EUR
 Deep Analysis,TDC,Tarkir: Dragonstorm Commander,150,normal,common,1,104523,2d93b071-d303-4892-bac4-77a75eaa91a1,0.18,false,false,near_mint,en,EUR
-Kudo, King Among Bears,MH3,Modern Horizons 3,192,normal,rare,1,94220,585e4e02-4873-4a65-a9ad-30cf0d5b6f79,0.19,false,false,near_mint,en,EUR
+"Kudo, King Among Bears",MH3,Modern Horizons 3,192,normal,rare,1,94220,585e4e02-4873-4a65-a9ad-30cf0d5b6f79,0.19,false,false,near_mint,en,EUR
 Zombie,TINR,Innistrad Remastered Tokens,10,normal,common,1,102819,e6474e0d-a3ca-439f-b9b8-82022c59ff14,0.21,false,false,near_mint,en,EUR
 Rosecot Knight,MH3,Modern Horizons 3,42,normal,common,1,94874,9ae7df20-1ccf-459b-b81c-ab8763c77ccf,0.07,false,false,near_mint,en,EUR
 Glimpse the Impossible,MH3,Modern Horizons 3,124,normal,common,1,94349,133ad0dd-5b61-4c38-9264-0b0e75b95d95,0.14,false,false,near_mint,en,EUR
@@ -1202,7 +1202,7 @@ Cephalid Coliseum,TDC,Tarkir: Dragonstorm Commander,349,normal,uncommon,1,104428
 Plains,MH3,Modern Horizons 3,311,normal,common,1,94630,d3bd857b-87d0-4a0f-9aac-0b1b661bb3bd,0.06,false,false,near_mint,en,EUR
 Moogle,TFIN,Final Fantasy Tokens,11,normal,common,1,105862,295b78dc-b26d-4e92-8f75-916566c4db14,0.32,false,false,near_mint,en,EUR
 Phantom Train,FIN,Final Fantasy,110,normal,uncommon,1,106350,7a50d2ac-101d-41e1-b400-18fa7d2d7125,0.1,false,false,near_mint,en,EUR
-Gongaga, Reactor Town,FIN,Final Fantasy,280,normal,common,1,106580,7beccfa6-3e4b-4460-954e-870cb39e462d,0.07,false,false,near_mint,en,EUR
+"Gongaga, Reactor Town",FIN,Final Fantasy,280,normal,common,1,106580,7beccfa6-3e4b-4460-954e-870cb39e462d,0.07,false,false,near_mint,en,EUR
 Prishe's Wanderings,FIN,Final Fantasy,193,normal,common,1,106658,d6e1dee0-e2cd-4899-a3ea-7d0df717c9ab,0.06,false,false,near_mint,en,EUR
 Rook Turret,FIN,Final Fantasy,69,normal,common,1,106541,4572884d-0c0e-41e7-b219-f76b95fdbd01,0.09,false,false,near_mint,en,EUR
 Fate of the Sun-Cryst,FIN,Final Fantasy,19,normal,common,1,106287,900cdf11-b42e-4dcc-97c3-2e4d8e406a70,0.07,false,false,near_mint,en,EUR
@@ -1224,7 +1224,7 @@ Kin-Tree Severance,TDM,Tarkir: Dragonstorm,200,normal,uncommon,1,104896,b577e246
 Jade-Cast Sentinel,TDM,Tarkir: Dragonstorm,243,normal,common,3,104293,516ce5fa-bd00-429b-ba22-b38c7dd9306c,0.09,false,false,near_mint,en,EUR
 Highspire Bell-Ringer,TDM,Tarkir: Dragonstorm,47,normal,common,2,105020,e75dccf7-2894-4c4a-b516-3eee73acddd3,0.09,false,false,near_mint,en,EUR
 Seize Opportunity,TDM,Tarkir: Dragonstorm,119,normal,common,2,104391,f7818d28-b9a5-4341-9adc-666070b8878d,0.09,false,false,near_mint,en,EUR
-Betor, Kin to All,TDM,Tarkir: Dragonstorm,172,normal,mythic,1,104345,b475b071-5545-483e-a397-89451f258602,5.4,false,false,near_mint,en,EUR
+"Betor, Kin to All",TDM,Tarkir: Dragonstorm,172,normal,mythic,1,104345,b475b071-5545-483e-a397-89451f258602,5.4,false,false,near_mint,en,EUR
 Warrior,TTDM,Tarkir: Dragonstorm Tokens,13,normal,common,2,104765,7edc0515-a130-45a7-aa09-0e23bba41587,0.25,false,false,near_mint,en,EUR
 Temur Battlecrier,TDM,Tarkir: Dragonstorm,425,foil,rare,1,104380,ee706aa4-3188-47ee-b164-35287b26e677,0.34,false,false,near_mint,en,EUR
 Izzet Boilerworks,M3C,Modern Horizons 3 Commander,350,normal,uncommon,1,94795,af8535f9-463e-4963-94db-db0e22605275,0.17,false,false,near_mint,en,EUR
@@ -1269,7 +1269,7 @@ Snakeskin Veil,TDM,Tarkir: Dragonstorm,159,normal,common,4,104856,a3d2c692-7566-
 Molten Exhale,TDM,Tarkir: Dragonstorm,113,normal,common,4,104440,0ab95aab-a4bf-4131-83a0-2c138b6f20c3,0.1,false,false,near_mint,en,EUR
 Wayfarer's Bauble,TDC,Tarkir: Dragonstorm Commander,335,normal,common,1,104879,ac1960a1-9141-468c-b96c-6c8e6905084d,0.24,false,false,near_mint,en,EUR
 Midnight Clock,DRC,Aetherdrift Commander,79,normal,rare,1,103285,d401b4af-649d-4b97-864d-5796a1a8e22b,0.27,false,false,near_mint,en,EUR
-Sarkhan, Dragon Ascendant,TDM,Tarkir: Dragonstorm,118,normal,rare,1,104003,c2200646-7b7c-489d-bbae-16b03e1d7fb2,0.29,false,false,near_mint,en,EUR
+"Sarkhan, Dragon Ascendant",TDM,Tarkir: Dragonstorm,118,normal,rare,1,104003,c2200646-7b7c-489d-bbae-16b03e1d7fb2,0.29,false,false,near_mint,en,EUR
 Songcrafter Mage,TDM,Tarkir: Dragonstorm,225,normal,rare,1,104813,9523bc07-49e5-409c-ae6b-b28e305eef36,0.26,false,false,near_mint,en,EUR
 Hundred-Battle Veteran,TDM,Tarkir: Dragonstorm,82,normal,uncommon,1,105017,e53adf93-2db5-4087-a2dc-c8f53401d700,0.07,false,false,near_mint,en,EUR
 Lotuslight Dancers,TDM,Tarkir: Dragonstorm,204,normal,rare,1,104771,82aa2593-4a79-46f1-a2bd-b71fb504d0ab,0.16,false,false,near_mint,en,EUR
@@ -1331,13 +1331,13 @@ Loxodon Battle Priest,TDM,Tarkir: Dragonstorm,15,normal,uncommon,1,104861,a527cd
 Ambling Stormshell,TDM,Tarkir: Dragonstorm,37,normal,rare,1,104942,c74d4a57-0f66-4965-9ed7-f88a08aa1d15,0.14,false,false,near_mint,en,EUR
 Parapet Thrasher,TDC,Tarkir: Dragonstorm Commander,76,normal,rare,1,104561,39df10ff-42a4-480d-a808-3ce838d9f8ce,3.15,false,false,near_mint,en,EUR
 Temple of the Dragon Queen,AFR,Adventures in the Forgotten Realms,260,normal,uncommon,1,60150,0c79b3c6-ccbe-48ae-a1f7-ddfd37ecdbf5,0.17,false,false,near_mint,en,EUR
-Sarkhan, Dragon Ascendant,TDM,Tarkir: Dragonstorm,302,normal,rare,1,103994,57c03255-e3dc-44c2-982b-7efa188280df,0.4,false,false,near_mint,en,EUR
+"Sarkhan, Dragon Ascendant",TDM,Tarkir: Dragonstorm,302,normal,rare,1,103994,57c03255-e3dc-44c2-982b-7efa188280df,0.4,false,false,near_mint,en,EUR
 Mountain,NEO,Kamigawa: Neon Dynasty,299,foil,common,1,66485,03cd5953-37fc-4a8a-89f8-0b5dd8412dc9,3.92,false,false,near_mint,en,EUR
-Lathliss, Dragon Queen,J25,Foundations Jumpstart,74,normal,rare,1,101123,c7db2091-2888-46d4-8f4a-49f55dc80cd8,2.72,false,false,near_mint,en,EUR
+"Lathliss, Dragon Queen",J25,Foundations Jumpstart,74,normal,rare,1,101123,c7db2091-2888-46d4-8f4a-49f55dc80cd8,2.72,false,false,near_mint,en,EUR
 Mountain,TDM,Tarkir: Dragonstorm,275,foil,common,1,104397,fe0865ba-47c0-40bc-b0c6-e1ea5ae08a98,0.93,false,false,near_mint,en,EUR
 Frostcliff Siege,TDM,Tarkir: Dragonstorm,385,normal,rare,1,104344,b32ab782-5f99-489c-895a-49c5c5ea249d,1.35,false,false,near_mint,en,EUR
 Fire Diamond,CLB,Commander Legends: Battle for Baldur's Gate,445,normal,common,1,69129,81fa8865-c600-4d8d-976d-789cd565802e,0.09,false,false,near_mint,en,EUR
-Etali, Primal Storm,FDN,Foundations,194,normal,rare,1,101037,b6af9894-95b5-4c8e-902f-a9ba70f02e4a,0.33,false,false,near_mint,en,EUR
+"Etali, Primal Storm",FDN,Foundations,194,normal,rare,1,101037,b6af9894-95b5-4c8e-902f-a9ba70f02e4a,0.33,false,false,near_mint,en,EUR
 Dragon's Hoard,TDC,Tarkir: Dragonstorm Commander,317,normal,rare,1,104575,3ee80876-6e87-46c4-a6fd-ff6752db3032,0.86,false,false,near_mint,en,EUR
 Clash of Titans,IKO,Ikoria: Lair of Behemoths,111,normal,uncommon,1,49966,ca10e2b8-a317-4c98-a866-43bf274e82cb,0.1,false,false,near_mint,en,EUR
 Winter Moon,MH3,Modern Horizons 3,213,normal,rare,1,94267,f76bc2da-8f4b-4153-8a7b-c601b19affaf,0.77,false,false,near_mint,en,EUR
@@ -1350,9 +1350,9 @@ Boots of Speed,AFR,Adventures in the Forgotten Realms,133,normal,common,1,60463,
 Island,TDM,Tarkir: Dragonstorm,273,normal,common,1,104276,4208e66c-8c98-4c48-ab07-8523c0b26ca4,0.8,false,false,near_mint,en,EUR
 Temple of the Dragon Queen,AFR,Adventures in the Forgotten Realms,357,normal,uncommon,1,60126,01054cee-3105-4e80-9ded-0ae57db5c159,0.33,false,false,near_mint,en,EUR
 Reliquary Tower,TDC,Tarkir: Dragonstorm Commander,386,normal,uncommon,1,104714,6be3be55-7f9d-4a4c-b916-a1cb64f833c8,2.19,false,false,near_mint,en,EUR
-Drakuseth, Maw of Flames,FDN,Foundations,193,normal,rare,1,100092,029b1edb-e1de-4f1c-81df-8d17f4920318,0.37,false,false,near_mint,en,EUR
+"Drakuseth, Maw of Flames",FDN,Foundations,193,normal,rare,1,100092,029b1edb-e1de-4f1c-81df-8d17f4920318,0.37,false,false,near_mint,en,EUR
 Warden of the Grove,TDM,Tarkir: Dragonstorm,351,normal,rare,1,104524,2e3d7969-5dcb-434d-8a8b-fb16da288bc4,1.16,false,false,near_mint,en,EUR
-Kefka, Court Mage // Kefka, Ruler of Ruin,FIN,Final Fantasy,231,normal,mythic,1,105666,8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8,4.8,false,false,near_mint,en,EUR
-Imoen, Mystic Trickster,CLB,Commander Legends: Battle for Baldur's Gate,385,normal,uncommon,1,69053,5ce62167-bd2c-4192-9ce4-dd19a1080db6,0.08,false,false,near_mint,en,EUR
+"Kefka, Court Mage // Kefka, Ruler of Ruin",FIN,Final Fantasy,231,normal,mythic,1,105666,8fcf3fbb-1ddd-437e-81c1-f5a3133f5ee8,4.8,false,false,near_mint,en,EUR
+"Imoen, Mystic Trickster",CLB,Commander Legends: Battle for Baldur's Gate,385,normal,uncommon,1,69053,5ce62167-bd2c-4192-9ce4-dd19a1080db6,0.08,false,false,near_mint,en,EUR
 Mimic,AFR,Adventures in the Forgotten Realms,349,normal,common,1,60380,b059c316-2be1-4f66-9888-d31714280a5e,0.06,false,false,near_mint,en,EUR
 Pixie Guide,AFR,Adventures in the Forgotten Realms,309,normal,common,1,60253,5c2074a9-8b6f-4904-bb8c-ae705d31f2f1,0.09,false,false,near_mint,en,EUR
