@@ -31,10 +31,31 @@
       background: #161a23; 
       color: #fff; 
       outline: none; 
-      margin-bottom: 20px; 
+      margin-bottom: 12px; 
       transition: border-color 0.2s; 
     }
     #search:focus { border-color: #3b82f6; }
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .filters select, .filters button {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 8px;
+      border: 1px solid #2d3544;
+      background: #161a23;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+    }
+    .filters button {
+      cursor: pointer;
+      background: #232a38;
+    }
+    .filters button:hover { border-color: #64748b; }
+    @media (max-width: 700px) { .filters { grid-template-columns: 1fr; } }
     
     table { width: 100%; border-collapse: collapse; background: #161a23; border-radius: 8px; overflow: hidden; border: 1px solid #2d3544; }
     th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #232a38; }
@@ -42,17 +63,25 @@
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #1c2230; }
     
-    /* Hover-Effekt auf Kartennamen */
     .card-cell { 
-      cursor: pointer; 
       color: #f8fafc; 
-      text-decoration: underline dotted #475569; 
+      text-decoration: none;
       transition: color 0.15s; 
     }
     .card-cell:hover { 
       color: #60a5fa; 
-      text-decoration: underline solid #60a5fa; 
+      text-decoration: underline;
     }
+    .preview-button {
+      cursor: pointer;
+      padding: 7px 10px;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      background: #232a38;
+      color: #e2e8f0;
+      font-size: 0.82rem;
+    }
+    .preview-button:hover { background: #30394a; border-color: #60a5fa; }
 
     .badge { padding: 4px 10px; border-radius: 9999px; font-size: 0.8rem; font-weight: 600; display: inline-block; }
     .owner-peter { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
@@ -61,26 +90,21 @@
     .set-tag { background: #232a38; color: #cbd5e1; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; }
     .empty-state { text-align: center; color: #64748b; padding: 30px; font-style: italic; }
 
-    /* Schwebende Kartenvorschau */
     #card-preview {
-      position: fixed;
-      pointer-events: none;
-      z-index: 9999;
-      display: none;
-      width: 240px;
-      min-height: 335px;
-      border-radius: 12px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
-      background: #1e232d;
+      width: 380px;
+      max-width: calc(100vw - 30px);
       border: 1px solid #3b82f6;
-      overflow: hidden;
+      border-radius: 12px;
+      padding: 12px;
+      background: #161a23;
+      color: #fff;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
     }
-    #card-preview img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      border-radius: 10px;
-    }
+    #card-preview::backdrop { background: rgba(0, 0, 0, 0.72); }
+    .preview-header { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .preview-header strong { font-size: 1rem; }
+    .preview-close { cursor: pointer; border: 0; background: transparent; color: #94a3b8; font-size: 1.35rem; }
+    #preview-img { width: 100%; display: block; border-radius: 9px; min-height: 200px; background: #232a38; }
   </style>
 </head>
 <body>
@@ -93,25 +117,44 @@
   </div>
 
   <input type="text" id="search" placeholder="Kartenname eingeben (z. B. Sol Ring, Swords, Command...)" autofocus>
+  <div class="filters">
+    <select id="set-filter" aria-label="Edition filtern">
+      <option value="">Alle Editionen</option>
+    </select>
+    <select id="owner-filter" aria-label="Besitzer filtern">
+      <option value="">Alle Besitzer</option>
+      <option value="Peter">Peter</option>
+      <option value="Flo">Flo</option>
+      <option value="Raphi">Raphi</option>
+    </select>
+    <select id="rarity-filter" aria-label="Seltenheit filtern">
+      <option value="">Alle Seltenheiten</option>
+    </select>
+    <button type="button" id="reset-filters">Filter zurücksetzen</button>
+  </div>
 
   <table>
     <thead>
       <tr>
-        <th>Karte (Hover für Bild)</th>
+        <th>Karte</th>
         <th>Edition</th>
         <th>Besitzer</th>
         <th>Anzahl</th>
+        <th>Vorschau</th>
       </tr>
     </thead>
     <tbody id="results">
-      <tr><td colspan="4" class="empty-state">Tippe mindestens 2 Buchstaben ein...</td></tr>
+      <tr><td colspan="5" class="empty-state">Lade Karten...</td></tr>
     </tbody>
   </table>
 
-  <!-- Floating Preview Box -->
-  <div id="card-preview">
+  <dialog id="card-preview">
+    <div class="preview-header">
+      <strong id="preview-title"></strong>
+      <button type="button" class="preview-close" aria-label="Vorschau schließen">&times;</button>
+    </div>
     <img id="preview-img" src="" alt="Kartenvorschau">
-  </div>
+  </dialog>
 
   <script>
     const sources = [
@@ -161,12 +204,18 @@
               const name = (row["Name"] || row["Card Name"] || row["Card name"] || row["name"] || "").trim();
               const count = parseInt(row["Quantity"] || row["Count"] || row["quantity"] || row["count"] || 1, 10);
               const setCode = (row["Set code"] || row["Set Code"] || row["set code"] || "").trim();
+              const setName = (row["Set name"] || row["Set Name"] || row["set name"] || "").trim();
+              const collectorNumber = (row["Collector number"] || row["Collector Number"] || row["collector number"] || "").trim();
+              const rarity = (row["Rarity"] || row["rarity"] || "").trim();
               const scryfallId = (row["Scryfall ID"] || row["Scryfall Id"] || row["scryfall id"] || "").trim();
               
               return {
                 name: name,
                 count: isNaN(count) ? 1 : count,
                 setCode: setCode,
+                setName: setName,
+                collectorNumber: collectorNumber,
+                rarity: rarity,
                 scryfallId: scryfallId,
                 owner: source.name,
                 badge: source.badge
@@ -187,88 +236,135 @@
     )).then(results => {
       renderStatus(results);
       cardInventory = results.flatMap(r => r.items);
+      populateFilters();
+      renderResults();
     });
 
     const searchInput = document.getElementById("search");
+    const setFilter = document.getElementById("set-filter");
+    const ownerFilter = document.getElementById("owner-filter");
+    const rarityFilter = document.getElementById("rarity-filter");
+    const resetFiltersButton = document.getElementById("reset-filters");
     const resultsTable = document.getElementById("results");
     const previewBox = document.getElementById("card-preview");
     const previewImg = document.getElementById("preview-img");
+    const previewTitle = document.getElementById("preview-title");
 
-    // Suchfilter
-    searchInput.addEventListener("input", (e) => {
-      const query = e.target.value.toLowerCase().trim();
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function populateFilters() {
+      const sets = [...new Set(cardInventory.map(item => item.setCode).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b));
+      const rarities = [...new Set(cardInventory.map(item => item.rarity).filter(Boolean))]
+        .sort((a, b) => a.localeCompare(b));
+
+      sets.forEach(setCode => {
+        const item = cardInventory.find(card => card.setCode === setCode);
+        const option = document.createElement("option");
+        option.value = setCode;
+        option.textContent = item && item.setName ? `${setCode} - ${item.setName}` : setCode;
+        setFilter.appendChild(option);
+      });
+
+      rarities.forEach(rarity => {
+        const option = document.createElement("option");
+        option.value = rarity;
+        option.textContent = rarity.charAt(0).toUpperCase() + rarity.slice(1);
+        rarityFilter.appendChild(option);
+      });
+    }
+
+    function getScryfallUrl(item) {
+      if (item.setCode && item.collectorNumber) {
+        return `https://scryfall.com/card/${encodeURIComponent(item.setCode.toLowerCase())}/${encodeURIComponent(item.collectorNumber)}`;
+      }
+      if (item.scryfallId) {
+        return `https://scryfall.com/card/${encodeURIComponent(item.scryfallId)}`;
+      }
+      return `https://scryfall.com/search?q=${encodeURIComponent(`!"${item.name}"`)}`;
+    }
+
+    function renderResults() {
+      const query = searchInput.value.toLowerCase().trim();
+      const selectedSet = setFilter.value;
+      const selectedOwner = ownerFilter.value;
+      const selectedRarity = rarityFilter.value;
       resultsTable.innerHTML = "";
 
-      if (query.length < 2) {
-        resultsTable.innerHTML = '<tr><td colspan="4" class="empty-state">Tippe mindestens 2 Buchstaben ein...</td></tr>';
-        return;
-      }
-
       const matches = cardInventory
-        .filter(item => item.name.toLowerCase().includes(query))
+        .filter(item => !query || item.name.toLowerCase().includes(query))
+        .filter(item => !selectedSet || item.setCode === selectedSet)
+        .filter(item => !selectedOwner || item.owner === selectedOwner)
+        .filter(item => !selectedRarity || item.rarity.toLowerCase() === selectedRarity.toLowerCase())
         .slice(0, 50);
 
       if (matches.length === 0) {
-        resultsTable.innerHTML = '<tr><td colspan="4" class="empty-state">Keine Karte gefunden.</td></tr>';
+        resultsTable.innerHTML = '<tr><td colspan="5" class="empty-state">Keine Karte gefunden.</td></tr>';
         return;
       }
 
       matches.forEach(item => {
         const row = document.createElement("tr");
+        const scryfallUrl = getScryfallUrl(item);
         row.innerHTML = `
-          <td><strong class="card-cell" data-id="${item.scryfallId}" data-name="${encodeURIComponent(item.name)}">${item.name}</strong></td>
+          <td><a class="card-cell" href="${escapeHtml(scryfallUrl)}">${escapeHtml(item.name)}</a></td>
           <td>${item.setCode ? `<span class="set-tag">${item.setCode}</span>` : "-"}</td>
           <td><span class="badge ${item.badge}">${item.owner}</span></td>
           <td>${item.count}x</td>
+          <td><button type="button" class="preview-button" data-id="${escapeHtml(item.scryfallId)}" data-name="${escapeHtml(item.name)}">Vorschau</button></td>
         `;
         resultsTable.appendChild(row);
       });
+    }
+
+    searchInput.addEventListener("input", renderResults);
+    setFilter.addEventListener("change", renderResults);
+    ownerFilter.addEventListener("change", renderResults);
+    rarityFilter.addEventListener("change", renderResults);
+    resetFiltersButton.addEventListener("click", () => {
+      searchInput.value = "";
+      setFilter.value = "";
+      ownerFilter.value = "";
+      rarityFilter.value = "";
+      renderResults();
     });
 
-    // Hover-Logik für Kartenvorschau
-    resultsTable.addEventListener("mouseover", (e) => {
-      const target = e.target.closest(".card-cell");
+    resultsTable.addEventListener("click", (e) => {
+      const target = e.target.closest(".preview-button");
       if (!target) return;
-      
       const id = target.dataset.id;
       const name = target.dataset.name;
-      
-      // Nutze direkte Scryfall ID falls vorhanden, sonst Fallback über Kartennamen
       const imgUrl = id 
         ? `https://api.scryfall.com/cards/${id}?format=image&version=normal` 
-        : `https://api.scryfall.com/cards/named?exact=${name}&format=image&version=normal`;
-
+        : `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(name)}&format=image&version=normal`;
+      previewTitle.textContent = name;
+      previewImg.dataset.fallbackName = name;
+      delete previewImg.dataset.usedNamedFallback;
       previewImg.src = imgUrl;
-      previewBox.style.display = "block";
+      previewBox.showModal();
     });
-
-    resultsTable.addEventListener("mousemove", (e) => {
-      if (previewBox.style.display !== "block") return;
-      
-      const offset = 20;
-      let x = e.clientX + offset;
-      let y = e.clientY + offset;
-
-      const boxWidth = 240;
-      const boxHeight = 335;
-
-      // Verhindern, dass die Vorschau rechts oder unten aus dem Fenster ragt
-      if (x + boxWidth > window.innerWidth) {
-        x = e.clientX - boxWidth - offset;
+    previewImg.addEventListener("error", () => {
+      const name = previewImg.dataset.fallbackName || "Vorschau nicht verfügbar";
+      if (!previewImg.dataset.usedNamedFallback) {
+        previewImg.dataset.usedNamedFallback = "true";
+        previewImg.src = `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(name)}&format=image&version=normal`;
+        return;
       }
-      if (y + boxHeight > window.innerHeight) {
-        y = Math.max(10, window.innerHeight - boxHeight - 10);
-      }
-
-      previewBox.style.left = `${x}px`;
-      previewBox.style.top = `${y}px`;
+      const safeName = escapeHtml(name).replaceAll("'", "");
+      previewImg.onerror = null;
+      previewImg.src = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="488" height="680"><rect width="100%" height="100%" fill="#232a38"/><text x="50%" y="50%" fill="#94a3b8" font-family="sans-serif" font-size="24" text-anchor="middle">${safeName}</text></svg>`)}`;
+      delete previewImg.dataset.usedNamedFallback;
     });
-
-    resultsTable.addEventListener("mouseout", (e) => {
-      const target = e.target.closest(".card-cell");
-      if (!target) return;
-      previewBox.style.display = "none";
-      previewImg.src = "";
+    document.querySelector(".preview-close").addEventListener("click", () => previewBox.close());
+    previewBox.addEventListener("click", (e) => {
+      if (e.target === previewBox) previewBox.close();
     });
   </script>
 </body>
