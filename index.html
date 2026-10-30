@@ -124,6 +124,7 @@
     .owner-peter { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
     .owner-flo { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
     .owner-raphi { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
+    .owner-tobi { background: rgba(249, 115, 22, 0.2); color: #fb923c; border: 1px solid rgba(249, 115, 22, 0.4); }
     
     .foil-badge {
       background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(244, 114, 182, 0.2), rgba(129, 140, 248, 0.2));
@@ -768,6 +769,15 @@ Counterspell
           Archidekt ↗
         </a>
       </div>
+      <div class="profile-card">
+        <div class="profile-info">
+          <strong>Tobi (<span style="color:#fb923c;">Schufterle04</span>)</strong>
+          <span id="tobi-deck-count">Lade Decks...</span>
+        </div>
+        <a href="https://archidekt.com/u/Schufterle04" target="_blank" rel="noopener noreferrer" class="external-link link-archidekt">
+          Archidekt ↗
+        </a>
+      </div>
     </div>
 
     <!-- Filter & Suchleiste für Decks -->
@@ -778,6 +788,7 @@ Counterspell
         <button type="button" class="chip-btn" data-owner="Peter">Peter</button>
         <button type="button" class="chip-btn" data-owner="Flo">Flo</button>
         <button type="button" class="chip-btn" data-owner="Raphi">Raphi</button>
+        <button type="button" class="chip-btn" data-owner="Tobi">Tobi</button>
       </div>
     </div>
 
@@ -1327,6 +1338,7 @@ Counterspell
     const peterDeckCount = document.getElementById("peter-deck-count");
     const floDeckCount = document.getElementById("flo-deck-count");
     const raphiDeckCount = document.getElementById("raphi-deck-count");
+    const tobiDeckCount = document.getElementById("tobi-deck-count");
     let selectedArchidektOwner = "";
 
     function loadArchidektDecks() {
@@ -1344,6 +1356,9 @@ Counterspell
             peterDeckCount.textContent = `${data.owners.Peter ? data.owners.Peter.count : 0} Decks`;
             floDeckCount.textContent = `${data.owners.Flo ? data.owners.Flo.count : 0} Decks`;
             raphiDeckCount.textContent = `${data.owners.Raphi ? data.owners.Raphi.count : 0} Decks`;
+            if (tobiDeckCount) {
+              tobiDeckCount.textContent = `${data.owners.Tobi ? data.owners.Tobi.count : 0} Deck${data.owners.Tobi && data.owners.Tobi.count === 1 ? '' : 's'}`;
+            }
           }
 
           buildCardDecksLookup();

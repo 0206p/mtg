@@ -16,6 +16,7 @@ Die App läuft komplett im Browser (client-side) und lädt eure ManaBox-CSV-Expo
 - 👤 **Peter:** [https://archidekt.com/u/p0206](https://archidekt.com/u/p0206) (10 Decks)
 - 👤 **Flo:** [https://archidekt.com/u/Flogrim96](https://archidekt.com/u/Flogrim96) (26 Decks)
 - 👤 **Raphi:** [https://archidekt.com/u/RaphaelOspelt](https://archidekt.com/u/RaphaelOspelt) (3 Decks)
+- 👤 **Tobi:** [https://archidekt.com/u/Schufterle04](https://archidekt.com/u/Schufterle04) (1 Deck: *From Loam to Hoof*)
 
 ---
 

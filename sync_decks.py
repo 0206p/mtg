@@ -18,7 +18,8 @@ HEADERS = {
 USERS = [
     {'name': 'Peter', 'username': 'p0206', 'badge': 'owner-peter'},
     {'name': 'Flo', 'username': 'Flogrim96', 'badge': 'owner-flo'},
-    {'name': 'Raphi', 'username': 'RaphaelOspelt', 'badge': 'owner-raphi'}
+    {'name': 'Raphi', 'username': 'RaphaelOspelt', 'badge': 'owner-raphi'},
+    {'name': 'Tobi', 'username': 'Schufterle04', 'badge': 'owner-tobi'}
 ]
 
 FORMAT_NAMES = {
@@ -147,8 +148,8 @@ def main():
             res = future.result()
             full_decks.append(res)
     
-    # Sort decks: first by Owner (Peter, Flo, Raphi), then by Name
-    owner_order = {'Peter': 1, 'Flo': 2, 'Raphi': 3}
+    # Sort decks: first by Owner (Peter, Flo, Raphi, Tobi), then by Name
+    owner_order = {'Peter': 1, 'Flo': 2, 'Raphi': 3, 'Tobi': 4}
     full_decks.sort(key=lambda d: (owner_order.get(d['owner'], 9), d['name'].lower()))
 
     output_data = {
@@ -157,7 +158,8 @@ def main():
         'owners': {
             'Peter': {'username': 'p0206', 'url': 'https://archidekt.com/u/p0206', 'count': sum(1 for d in full_decks if d['owner'] == 'Peter')},
             'Flo': {'username': 'Flogrim96', 'url': 'https://archidekt.com/u/Flogrim96', 'count': sum(1 for d in full_decks if d['owner'] == 'Flo')},
-            'Raphi': {'username': 'RaphaelOspelt', 'url': 'https://archidekt.com/u/RaphaelOspelt', 'count': sum(1 for d in full_decks if d['owner'] == 'Raphi')}
+            'Raphi': {'username': 'RaphaelOspelt', 'url': 'https://archidekt.com/u/RaphaelOspelt', 'count': sum(1 for d in full_decks if d['owner'] == 'Raphi')},
+            'Tobi': {'username': 'Schufterle04', 'url': 'https://archidekt.com/u/Schufterle04', 'count': sum(1 for d in full_decks if d['owner'] == 'Tobi')}
         },
         'decks': full_decks
     }
