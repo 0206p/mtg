@@ -257,6 +257,141 @@
       min-width: 0;
       max-width: 100%;
     }
+    .deck-input-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .deck-textarea {
+      width: 100%;
+      height: 340px;
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 8px;
+      padding: 12px;
+      color: #f1f5f9;
+      font-family: monospace;
+      font-size: 0.88rem;
+      resize: vertical;
+    }
+    .deck-textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #1d4ed8; }
+
+    .btn-secondary {
+      background: #232a38;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+    .btn-secondary:hover {
+      background: #334155;
+      color: #fff;
+      border-color: #64748b;
+    }
+
+    .deck-summary-card {
+      background: #161a23;
+      border: 1px solid #2d3544;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+    .stat-lbl {
+      color: #8a94a6;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .progress-bar-bg {
+      width: 100%;
+      height: 9px;
+      background: #232a38;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    /* Deck Filter Bar & Chips */
+    .deck-filter-bar {
+      margin-bottom: 14px;
+    }
+    .deck-chip {
+      background: #11141a;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .deck-chip:hover {
+      background: #1f2533;
+      color: #fff;
+    }
+    .deck-chip.active {
+      background: #2563eb;
+      color: #fff;
+      border-color: #3b82f6;
+    }
+    .deck-chip.chip-borrow.active {
+      background: rgba(234, 179, 8, 0.2);
+      color: #facc15;
+      border-color: rgba(234, 179, 8, 0.55);
+    }
+    .deck-chip.chip-missing.active {
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.55);
+    }
+    .deck-chip.chip-have.active {
+      background: rgba(34, 197, 94, 0.2);
+      color: #4ade80;
+      border-color: rgba(34, 197, 94, 0.55);
+    }
+
     @media (max-width: 900px) {
       .deck-container {
         grid-template-columns: 1fr;
@@ -341,101 +476,6 @@
       .deck-grid {
         grid-template-columns: 1fr;
       }
-    }
-    .deck-input-box {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .deck-textarea {
-      width: 100%;
-      height: 340px;
-      background: #161a23;
-      border: 1px solid #2d3544;
-      border-radius: 8px;
-      padding: 12px;
-      color: #f1f5f9;
-      font-family: monospace;
-      font-size: 0.88rem;
-      resize: vertical;
-    }
-    .deck-textarea:focus {
-      outline: none;
-      border-color: #3b82f6;
-    }
-    .btn-primary {
-      background: #2563eb;
-      color: #fff;
-      border: none;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      transition: background 0.15s;
-    }
-    .btn-primary:hover { background: #1d4ed8; }
-
-    .btn-secondary {
-      background: #232a38;
-      color: #e2e8f0;
-      border: 1px solid #334155;
-      padding: 7px 12px;
-      border-radius: 6px;
-      font-size: 0.82rem;
-      font-weight: 500;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.15s;
-    }
-    .btn-secondary:hover {
-      background: #334155;
-      color: #fff;
-      border-color: #64748b;
-    }
-
-    .deck-summary-card {
-      background: #161a23;
-      border: 1px solid #2d3544;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .stat-item {
-      text-align: center;
-    }
-    .stat-num {
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
-    .stat-lbl {
-      color: #8a94a6;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-    }
-    .progress-bar-bg {
-      width: 100%;
-      height: 8px;
-      background: #232a38;
-      border-radius: 4px;
-      overflow: hidden;
-      margin-top: 10px;
-    }
-    .progress-bar-fill {
-      height: 100%;
-      background: #22c55e;
-      transition: width 0.3s ease;
     }
 
     .status-ok { color: #4ade80; font-weight: 600; }
@@ -697,22 +737,57 @@ Counterspell
               <div class="stat-num" id="stat-total">0</div>
               <div class="stat-lbl">Karten gesucht</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-num" style="color: #4ade80;" id="stat-found">0</div>
-              <div class="stat-lbl">Im Pool vorhanden</div>
+            <div class="stat-item" id="stat-user-box">
+              <div class="stat-num" style="color: #4ade80;" id="stat-user-have">0</div>
+              <div class="stat-lbl" id="stat-user-lbl">Hast du selbst</div>
             </div>
-            <div class="stat-item">
-              <div class="stat-num" style="color: #f87171;" id="stat-missing">0</div>
-              <div class="stat-lbl">Fehlen noch</div>
+            <div class="stat-item" id="stat-borrow-box">
+              <div class="stat-num" style="color: #fbbf24;" id="stat-borrow">0</div>
+              <div class="stat-lbl">Bei Freunden da (Leihen)</div>
+            </div>
+            <div class="stat-item" id="stat-missing-box">
+              <div class="stat-num" style="color: #f87171;" id="stat-missing-pool">0</div>
+              <div class="stat-lbl" id="stat-missing-lbl">Fehlen komplett</div>
             </div>
             <div class="stat-item">
               <div class="stat-num" style="color: #60a5fa;" id="stat-percent">0%</div>
-              <div class="stat-lbl">Abdeckung</div>
+              <div class="stat-lbl">Abdeckung Gesamt</div>
             </div>
             <div style="width: 100%;">
-              <div class="progress-bar-bg">
-                <div id="deck-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+              <div class="progress-bar-bg" style="display: flex;">
+                <div id="deck-bar-user" style="height: 100%; background: #22c55e; width: 0%; transition: width 0.3s;" title="Eigene Karten"></div>
+                <div id="deck-bar-friends" style="height: 100%; background: #eab308; width: 0%; transition: width 0.3s;" title="Bei Freunden im Pool (Leihen)"></div>
               </div>
+              <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 0.72rem; color: #8a94a6; margin-top: 6px;">
+                <span><span style="display:inline-block; width:8px; height:8px; background:#22c55e; border-radius:2px; margin-right:4px;"></span>Eigene Karten</span>
+                <span><span style="display:inline-block; width:8px; height:8px; background:#eab308; border-radius:2px; margin-right:4px;"></span>Bei Freunden vorhanden (Leihen)</span>
+                <span><span style="display:inline-block; width:8px; height:8px; background:#232a38; border-radius:2px; margin-right:4px; border:1px solid #334155;"></span>Fehlt im Pool</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Toolbar für Verfügbarkeit -->
+        <div class="deck-filter-bar" id="deck-filter-toolbar" style="display: none;">
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between; background: #161a23; padding: 10px 14px; border: 1px solid #2d3544; border-radius: 8px; margin-bottom: 14px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <label for="deck-user-select" style="font-size: 0.86rem; color: #94a3b8; font-weight: 500; white-space: nowrap;">
+                👤 Deck gehört:
+              </label>
+              <select id="deck-user-select" style="padding: 6px 10px; border-radius: 6px; border: 1px solid #334155; background: #11141a; color: #f0f2f5; font-size: 0.86rem;">
+                <option value="Peter" selected>Peter</option>
+                <option value="Flo">Flo</option>
+                <option value="Raphi">Raphi</option>
+                <option value="Tobi">Tobi</option>
+                <option value="">(Neutral / Pool gesamt)</option>
+              </select>
+            </div>
+
+            <div class="deck-filter-chips" style="display: flex; gap: 6px; flex-wrap: wrap;">
+              <button type="button" class="deck-chip active" data-filter="all">Alle (<span id="chip-cnt-all">0</span>)</button>
+              <button type="button" class="deck-chip chip-borrow" data-filter="borrowable">⭐ Bei Freunden da (<span id="chip-cnt-borrow">0</span>)</button>
+              <button type="button" class="deck-chip chip-missing" data-filter="missing_pool">❌ Fehlt im Pool (<span id="chip-cnt-missing">0</span>)</button>
+              <button type="button" class="deck-chip chip-have" data-filter="have_user">✔ Habe ich selbst (<span id="chip-cnt-have">0</span>)</button>
             </div>
           </div>
         </div>
@@ -1195,12 +1270,35 @@ Counterspell
     const btnCheckDeck = document.getElementById("btn-check-deck");
     const deckResultsBody = document.getElementById("deck-results-body");
     const deckSummaryWrapper = document.getElementById("deck-summary-wrapper");
+    const deckFilterToolbar = document.getElementById("deck-filter-toolbar");
+    const deckUserSelect = document.getElementById("deck-user-select");
     const statTotal = document.getElementById("stat-total");
-    const statFound = document.getElementById("stat-found");
-    const statMissing = document.getElementById("stat-missing");
+    const statUserBox = document.getElementById("stat-user-box");
+    const statUserHave = document.getElementById("stat-user-have");
+    const statUserLbl = document.getElementById("stat-user-lbl");
+    const statBorrowBox = document.getElementById("stat-borrow-box");
+    const statBorrow = document.getElementById("stat-borrow");
+    const statMissingBox = document.getElementById("stat-missing-box");
+    const statMissingPool = document.getElementById("stat-missing-pool");
+    const statMissingLbl = document.getElementById("stat-missing-lbl");
     const statPercent = document.getElementById("stat-percent");
-    const deckProgressBar = document.getElementById("deck-progress-bar");
+    const deckBarUser = document.getElementById("deck-bar-user");
+    const deckBarFriends = document.getElementById("deck-bar-friends");
     const quickDeckSelect = document.getElementById("deck-select-quick");
+    const chipCntAll = document.getElementById("chip-cnt-all");
+    const chipCntBorrow = document.getElementById("chip-cnt-borrow");
+    const chipCntMissing = document.getElementById("chip-cnt-missing");
+    const chipCntHave = document.getElementById("chip-cnt-have");
+
+    let currentDeckAnalysis = [];
+    let activeDeckFilter = "all";
+
+    const cameraIconSvg = `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+        <circle cx="12" cy="13" r="4"></circle>
+      </svg>
+    `;
 
     function parseDecklist(text) {
       const lines = text.split("\n");
@@ -1258,17 +1356,13 @@ Counterspell
         return;
       }
 
+      const currentUser = deckUserSelect ? deckUserSelect.value : "";
+      currentDeckAnalysis = [];
+
       let totalNeededCards = 0;
-      let totalAvailableCards = 0;
-
-      const cameraIconSvg = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-          <circle cx="12" cy="13" r="4"></circle>
-        </svg>
-      `;
-
-      deckResultsBody.innerHTML = "";
+      let totalUserCovered = 0;
+      let totalBorrowable = 0;
+      let totalMissingPool = 0;
 
       wantedCards.forEach(wanted => {
         totalNeededCards += wanted.needed;
@@ -1288,17 +1382,39 @@ Counterspell
           totalHave += m.count;
         });
 
-        const covered = Math.min(wanted.needed, totalHave);
-        totalAvailableCards += covered;
-        const missing = Math.max(0, wanted.needed - totalHave);
+        const userHave = currentUser ? (ownerCounts[currentUser] || 0) : 0;
+        const othersHave = currentUser ? (totalHave - userHave) : totalHave;
 
-        let statusText = '';
-        if (totalHave >= wanted.needed) {
-          statusText = '<span class="status-ok">✔ Komplett</span>';
-        } else if (totalHave > 0) {
-          statusText = `<span class="status-part">⚠ Fehlt ${missing}x</span>`;
+        const userCovered = currentUser ? Math.min(wanted.needed, userHave) : Math.min(wanted.needed, totalHave);
+        const userMissing = currentUser ? Math.max(0, wanted.needed - userHave) : 0;
+        const borrowable = currentUser ? Math.min(userMissing, othersHave) : 0;
+        const missingPool = Math.max(0, wanted.needed - totalHave);
+
+        totalUserCovered += userCovered;
+        totalBorrowable += borrowable;
+        totalMissingPool += missingPool;
+
+        let statusHtml = '';
+        if (currentUser) {
+          if (userHave >= wanted.needed) {
+            statusHtml = `<span class="status-ok">✔ Bei ${escapeHtml(currentUser)} (${userHave}x)</span>`;
+          } else if (borrowable > 0) {
+            if (missingPool > 0) {
+              statusHtml = `<span style="display:inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; background: rgba(234, 179, 8, 0.15); color: #fbbf24; border: 1px solid rgba(234, 179, 8, 0.35);">⭐ Leihen (${borrowable}x, fehlt ${missingPool}x)</span>`;
+            } else {
+              statusHtml = `<span style="display:inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; background: rgba(234, 179, 8, 0.15); color: #fbbf24; border: 1px solid rgba(234, 179, 8, 0.35);">⭐ Bei Freunden (${borrowable}x)</span>`;
+            }
+          } else {
+            statusHtml = `<span class="status-missing">✖ Fehlt im Pool</span>`;
+          }
         } else {
-          statusText = `<span class="status-missing">✖ Fehlt komplett</span>`;
+          if (totalHave >= wanted.needed) {
+            statusHtml = '<span class="status-ok">✔ Komplett</span>';
+          } else if (totalHave > 0) {
+            statusHtml = `<span class="status-part">⚠ Fehlt ${missingPool}x</span>`;
+          } else {
+            statusHtml = '<span class="status-missing">✖ Fehlt komplett</span>';
+          }
         }
 
         let breakdownHtml = '';
@@ -1319,39 +1435,132 @@ Counterspell
           ? getImageUrl(sampleMatch) 
           : `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(wanted.cleanName)}&format=image&version=normal`;
 
+        // Filter flags
+        const isBorrowable = currentUser ? (userMissing > 0 && othersHave > 0) : (othersHave > 0 && totalHave >= wanted.needed);
+        const isMissingPool = missingPool > 0;
+        const isHaveUser = currentUser ? (userHave >= wanted.needed) : (totalHave >= wanted.needed);
+
+        currentDeckAnalysis.push({
+          name: wanted.name,
+          cleanName: wanted.cleanName,
+          needed: wanted.needed,
+          totalHave,
+          userHave,
+          othersHave,
+          borrowable,
+          missingPool,
+          isBorrowable,
+          isMissingPool,
+          isHaveUser,
+          breakdownHtml,
+          statusHtml,
+          cardmarketUrl,
+          imgUrl
+        });
+      });
+
+      // Update Top Summary Stats
+      statTotal.textContent = totalNeededCards;
+
+      if (currentUser) {
+        statUserBox.style.display = "block";
+        statBorrowBox.style.display = "block";
+        statUserLbl.textContent = `Hat ${escapeHtml(currentUser)} selbst`;
+        statUserHave.textContent = totalUserCovered;
+        statBorrow.textContent = totalBorrowable;
+        statMissingPool.textContent = totalMissingPool;
+        statMissingLbl.textContent = "Fehlen im Pool";
+
+        const userPct = totalNeededCards > 0 ? (totalUserCovered / totalNeededCards) * 100 : 0;
+        const friendsPct = totalNeededCards > 0 ? (totalBorrowable / totalNeededCards) * 100 : 0;
+        const totalPct = Math.min(100, Math.round(userPct + friendsPct));
+
+        statPercent.textContent = `${totalPct}%`;
+        deckBarUser.style.width = `${userPct}%`;
+        deckBarFriends.style.width = `${friendsPct}%`;
+      } else {
+        statUserBox.style.display = "none";
+        statBorrowBox.style.display = "none";
+        statMissingPool.textContent = totalMissingPool;
+        statMissingLbl.textContent = "Fehlen komplett";
+
+        const poolCovered = totalNeededCards - totalMissingPool;
+        const poolPct = totalNeededCards > 0 ? Math.round((poolCovered / totalNeededCards) * 100) : 0;
+
+        statPercent.textContent = `${poolPct}%`;
+        deckBarUser.style.width = `${poolPct}%`;
+        deckBarFriends.style.width = `0%`;
+      }
+
+      // Update Filter Chip Counts
+      chipCntAll.textContent = currentDeckAnalysis.length;
+      chipCntBorrow.textContent = currentDeckAnalysis.filter(c => c.isBorrowable).length;
+      chipCntMissing.textContent = currentDeckAnalysis.filter(c => c.isMissingPool).length;
+      chipCntHave.textContent = currentDeckAnalysis.filter(c => c.isHaveUser).length;
+
+      deckSummaryWrapper.style.display = "block";
+      deckFilterToolbar.style.display = "block";
+
+      renderFilteredDeckTable();
+    }
+
+    function renderFilteredDeckTable() {
+      deckResultsBody.innerHTML = "";
+
+      const filtered = currentDeckAnalysis.filter(item => {
+        if (activeDeckFilter === "borrowable") return item.isBorrowable;
+        if (activeDeckFilter === "missing_pool") return item.isMissingPool;
+        if (activeDeckFilter === "have_user") return item.isHaveUser;
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        deckResultsBody.innerHTML = '<tr><td colspan="7" class="empty-state">Keine Karten für den aktuellen Filter gefunden.</td></tr>';
+        return;
+      }
+
+      filtered.forEach(item => {
         const row = document.createElement("tr");
         row.innerHTML = `
           <td style="text-align: center;">
-            <span class="camera-trigger" data-img="${escapeHtml(imgUrl)}" title="Hover für Bildvorschau">
+            <span class="camera-trigger" data-img="${escapeHtml(item.imgUrl)}" title="Hover für Bildvorschau">
               ${cameraIconSvg}
             </span>
           </td>
           <td>
-            <a class="card-cell" href="${escapeHtml(cardmarketUrl)}" target="_blank" rel="noopener noreferrer" title="Auf Cardmarket ansehen">
-              ${escapeHtml(wanted.name)}
+            <a class="card-cell" href="${escapeHtml(item.cardmarketUrl)}" target="_blank" rel="noopener noreferrer" title="Auf Cardmarket ansehen">
+              ${escapeHtml(item.name)}
             </a>
           </td>
-          <td style="text-align: center; font-weight: bold;">${wanted.needed}x</td>
-          <td style="text-align: center; font-weight: bold; ${totalHave >= wanted.needed ? 'color:#4ade80;' : (totalHave > 0 ? 'color:#facc15;' : 'color:#f87171;')}">
-            ${totalHave}x
+          <td style="text-align: center; font-weight: bold;">${item.needed}x</td>
+          <td style="text-align: center; font-weight: bold; ${item.totalHave >= item.needed ? 'color:#4ade80;' : (item.totalHave > 0 ? 'color:#facc15;' : 'color:#f87171;')}">
+            ${item.totalHave}x
           </td>
-          <td>${breakdownHtml}</td>
-          <td>${statusText}</td>
-          <td>${getCardDecksHtml(wanted.name)}</td>
+          <td>${item.breakdownHtml}</td>
+          <td>${item.statusHtml}</td>
+          <td>${getCardDecksHtml(item.name)}</td>
         `;
         deckResultsBody.appendChild(row);
       });
+    }
 
-      const missingTotal = Math.max(0, totalNeededCards - totalAvailableCards);
-      const percentage = totalNeededCards > 0 ? Math.round((totalAvailableCards / totalNeededCards) * 100) : 0;
+    // Filter Chips Event Listeners
+    document.querySelectorAll(".deck-filter-chips .deck-chip").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".deck-filter-chips .deck-chip").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeDeckFilter = btn.dataset.filter || "all";
+        renderFilteredDeckTable();
+      });
+    });
 
-      statTotal.textContent = totalNeededCards;
-      statFound.textContent = totalAvailableCards;
-      statMissing.textContent = missingTotal;
-      statPercent.textContent = `${percentage}%`;
-      deckProgressBar.style.width = `${percentage}%`;
-
-      deckSummaryWrapper.style.display = "block";
+    // Perspective Selector Event Listener
+    if (deckUserSelect) {
+      deckUserSelect.addEventListener("change", () => {
+        if (deckInput.value.trim().length > 0) {
+          runDeckCheck();
+        }
+      });
     }
 
     btnCheckDeck.addEventListener("click", runDeckCheck);
@@ -1457,6 +1666,9 @@ Counterspell
         .map(c => `${c.quantity} ${c.name}`);
 
       deckInput.value = lines.join("\n");
+      if (deckUserSelect && deck.owner) {
+        deckUserSelect.value = deck.owner;
+      }
       switchTab("tab-deck");
       runDeckCheck();
     }
